@@ -120,21 +120,29 @@ async function escalateToHuman(sessionId) {
  * Gera resposta da Fernanda IA com base no histórico da conversa
  */
 async function generateResponse(history) {
-  // Monta contexto dinâmico: data atual + nome do devedor
+  // Monta contexto dinâmico: data atual + flag de continuação
   const now = new Date();
   const diasSemana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
   const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
   const dataHoje = `${diasSemana[now.getDay()]}, ${now.getDate()} de ${meses[now.getMonth()]} de ${now.getFullYear()}`;
   const hora = `${now.getHours()}:${String(now.getMinutes()).padStart(2, '0')}`;
 
+  // Detectar se já houve interação prévia (se tem mensagem do assistant no histórico)
+  const hasAssistantMessage = history.some(m => m.role === 'assistant');
+  const isFirstMessage = !hasAssistantMessage;
+
   let systemPrompt = SYSTEM_PROMPT;
   systemPrompt += `\n\n## CONTEXTO ATUAL`;
   systemPrompt += `\nData de hoje: ${dataHoje}`;
   systemPrompt += `\nHorário atual: ${hora}`;
+
+  if (isFirstMessage) {
+    systemPrompt += `\nEsta é a PRIMEIRA mensagem da conversa. Cumprimente o cliente e se apresente.`;
+  } else {
+    systemPrompt += `\nEsta é uma CONTINUAÇÃO de conversa. NÃO cumprimente novamente. NÃO repita "Olá, aqui é a Fernanda...". Apenas responda naturalmente ao que o cliente disse. Leia o histórico acima e continue de onde parou.`;
+  }
+
   // IMPORTANTE: NÃO enviar o nome do perfil do WhatsApp como nome do devedor.
-  // O nome do WhatsApp pode ser emoji, frase, apelido — NÃO é confiável.
-  // O nome só deve ser usado quando confirmado pelo próprio devedor na conversa
-  // ou validado na planilha de remessa de cobrança.
   systemPrompt += `\nIMPORTANTE: Você NÃO sabe o nome do cliente ainda. NÃO use "[nome]" nem qualquer placeholder. Trate por "você" até que o próprio cliente informe seu nome na conversa.`;
 
   const messages = [
