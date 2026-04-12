@@ -33,6 +33,19 @@ const HUMAN_USER_ID = process.env.HUMAN_USER_ID || process.env.ANA_USER_ID || ''
 
 const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
+// Rastreia sessões que já receberam cumprimento (evita repetição)
+// Key: sessionId, Value: timestamp do primeiro cumprimento
+const greetedSessions = new Map();
+
+// Limpa sessões antigas a cada 6 horas (evita vazamento de memória)
+setInterval(() => {
+  const sixHoursAgo = Date.now() - 6 * 60 * 60 * 1000;
+  for (const [sid, ts] of greetedSessions) {
+    if (ts < sixHoursAgo) greetedSessions.delete(sid);
+  }
+  console.log(`[CLEANUP] greetedSessions: ${greetedSessions.size} sessões ativas`);
+}, 60 * 60 * 1000); // roda a cada 1h
+
 // ==================== ZAPERCHAT API ====================
 
 async function zaperchatRequest(method, path, body = null) {
@@ -119,7 +132,7 @@ async function escalateToHuman(sessionId) {
 /**
  * Gera resposta da Fernanda IA com base no histórico da conversa
  */
-async function generateResponse(history) {
+async function generateResponse(history, sessionId) {
   // Monta contexto dinâmico: data atual + flag de continuação
   const now = new Date();
   const diasSemana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
@@ -127,19 +140,29 @@ async function generateResponse(history) {
   const dataHoje = `${diasSemana[now.getDay()]}, ${now.getDate()} de ${meses[now.getMonth()]} de ${now.getFullYear()}`;
   const hora = `${now.getHours()}:${String(now.getMinutes()).padStart(2, '0')}`;
 
-  // Detectar se já houve interação prévia (se tem mensagem do assistant no histórico)
+  // Detectar primeira mensagem via Map em memória (mais confiável que histórico da API)
+  const isFirstMessage = !greetedSessions.has(sessionId);
+
+  // Também verificar pelo histórico como fallback
   const hasAssistantMessage = history.some(m => m.role === 'assistant');
-  const isFirstMessage = !hasAssistantMessage;
+
+  // Se NÃO está no Map MAS tem mensagem de assistant no histórico, não é primeira
+  const shouldGreet = isFirstMessage && !hasAssistantMessage;
+
+  if (shouldGreet) {
+    greetedSessions.set(sessionId, Date.now());
+    console.log(`[GREETED] Sessão ${sessionId} marcada como cumprimentada (total: ${greetedSessions.size})`);
+  }
 
   let systemPrompt = SYSTEM_PROMPT;
   systemPrompt += `\n\n## CONTEXTO ATUAL`;
   systemPrompt += `\nData de hoje: ${dataHoje}`;
   systemPrompt += `\nHorário atual: ${hora}`;
 
-  if (isFirstMessage) {
+  if (shouldGreet) {
     systemPrompt += `\nEsta é a PRIMEIRA mensagem da conversa. Cumprimente o cliente e se apresente.`;
   } else {
-    systemPrompt += `\nEsta é uma CONTINUAÇÃO de conversa. NÃO cumprimente novamente. NÃO repita "Olá, aqui é a Fernanda...". Apenas responda naturalmente ao que o cliente disse. Leia o histórico acima e continue de onde parou.`;
+    systemPrompt += `\nEsta é uma CONTINUAÇÃO de conversa. NÃO cumprimente novamente. NÃO se apresente de novo. NÃO repita "Olá", "Tudo bem?", "Aqui é a Fernanda" ou qualquer variação de cumprimento/apresentação. Vá DIRETO ao ponto respondendo o que o cliente disse.`;
   }
 
   // IMPORTANTE: NÃO enviar o nome do perfil do WhatsApp como nome do devedor.
@@ -249,7 +272,7 @@ app.post('/webhook/zaperchat', async (req, res) => {
     }
 
     // Gerar resposta da Fernanda IA (sem nome do WhatsApp — não confiável)
-    const response = await generateResponse(history);
+    const response = await generateResponse(history, sessionId);
 
     if (!response) {
       console.error('[WEBHOOK] Falha ao gerar resposta');
@@ -322,12 +345,13 @@ app.post('/webhook/message-received', async (req, res) => {
 
     // Buscar histórico
     const history = await getSessionHistory(sessionId, 15);
+    console.log(`[EVENT] Histórico: ${history.length} msgs, roles: ${history.map(m => m.role).join(',')}, greeted: ${greetedSessions.has(sessionId)}`);
     if (history.length === 0) {
       history.push({ role: 'user', content: text });
     }
 
     // Gerar e enviar resposta (sem passar nome — a IA descobre na conversa)
-    const response = await generateResponse(history);
+    const response = await generateResponse(history, sessionId);
 
     if (!response) {
       await sendMessage(sessionId, 'Vou verificar e já te retorno!');
