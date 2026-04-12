@@ -9,6 +9,7 @@
 const express = require('express');
 const OpenAI = require('openai');
 const { SYSTEM_PROMPT } = require('./prompt-ana');
+const remessa = require('./remessa-loader');
 
 const app = express();
 app.use(express.json());
@@ -132,7 +133,39 @@ async function escalateToHuman(sessionId) {
 /**
  * Gera resposta da Fernanda IA com base no histórico da conversa
  */
-async function generateResponse(history, sessionId) {
+/**
+ * Tenta identificar o devedor baseando-se no histórico da conversa e telefone
+ */
+function buscarDevedorNoHistorico(history, phoneNumber) {
+  // 1. Tentar pelo telefone primeiro (mais confiável)
+  if (phoneNumber) {
+    const porTel = remessa.buscarPorTelefone(phoneNumber);
+    if (porTel) return remessa.formatarDadosDevedor(porTel);
+  }
+
+  // 2. Extrair nomes e CPFs das mensagens do usuário
+  const userMessages = history.filter(m => m.role === 'user').map(m => m.content);
+
+  for (const msg of userMessages) {
+    // Tentar CPF (11 dígitos)
+    const cpfMatch = msg.match(/\d{3}[.\s]?\d{3}[.\s]?\d{3}[.\-\s]?\d{2}/);
+    if (cpfMatch) {
+      const resultado = remessa.buscarDevedor(cpfMatch[0]);
+      if (resultado) return resultado;
+    }
+
+    // Tentar nome (mensagens que parecem ser um nome — 2+ palavras, sem números)
+    const limpo = msg.trim();
+    if (limpo.length >= 5 && !limpo.match(/\d/) && limpo.split(/\s+/).length >= 2) {
+      const resultado = remessa.buscarDevedor(limpo);
+      if (resultado) return resultado;
+    }
+  }
+
+  return null;
+}
+
+async function generateResponse(history, sessionId, phoneNumber) {
   // Monta contexto dinâmico: data atual + flag de continuação
   const now = new Date();
   const diasSemana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
@@ -165,8 +198,30 @@ async function generateResponse(history, sessionId) {
     systemPrompt += `\nEsta é uma CONTINUAÇÃO de conversa. NÃO cumprimente novamente. NÃO se apresente de novo. NÃO repita "Olá", "Tudo bem?", "Aqui é a Fernanda" ou qualquer variação de cumprimento/apresentação. Vá DIRETO ao ponto respondendo o que o cliente disse.`;
   }
 
-  // IMPORTANTE: NÃO enviar o nome do perfil do WhatsApp como nome do devedor.
-  systemPrompt += `\nIMPORTANTE: Você NÃO sabe o nome do cliente ainda. NÃO use "[nome]" nem qualquer placeholder. Trate por "você" até que o próprio cliente informe seu nome na conversa.`;
+  // Tentar buscar dados do devedor na remessa com base no histórico
+  const dadosDevedor = buscarDevedorNoHistorico(history, phoneNumber);
+  if (dadosDevedor && !dadosDevedor.multiplos) {
+    systemPrompt += `\n\n## DADOS DO DEVEDOR (da remessa de cobrança)`;
+    systemPrompt += `\nNome: ${dadosDevedor.nome}`;
+    systemPrompt += `\nCPF: ${dadosDevedor.cpf}`;
+    systemPrompt += `\nEmpreendimento: ${dadosDevedor.empreendimento}`;
+    if (dadosDevedor.bloco) systemPrompt += `\nBloco: ${dadosDevedor.bloco}`;
+    if (dadosDevedor.unidade) systemPrompt += `\nUnidade: ${dadosDevedor.unidade}`;
+    systemPrompt += `\nStatus: ${dadosDevedor.status}`;
+    systemPrompt += `\nParcelas inadimplentes: ${dadosDevedor.parcelas_inadimplentes}`;
+    systemPrompt += `\nValor inadimplente: ${dadosDevedor.valor_inadimplente}`;
+    systemPrompt += `\nEncargos: ${dadosDevedor.valor_encargos}`;
+    systemPrompt += `\nDias em atraso: ${dadosDevedor.dias_atraso}`;
+    systemPrompt += `\nValor do contrato: ${dadosDevedor.valor_contrato}`;
+    systemPrompt += `\nChaves entregues: ${dadosDevedor.chavesEntregues}`;
+    systemPrompt += `\nUse esses dados para conduzir a negociação. Você TEM a informação — NÃO diga "vou verificar" ou "vou buscar".`;
+    console.log(`[REMESSA] Devedor encontrado: ${dadosDevedor.nome} (${dadosDevedor.cpf})`);
+  } else if (dadosDevedor && dadosDevedor.multiplos) {
+    systemPrompt += `\n\n## BUSCA NA REMESSA`;
+    systemPrompt += `\nEncontrei ${dadosDevedor.total} clientes com nome similar. Peça ao cliente que confirme o CPF ou o empreendimento para identificá-lo com certeza.`;
+  } else {
+    systemPrompt += `\nIMPORTANTE: Você NÃO sabe o nome do cliente ainda. NÃO use "[nome]" nem qualquer placeholder. Trate por "você" até que o próprio cliente informe seu nome na conversa.`;
+  }
 
   const messages = [
     { role: 'system', content: systemPrompt },
@@ -242,6 +297,7 @@ app.post('/webhook/zaperchat', async (req, res) => {
       lastMessage,
       lastMessagesAggregated,
       departmentId,
+      phoneNumber,
     } = req.body;
 
     // Validação básica
@@ -271,8 +327,8 @@ app.post('/webhook/zaperchat', async (req, res) => {
       history.push({ role: 'user', content: devedorMessage });
     }
 
-    // Gerar resposta da Fernanda IA (sem nome do WhatsApp — não confiável)
-    const response = await generateResponse(history, sessionId);
+    // Gerar resposta da Fernanda IA
+    const response = await generateResponse(history, sessionId, phoneNumber);
 
     if (!response) {
       console.error('[WEBHOOK] Falha ao gerar resposta');
@@ -329,6 +385,7 @@ app.post('/webhook/message-received', async (req, res) => {
     const text = content?.text || '';
     const isFromMe = content?.isFromMe;
     const contactId = content?.contactId || content?.contact?.id || '';
+    const phoneNumber = content?.phoneNumber || content?.contact?.phoneNumber || '';
 
     // Ignorar mensagens enviadas por nós mesmos
     if (isFromMe) {
@@ -339,9 +396,7 @@ app.post('/webhook/message-received', async (req, res) => {
       return res.status(200).json({ status: 'ignored', reason: 'no_data' });
     }
 
-    // NÃO usar nome do WhatsApp/Zaperchat — pode ser emoji, frase, etc.
-    // O nome do cliente só será usado quando ele mesmo informar na conversa.
-    console.log(`[EVENT] Sessão: ${sessionId}, contactId: ${contactId || '(sem id)'}`);
+    console.log(`[EVENT] Sessão: ${sessionId}, contactId: ${contactId || '(sem id)'}, phone: ${phoneNumber || '(sem tel)'}`);
 
     // Buscar histórico
     const history = await getSessionHistory(sessionId, 15);
@@ -350,8 +405,8 @@ app.post('/webhook/message-received', async (req, res) => {
       history.push({ role: 'user', content: text });
     }
 
-    // Gerar e enviar resposta (sem passar nome — a IA descobre na conversa)
-    const response = await generateResponse(history, sessionId);
+    // Gerar e enviar resposta com dados da remessa
+    const response = await generateResponse(history, sessionId, phoneNumber);
 
     if (!response) {
       await sendMessage(sessionId, 'Vou verificar e já te retorno!');
@@ -389,6 +444,7 @@ app.get('/', (req, res) => {
       hasZaperchat: !!ZAPERCHAT_TOKEN,
       hasHumanUser: !!HUMAN_USER_ID,
     },
+    remessa: remessa.getStatus(),
   });
 });
 
