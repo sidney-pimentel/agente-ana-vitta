@@ -1,0 +1,14 @@
+{
+  "name": "agente-ana-vitta",
+  "version": "1.0.0",
+  "description": "Agente IA receptivo de cobrança Vitta - Prop Assessoria",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "openai": "^4.20.0"
+  }
+}
