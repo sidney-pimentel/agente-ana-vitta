@@ -1,0 +1,24 @@
+dominio;url_categoria;status;filtro_metragem;campos_disponiveis;estoque_estimado_acima_5000m2;observacao
+ivannegocios.com.br;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno;nao_verificado_rede_bloqueada;;;;Semente do prompt. Candidata via resultado de busca (snippet indica 1032 anuncios "Terreno" no total, sem recorte de metragem). Nao foi possivel baixar nenhuma pagina: egress do ambiente bloqueia o dominio.
+deltaimoveis.com.br;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area;nao_verificado_rede_bloqueada;;;;Semente do prompt. Candidata via resultado de busca (snippet indica 164 anuncios na categoria "Area", sem recorte de metragem). Nao foi possivel baixar nenhuma pagina: egress do ambiente bloqueia o dominio.
+guinzaimoveis.com.br;https://www.guinzaimoveis.com.br/area/a-venda/uberlandia-mg;nao_verificado_rede_bloqueada;;;;Candidata via busca; tem categoria "Area" separada. Nenhuma pagina baixada.
+storteimoveis.com.br;https://www.storteimoveis.com.br/imoveis/a-venda/area+terreno/uberlandia;nao_verificado_rede_bloqueada;;;;Candidata via busca; URL de categoria combina area+terreno. Nenhuma pagina baixada.
+nexusimob.com;https://www.nexusimob.com/imoveis/a-venda/terreno/uberlandia;nao_verificado_rede_bloqueada;;;;Candidata via busca. Nenhuma pagina baixada.
+eliteimobiliaria.com;https://eliteimobiliaria.com/terreno-lote/a-venda/uberlandia-mg;nao_verificado_rede_bloqueada;;;;Candidata via busca (snippet indica 174 anuncios terreno/lote no total). Nenhuma pagina baixada.
+wenderbernardesimoveis.com.br;https://wenderbernardesimoveis.com.br/terreno-lote/a-venda/uberlandia-mg;nao_verificado_rede_bloqueada;;;;Candidata via busca. Nenhuma pagina baixada.
+lbnegocios.com;https://www.lbnegocios.com/imoveis/a-venda/uberlandia;nao_verificado_rede_bloqueada;;;;Candidata via busca. Nenhuma pagina baixada.
+mggaveaimoveis.com.br;https://mggaveaimoveis.com.br/;nao_verificado_rede_bloqueada;;;;Candidata via busca; imobiliaria de Uberlandia confirmada apenas pelo titulo do resultado. Nenhuma pagina baixada.
+ativaimoveismg.com.br;https://www.ativaimoveismg.com.br/;nao_verificado_rede_bloqueada;;;;Candidata via busca; imobiliaria de Uberlandia confirmada apenas pelo titulo do resultado. Nenhuma pagina baixada.
+ultraimoveis.com;https://ultraimoveis.com/;nao_verificado_rede_bloqueada;;;;Candidata via busca. Nenhuma pagina baixada.
+arantesimoveis.com;https://www.arantesimoveis.com/;nao_verificado_rede_bloqueada;;;;Candidata via busca. Nenhuma pagina baixada.
+praxisimoveis.com;https://praxisimoveis.com/imovel-tipo/terreno-gleba/;nao_verificado_rede_bloqueada;;;;Candidata via busca; tem categoria "terreno-gleba". Cidade NAO confirmada (pode nao ser Uberlandia). Nenhuma pagina baixada.
+glebaimoveis.com;https://www.glebaimoveis.com/imoveis/a-venda;nao_verificado_rede_bloqueada;;;;Candidata via busca. Cidade NAO confirmada. Nenhuma pagina baixada.
+josealdoimoveisrurais.com.br;https://www.josealdoimoveisrurais.com.br/;provavelmente_fora_do_escopo;;;;Corretor especializado em imoveis RURAIS (escopo exclui rural). Registrada apenas para nao ser redescoberta.
+chavesnamao.com.br;https://www.chavesnamao.com.br/terrenos-direto-com-o-proprietario-a-venda/mg-uberlandia/;nao_verificado_rede_bloqueada;;;;Portal (camada 2 do plano). Nenhuma pagina baixada.
+lopes.com.br;https://www.lopes.com.br/busca/venda/br/mg/uberlandia/tipo/terreno;nao_verificado_rede_bloqueada;;;;Rede nacional com filial/busca em Uberlandia. Nenhuma pagina baixada.
+zapimoveis.com.br;https://www.zapimoveis.com.br/venda/terrenos-lotes-condominios/mg+uberlandia/;nao_verificado_rede_bloqueada;;;;Portal (ultima camada do plano). Snippet indica 7738 anuncios terrenos/lotes/condominios no total. Nenhuma pagina baixada.
+vivareal.com.br;https://www.vivareal.com.br/venda/minas-gerais/uberlandia/;nao_verificado_rede_bloqueada;;;;Portal (ultima camada do plano). Nenhuma pagina baixada.
+imovelweb.com.br;https://www.imovelweb.com.br/terrenos-venda-uberlandia-mg.html;nao_verificado_rede_bloqueada;;;;Portal (ultima camada do plano). Snippet indica 3744 anuncios de terrenos no total. Nenhuma pagina baixada.
+wimoveis.com.br;https://www.wimoveis.com.br/venda/terrenos/mg/uberlandia/;nao_verificado_rede_bloqueada;;;;Portal/agregador. Nenhuma pagina baixada.
+nestoria.com.br;https://www.nestoria.com.br/uberlandia/terreno/venda;nao_verificado_rede_bloqueada;;;;Agregador (indexa anuncios de terceiros; baixa prioridade, risco de dado desatualizado). Nenhuma pagina baixada.
+uberlandia.mg.gov.br;https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/;bloqueado_rede;;;;Fonte da lista oficial de bairros (FASE 1A). Egress do ambiente bloqueia o dominio; lista NAO foi gerada (regra: nao montar de memoria).
