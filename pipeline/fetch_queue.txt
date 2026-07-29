@@ -1,27 +1,42 @@
-# Lote 1 — FASE 1: prefeitura (bairros oficiais) + robots/listagem das candidatas
-https://www.uberlandia.mg.gov.br/	pref_home
-https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/	pref_planejamento
-https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/mapas-e-bairros/	pref_mapas_bairros
-https://www.ivannegocios.com.br/comprar/Uberlandia/Area	ivan_listagem_area
-https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno	ivan_listagem_terreno
-https://www.deltaimoveis.com.br/comprar/Uberlandia/Area	delta_listagem_area
-https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno	delta_listagem_terreno
-https://www.guinzaimoveis.com.br/area/a-venda/uberlandia-mg	guinza_listagem_area
-https://www.storteimoveis.com.br/imoveis/a-venda/area+terreno/uberlandia	storte_listagem
-https://www.nexusimob.com/imoveis/a-venda/terreno/uberlandia	nexus_listagem
-https://eliteimobiliaria.com/terreno-lote/a-venda/uberlandia-mg	elite_listagem
-https://wenderbernardesimoveis.com.br/terreno-lote/a-venda/uberlandia-mg	wender_listagem
-https://www.lbnegocios.com/imoveis/a-venda/uberlandia	lb_listagem
-https://mggaveaimoveis.com.br/	mggavea_home
-https://www.ativaimoveismg.com.br/	ativa_home
-https://ultraimoveis.com/	ultra_home
-https://www.arantesimoveis.com/	arantes_home
-https://praxisimoveis.com/imovel-tipo/terreno-gleba/	praxis_listagem
-https://www.glebaimoveis.com/imoveis/a-venda	glebaimoveis_listagem
-https://www.chavesnamao.com.br/terrenos-direto-com-o-proprietario-a-venda/mg-uberlandia/	chavesnamao_listagem
-https://www.lopes.com.br/busca/venda/br/mg/uberlandia/tipo/terreno	lopes_listagem
-https://www.zapimoveis.com.br/venda/terrenos-lotes-condominios/mg+uberlandia/	zap_listagem
-https://www.vivareal.com.br/venda/minas-gerais/uberlandia/	vivareal_listagem
-https://www.imovelweb.com.br/terrenos-venda-uberlandia-mg.html	imovelweb_listagem
-https://www.wimoveis.com.br/venda/terrenos/mg/uberlandia/	wimoveis_listagem
-https://www.nestoria.com.br/uberlandia/terreno/venda	nestoria_listagem
+# Lote 2 — FASE 1B: filtros de metragem, detalhes amostrais, categorias faltantes
+# Delta (id_cidade 26 = Uberlandia no menu do proprio site)
+https://www.deltaimoveis.com.br/pesquisa-de-imoveis/?busca_free=&locacao_venda=V&id_cidade%5B%5D=26&dormitorio=&garagem=&finalidade=&a_min=5000&a_max=&vmi=0&vma=	delta_busca_amin5000
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area?pag=2	delta_listagem_area_p2
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area?pag=3	delta_listagem_area_p3
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area?pag=4	delta_listagem_area_p4
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area?pag=5	delta_listagem_area_p5
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area?pag=6	delta_listagem_area_p6
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area?pag=7	delta_listagem_area_p7
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Martins/52725	delta_detalhe_52725
+# Ivan (mesmo CMS)
+https://www.ivannegocios.com.br/pesquisa-de-imoveis/?busca_free=&locacao_venda=V&dormitorio=&garagem=&finalidade=&a_min=5000&a_max=&vmi=0&vma=	ivan_busca_amin5000
+https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/City-Uberlandia/84378	ivan_detalhe_84378
+# Guinza / Elite / Wender (mesma plataforma, testar min_area)
+https://www.guinzaimoveis.com.br/area/a-venda/uberlandia-mg?min_area=5000	guinza_area_min5000
+https://www.guinzaimoveis.com.br/area/a-venda/uberlandia-mg?pagina=2	guinza_listagem_area_p2
+https://www.guinzaimoveis.com.br/imovel/area-a-venda-4000m2-jardim-holanda-uberlandia-mg-id-858	guinza_detalhe_858
+https://eliteimobiliaria.com/terreno-lote/a-venda/uberlandia-mg?min_area=5000	elite_terreno_min5000
+https://eliteimobiliaria.com/area/a-venda/uberlandia-mg	elite_listagem_area
+https://eliteimobiliaria.com/imovel/terreno-lote-a-venda-6666m2-pequis-uberlandia-mg-id-2594	elite_detalhe_2594
+https://wenderbernardesimoveis.com.br/terreno-lote/a-venda/uberlandia-mg?min_area=5000	wender_terreno_min5000
+https://wenderbernardesimoveis.com.br/area/a-venda/uberlandia-mg	wender_listagem_area
+https://wenderbernardesimoveis.com.br/imovel/terreno-lote-a-venda-250m2-quinta-alto-umuarama-uberlandia-mg-id-607	wender_detalhe_607
+# Ativa / Ultra
+https://ativaimoveismg.com.br/imoveis/Venda/Terreno	ativa_listagem_terreno
+https://ultraimoveis.com/comprar/mg/uberlandia/terreno	ultra_listagem_terreno_guess
+https://ultraimoveis.com/comprar	ultra_comprar
+# Praxis — verificar cidade (suspeita de ser Rio Claro/SP)
+https://praxisimoveis.com/imovel/terreno-venda-jd-veneza/	praxis_detalhe_cidade_check
+# Novas candidatas da 2a rodada de busca
+https://www.objetivauberlandia.com.br/	objetiva_home
+https://www.objetivauberlandia.com.br/imovel/area-a-venda-loteamento-centro-empresarial-leste-iii-uberlandia-mg/31493	objetiva_detalhe_31493
+https://www.seuimovelgold.com.br/	gold_home
+https://www.estilonegocios.com.br/	estilo_home
+http://www.imoveisuberlandia.com.br/lote_terreno-venda-uberlandia_mg	imoveisudi_listagem
+# Portais — URLs corretas de categoria e teste de filtro de area
+https://www.chavesnamao.com.br/terrenos-a-venda/mg-uberlandia/	chaves_listagem_geral
+https://www.chavesnamao.com.br/imovel/terreno-a-venda-mg-uberlandia-morada-nova-2000m2-RS525000/id-16637810/	chaves_detalhe_16637810
+https://www.zapimoveis.com.br/venda/terrenos-lotes-condominios/mg+uberlandia/?areaMinima=5000	zap_area_min5000
+https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-cidade-jardim-uberlandia-mg-432m2-id-2889378892/	zap_detalhe_2889378892
+https://www.vivareal.com.br/venda/minas-gerais/uberlandia/lote-terreno_residencial/	vivareal_listagem_terrenos
+https://www.lopes.com.br/imovel/REO797220/venda-terreno-421-m2-uberlandia-jardim-inconfidencia	lopes_detalhe_REO797220

@@ -22,3 +22,9 @@ imovelweb.com.br;https://www.imovelweb.com.br/terrenos-venda-uberlandia-mg.html;
 wimoveis.com.br;https://www.wimoveis.com.br/venda/terrenos/mg/uberlandia/;nao_verificado_rede_bloqueada;;;;Portal/agregador. Nenhuma pagina baixada.
 nestoria.com.br;https://www.nestoria.com.br/uberlandia/terreno/venda;nao_verificado_rede_bloqueada;;;;Agregador (indexa anuncios de terceiros; baixa prioridade, risco de dado desatualizado). Nenhuma pagina baixada.
 uberlandia.mg.gov.br;https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/;bloqueado_rede;;;;Fonte da lista oficial de bairros (FASE 1A). Egress do ambiente bloqueia o dominio; lista NAO foi gerada (regra: nao montar de memoria).
+objetivauberlandia.com.br;https://www.objetivauberlandia.com.br/;nao_verificado_rede_bloqueada;;;;Candidata via busca (2a rodada); snippets mostram anuncios de AREA em loteamentos (ex. Centro Empresarial Leste III). Nenhuma pagina baixada ainda.
+seuimovelgold.com.br;https://www.seuimovelgold.com.br/;nao_verificado_rede_bloqueada;;;;Candidata via busca (2a rodada); Gold Negocios Imobiliarios, Uberlandia. Nenhuma pagina baixada ainda.
+estilonegocios.com.br;https://www.estilonegocios.com.br/;nao_verificado_rede_bloqueada;;;;Candidata via busca (2a rodada); Estilo Imobiliaria, Uberlandia. Nenhuma pagina baixada ainda.
+imoveisuberlandia.com.br;http://www.imoveisuberlandia.com.br/lote_terreno-venda-uberlandia_mg;nao_verificado_rede_bloqueada;;;;Candidata via busca (2a rodada); URL indexada em http (sem TLS?). Nenhuma pagina baixada ainda.
+imoveis.trovit.com.br;https://imoveis.trovit.com.br/terreno-uberlandia-m2;nao_verificado_rede_bloqueada;;;;Agregador (indexa terceiros; baixa prioridade, risco de dado desatualizado). Nenhuma pagina baixada ainda.
+evertonimobiliaria.com.br;https://evertonimobiliaria.com.br/;provavelmente_fora_do_escopo;;;;Especializada em imoveis RURAIS (escopo exclui rural). Registrada para nao ser redescoberta.
