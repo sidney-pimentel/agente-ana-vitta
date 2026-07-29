@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /imovel-nao-encontrado/
+Disallow: /obrigado-imovel-ideal/
+Disallow: /contato-obrigado/
+Disallow: /agendar-obrigado/
+Disallow: /fale-com-corretor-obrigado/
+
+Sitemap: https://premium.portalunsoft.com.br.com.br/sitemap.xml

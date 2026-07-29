@@ -1,0 +1,1604 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Ativa Imóveis - Uberlândia (Aqui você encontra o imóvel que procura)</title>
+        <meta name="Keywords" content="">
+        <meta name="description" content="Compra venda e aluguel de imóveis em Uberlândia/MG">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Meu Site Imobiliario - Site par Imobiliarias e Corretores de Imoveis">
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Ativa Imóveis - Uberlândia (Aqui você encontra o imóvel que procura)" />
+        <meta property="og:title" content="Ativa Imóveis - Uberlândia (Aqui você encontra o imóvel que procura)"/>
+        <meta property="og:description" content="Compra venda e aluguel de imóveis em Uberlândia/MG" />
+                    <meta property="og:image" content="https://meusiteimobiliario.com.br/painel/subdominios/818/layout/logo/Logo Site.jpg" />
+                            <meta property="og:image:secure_url" content="https://meusiteimobiliario.com.br/painel/subdominios/818/layout/logo/Logo Site.jpg" />
+                <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:url" content="https://ativaimoveismg.com.br" />
+        <meta property="og:type" content="website" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                
+        <link rel="apple-touch-icon" sizes="180x180" href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/apple-touch-icon-180x180.png">
+        <link rel="android-chrome" sizes="192x192" href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/android-chrome-192x192.png">
+        <link rel="android-chrome" sizes="256x256" href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/android-chrome-256x256.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/favicon-16x16.png">
+        <link rel="shortcut icon" type="image/x-icon" href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/favicon.ico">
+                                                        
+        <!-- Bootstrap core CSS -->
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/bootstrap/css/bootstrap1.css" rel="stylesheet" type="text/css">
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/bootstrap/css/bootstrap2.css" rel="stylesheet" type="text/css">
+        
+        <!-- Custom styles for this template -->
+        <STYLE type="text/css">
+    
+body{
+    font: 400 15px 'Open Sans', Arial, sans-serif;
+    position: relative;background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/fundo/bg_2.png");
+    background-color: #333333;
+}
+.fa-check {
+    color:#cb1112;      
+}
+.modal-header-pop{
+    background-color: #cb1112;
+}
+.modal-header-pop .modal-title-pop {
+    color: #FFFFFF;
+}
+.fancybox-slide.watermark .fancybox-spaceball {
+  opacity: 0.5;
+  background-image: url("https://meusiteimobiliario.com.br/painel/subdominios/818/layout/marcadagua/Logo_Site-removebg-preview22-removebg-preview (1).png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.fancybox-is-scaling .fancybox-spaceball {
+  background-image: none !important;
+}
+  .fancybox-thumbs {
+    top: auto;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right : 0;
+    height: 95px;
+    padding: 10px 10px 5px 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .fancybox-show-thumbs .fancybox-inner {
+    right: 0;
+    bottom: 95px;
+  }
+  .fancybox-thumbs__list a::before {
+    border: 2px solid #fff;
+}
+.simple-cookies.dark a.tap {
+    color: #FFFFFF; 
+}
+.simple-cookies a.tap {
+    background-color: #cb1112;
+}
+.linha-busca2 {
+  margin-left: 0px;
+  margin-right: 0px;
+ background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/cabecalho_3.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-busca {
+  max-width:1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/cabecalho_3.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  animation:90s linear infinite zoom;
+}
+@keyframes zoom {
+  0%   { background-size: 1900px auto; }
+  50% { background-size: 2660px auto; }
+  100% { background-size: 1900px auto; }
+}
+
+
+.linha-busca3575 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linha-busca-3575 {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+
+@media screen and (max-width: 767px){
+
+  .linha-busca3575{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+
+  .linha-busca3575{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+
+.linha-busca4447 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linha-busca-4447 {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+
+@media screen and (max-width: 767px){
+
+  .linha-busca4447{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+
+  .linha-busca4447{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+
+.linha-busca4601 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linha-busca-4601 {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+
+@media screen and (max-width: 767px){
+
+  .linha-busca4601{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+
+  .linha-busca4601{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+
+.linha-busca5401 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linha-busca-5401 {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+
+@media screen and (max-width: 767px){
+
+  .linha-busca5401{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+
+  .linha-busca5401{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+
+.linha-busca5742 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linha-busca-5742 {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+
+@media screen and (max-width: 767px){
+
+  .linha-busca5742{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+
+  .linha-busca5742{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+
+.linha-busca6055 {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/6055.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.linha-busca-6055 {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+    url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/6055.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+
+@media screen and (max-width: 767px){
+
+  .linha-busca6055{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/6055.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px){
+
+  .linha-busca6055{
+    margin-left:0px;
+    margin-right:0px;
+    background-image:url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/6055.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+}
+
+
+/*
+.linha-busca3575 {
+  margin-left: 0px;
+  margin-right: 0px;
+ background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-busca-3575 {
+  max-width:1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+.linha-busca4447 {
+  margin-left: 0px;
+  margin-right: 0px;
+ background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-busca-4447 {
+  max-width:1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+.linha-busca4601 {
+  margin-left: 0px;
+  margin-right: 0px;
+ background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-busca-4601 {
+  max-width:1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+.linha-busca5401 {
+  margin-left: 0px;
+  margin-right: 0px;
+ background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-busca-5401 {
+  max-width:1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+  animation:90s linear infinite zoom;
+}
+.linha-busca5742 {
+  margin-left: 0px;
+  margin-right: 0px;
+ background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-busca-5742 {
+  max-width:1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 250px;
+}
+*/
+.linha-busca-interno {
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/cabecalho_3.jpg");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linha-dois-header {
+    background-color: #cb1112;
+    height: 66px;
+    width: 100%;
+    margin-left: 0px;  
+    margin-right: 0px;
+}
+.back-to-top {
+    color: #FFFFFF;
+    cursor: pointer;
+    position: fixed;
+    bottom: 90px;
+    display: none;
+    left: 25px;
+    z-index: 1040;
+    background-color: #cb1112;
+    border-color: #cb1112;
+}
+.back-to-top:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    position: fixed;
+    bottom: 90px;
+    display: none;
+    left: 25px;
+    background-color: #3b3b3b;
+	border-color: #3b3b3b;
+}
+.back-to-top:focus {
+    color: #FFFFFF;
+    cursor: pointer;
+    position: fixed;
+    bottom: 90px;
+    display: none;
+    left: 25px;
+    background-color: #cb1112;
+    border-color: #cb1112;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+    color: #fefefe;
+    background-color: #3b3b3b;
+}
+.nav-tabs > li > a:hover
+{
+    background-color: #cb1112;
+    color: #fff;
+    text-decoration-line: none;
+    position: relative;
+    display: block;
+    padding-top: 23px;
+    padding-right: 15px;
+    padding-bottom: 23px;
+    padding-left: 15px;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+.nav-tabs > li.active a,
+ .nav-tabs > li.active a:hover,
+ .nav-tabs > li.active a:focus {
+    background-color: #cb1112;
+    color: #fff;
+    text-decoration-line: none;
+    border: 0px;
+}
+.nav-tabs > li.active a:before {
+    border-color: #cb1112 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0px 10px;
+    content: "";
+    display: block;
+    left: calc(50% - 10px);
+    position: absolute;
+    width: 0px;
+    top: 68px;
+    z-index: 10;
+}
+.btn-theme
+{
+    color: #FFFFFF;
+    background-color: #cb1112;
+    border-top-color: #cb1112;
+    border-right-color: #cb1112;
+    border-bottom-color: #cb1112;
+    border-left-color: #cb1112;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+   /* border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;*/
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-theme:hover,
+ .btn-theme:focus {
+    color: #fff;
+    background-color: #3b3b3b;
+    border-top-color: #3b3b3b;
+    border-right-color: #3b3b3b;
+    border-bottom-color: #3b3b3b;
+    border-left-color: #3b3b3b;
+    text-decoration: none;
+}
+.bg_banner {
+    background-color: #3b3b3b;
+}
+.post_info .post-title {
+    background-color: #cb1112;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    color: #FFFFFF;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.15) inset;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.post_info .post-negocio {
+    background-color: #3b3b3b;
+    color: #ffffff;
+    box-shadow: -0px 0px rgba(0, 0, 0, 0.15) inset;
+    text-transform: uppercase;
+    float: right;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+}
+.boxe > .icon > .image {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    border: 8px solid white;
+    line-height: 88px;
+    border-radius: 50%;
+    background: #3b3b3b;
+    vertical-align: middle;
+}
+.boxe > .icon:hover > .image {
+    background: #cb1112;
+}
+.boxe > .icon > .info > .more button {
+    background-color: #cb1112;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-color: #cb1112;
+}
+.boxe > .icon:hover > .info > .more > button {
+    color: #fff;
+    background-color: #3b3b3b;
+    border-color: transparent;
+}
+.post_tarja {
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  left: 8px;
+  right: 0px;
+  height: 0px;
+  padding-bottom: 8px;
+  top: 8px;
+    background-color: ;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+.post_tarja_interno {
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    left: 8px;
+    right: 0px;
+    height: 0px;
+    padding-bottom: 8px;
+    bottom: 32px;
+}
+.post_tarja .post-status
+{
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    color: #ffffff;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.15) inset;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.post_tarja_interno .post-status-interno
+{
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    color: #ffffff;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.15) inset;
+    text-transform: uppercase;
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: ;
+    opacity: 0.9;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+.property-info .property-title
+{
+  background-color: #cb1112;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  color: #FFFFFF;
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.15) inset;
+  text-transform: uppercase;
+  float: left;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.bg-opacity {
+    background-color: #cb1112;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.pagination a {
+    display: block;
+    float: left;
+    width: 100px;
+    outline: none;
+    color: #FFFFFF;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+font-weight: normal;
+}
+  .pagination a:hover, .pagination a:focus, .pagination a:active {
+    background-color: #3b3b3b;
+ }
+ .progress-bar
+ {
+   color: #FFFFFF;
+   background-color: #cb1112;
+ }
+ .panel-default > .panel-heading
+ {
+   background-color: #cb1112;
+ }
+ .panel-title a {
+   display: block;
+   color: #FFFFFF;
+   padding: 5px;
+   position: relative;
+   font-size: 16px;
+   font-weight: 400;
+   text-decoration: none;
+ }
+ .modal-content-pop-home {
+	max-width: px !important;
+	margin: 0px auto;
+}
+ @media screen and (max-width: 767px) {
+     .pagination a {
+     display: block;
+     float: left;
+     width: 20px;
+     outline: none;
+     color: #FFFFFF;
+     vertical-align: middle;
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+   .linha-busca {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/cabecalho_3.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+/*
+    .linha-busca3575 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca4447 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca4601 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca5401 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca5742 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    */
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     color: #fff;
+     background-color: #3b3b3b;
+ }
+   .navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFFFFF;
+    font-size: 15px;
+  }
+ }
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 14px;
+  }
+.dropdown .dropdown-menu4 > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus
+{
+    background: #E4E4E4;
+    color: #3b3b3b;
+}
+  .linha-busca {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/cabecalho_3.jpg");    
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+/*
+    .linha-busca3575 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/3575.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca5401 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5401.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca5742 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/5742.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca4447 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4447.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .linha-busca4601 {
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("https://meusiteimobiliario.com.br/painel/front/layout/cabecalho/4601.jpg");
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    */
+}
+ </STYLE>         <link href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/css/style.css?v=1.1.62" rel="stylesheet" type="text/css">
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/css/simple-cookies.css" rel="stylesheet" type="text/css">
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/css/font.min.css" rel="stylesheet" type="text/css">
+        
+        <!-- Fonts Google/Awesome -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
+        
+        <!-- Multiselect CSS -->
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+        
+        <!-- Flags CSS --> 
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+        
+        <!-- Bootstrap MultiSelect CSS -->
+        <link href="https://meusiteimobiliario.com.br/painel/front/tema01/assets/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+        
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <!-- Leaflet JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+    <body>
+                            <div class="container-fluid">
+         
+<!-- Start: HEAD -->
+            <div id="simple-cookies" class="simple-cookies bottom dark animated fw ">
+                <div class="simple-cookies-wrapper">
+                    <div class="simple-cookie-content">
+                        <div>
+                             Esse site utiliza cookies, que possibilitam uma melhor experiência de navegação.<br>
+                             Ao continuar, você concorda com a nossa <a href="https://ativaimoveismg.com.br/Politica-de-Cookies" target="_blank">Política de Cookies.</a>
+                        </div>
+                    </div>
+                    <div class="simple-cookie-buttons">
+                        <div>
+                            <a href="#" class="tap allow js-close">Aceito os Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<header>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Start: HEAD Menu Rapido -->
+<div class="row linha-um-header"> 
+    <div class="container">
+        <div class="col-sm-9 col-xs-8 col-md-9">
+                                        
+            <div class="dropdown fones hidden-xs pull-left" style="margin-right: 20px;">                
+                                                                        
+                            <a data-toggle="dropdown" href="#" target="_blank" id="dropdownMenu1">(34) 3219-9495 (Fixo) <i class="fa fa-caret-down fa-lg" aria-hidden="true" style="color:#5E5E5E"></i></a>
+                            
+                           
+                                               
+                <ul class="dropdown-menu dropdown-menu1" aria-labelledby="dropdownMenu1" role="menu">
+                      
+                                                    <li>
+                                <a data-toggle="dropdown" href="#" target="_blank" id="dropdownMenu1">(34) 3219-9495 (Fixo)</a>
+                            </li>    
+                                                                  
+                                            
+                            <li>
+                                <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5534999201717&amp;text=Olá, visitei o seu site e gostaria de mais informações! Aguardo o contato. Obrigado(a)." target="_blank">(34) 99920-1717 (Vivo) <i class="fa fa-whatsapp" aria-hidden="true" style="color:#009757"></i></a>
+                            </li>
+                                             
+                                                                                
+                </ul>                
+            </div>
+            
+            <div class="dropdown fones hidden-sm hidden-lg hidden-md pull-left" style="margin-right: 20px;"> 
+                                                                        
+                            <a data-toggle="dropdown" href="#" target="_blank" id="dropdownMenu1">Telefones <i class="fa fa-caret-down fa-lg" aria-hidden="true" style="color:#5E5E5E"></i></a>
+                        
+                           
+                     
+                    
+                <ul class="dropdown-menu dropdown-menu1" aria-labelledby="dropdownMenu1" role="menu">
+                      
+                                                    <li>
+                                <a data-toggle="dropdown" href="#" target="_blank" id="dropdownMenu1">(34) 3219-9495 (Fixo)</a>
+                            </li>
+                                                                  
+                                            
+                            <li>
+                                <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5534999201717&amp;text=Olá, visitei o seu site e gostaria de mais informações! Aguardo o contato. Obrigado(a)." target="_blank">(34) 99920-1717 (Vivo) <i class="fa fa-whatsapp" aria-hidden="true" style="color:#009757"></i></a>
+                            </li>
+                                            
+                                                                                
+                </ul>                
+            </div>
+                        <div class="pull-left" id="favoritos">                
+                                     <a href="#" class="link-estilizado" data-toggle="modal" data-target="#myModal"><span class="hidden-xs"><i class="fa fa-heart-o"></i> Meus</span> Favoritos </a>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false"> 
+                    <div class="modal-dialog"> 
+                        <div class="modal-content-pop"> 
+                            <div class="modal-header-pop"> 
+                                <button type="button" class="close-pop" data-dismiss="modal" aria-hidden="true">&times;</button>                                                 
+                                <div class="modal-title-pop"></div>                                                 
+                            </div>                                             
+                            <div class="modal-body-pop"> 
+                                <div class="alert alert-warning text-center"> 
+                                    <i class="fa fa-home fa-5x"></i>
+                                    <h3> Você não possui nenhum imóvel<br> na lista de favoritos.</h3>
+                                    Para adicionar um imóvel, clique no ícone 
+                                    <i class="fa fa-heart"></i> do imóvel desejado.
+                                </div>
+                            </div>                                             
+                        </div>                                         
+                    </div>                                     
+                </div>
+                            </div>            
+           <span id="favoritos_cont" class="badge" style="background-color: #F01922; margin-left: 5px">0</span> 
+        </div>
+        <div class="col-sm-3 col-xs-4 col-md-3">
+<!--            <div class="dropdown text-right pull-right">
+                <a data-toggle="dropdown" href="#" id="dropdownMenu2"><span class="glyphicon glyphicon-globe"></span> Idioma</a>
+                <ul class="dropdown-menu dropdown-menu-right dropdown-menu2" aria-labelledby="dropdownMenu2" role="menu">
+                    <li>
+                        <a href="#"><span class="flag-icon flag-icon-br flag-icon-squared"></span> Português</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="flag-icon flag-icon-squared flag-icon-es"></span> Espanhol</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="flag-icon flag-icon-squared flag-icon-us"></span> Inglês</a>
+                    </li>
+                </ul>
+            </div>-->
+            <div class="dropdown text-right pull-right" style="margin-right: 20px;">
+                <a data-toggle="dropdown" href="#" id="dropdownMenu3"><span class="glyphicon glyphicon-menu-hamburger"></span> Menu</a>
+                <ul class="dropdown-menu dropdown-menu-right dropdown-menu3" aria-labelledby="dropdownMenu2" role="menu">
+                    <li>
+                        <a href="https://ativaimoveismg.com.br/home" class="links">Página Inicial</a>
+                    </li>
+                                                                                                <li>
+                                        <a href="https://ativaimoveismg.com.br/Politica-de-Cookies">Política de Cookies</a>
+                                    </li>                              
+                                  
+                     
+                    <li>
+                                                                        <a href="https://ativaimoveismg.com.br/anuncie_seu_imovel">Anuncie seu imóvel</a>
+                                            </li>
+                    <li>
+                        <a href="https://ativaimoveismg.com.br/encomende_seu_imovel">Encomende seu imóvel</a>
+                    </li>
+                    <li>
+                        <a href="https://ativaimoveismg.com.br/fale_conosco">Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End: HEAD Menu Rapido -->
+<!-- Start: HEAD Logo/Menu -->
+<div class="row linha-dois-header">
+    <div class="container ajustes-container">
+        <!-- Start: HEAD Logo -->
+        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+            <div class='logo'>                <a href="https://ativaimoveismg.com.br/home" class="navbar-brand">
+                   
+                    <img src="https://meusiteimobiliario.com.br/painel/subdominios/818/layout/logo/Logo Site.jpg" alt="Ativa Imóveis - Uberlândia (Aqui você encontra o imóvel que procura)" width="300px" height="120px" class="img-responsive" />
+                                </a>
+            </div>
+        </div>
+        <!-- End: HEAD Logo -->
+        <!-- Start: HEAD Menu -->
+        <div class="col-lg-9 col-md-8 col-sm-9 col-xs-12">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="nav1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden-md hidden-sm"> 
+                                <a href="https://ativaimoveismg.com.br/home" class="links">Página Inicial</a>
+                            </li>
+                             
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" id="dropdownMenu4" class="dropdown-toggle">Venda <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu dropdown-menu4">
+                                     
+                                        <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Venda/Apartamento">Apartamento</a>
+                                        </li>
+                                                                         
+                                        <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Venda/Casa">Casa</a>
+                                        </li>
+                                                                         
+                                        <li>
+                                            <a href="https://ativaimoveismg.com.br//imoveis/Venda/Comercial">Comercial</a>
+                                        </li>
+                                                                         
+                                        <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Venda/Rural">Rural</a>
+                                        </li>
+                                                                         
+                                        <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Venda/Terreno">Terreno</a>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                       
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locação <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu dropdown-menu4">
+                                                                            <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Locacao/Apartamento">Apartamento</a>
+                                        </li>
+                                                                                                                <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Locacao/Casa">Casa</a>
+                                        </li>
+                                                                                                                <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Locacao/Comercial">Comercial</a>
+                                        </li>
+                                                                                                                                                    <li>
+                                            <a href="https://ativaimoveismg.com.br/imoveis/Locacao/Terreno">Terreno</a>
+                                        </li>
+                                                                        
+                                </ul>
+                            </li>
+                                                                                                                                                                        <li class="hidden-sm hidden-sm ">
+                            <a href="https://ativaimoveismg.com.br/fale_conosco">Fale Conosco</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End: HEAD Menu -->
+    </div>
+</div>
+<!-- End: HEAD Logo/Menu-->
+          <div class='row linha-busca-interno'>                    <div class="bg-fade">
+                        <div class="container container-search">
+                            <div class="col-lg-12">
+                                                                
+                                <h1 class='title-head'>                                
+                                Página não Encontrada                                
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: HEAD Título  -->
+                <!-- End: HEAD Logo/Menu/Título-->
+</header>
+<!-- End: HEAD -->    
+    <main>
+        <div class="row linha-corpo">
+            <div class="container" style="margin-top:20px; margin-bottom:220px">
+                <div class="box cor-box-main clearfix">
+                    <!-- Start: MAIN Titulo -->
+                    <div class="row hidden-lg hidden-md hidden-sm hidden-xs">
+                        <div class="col-lg-12">
+                            <h1 class="ajuste">QUEM SOMOS</h1>
+                        </div>
+                    </div>
+                    <!-- End: MAIN Titulo -->
+                    <div class="row ajuste">
+                        <div class="box text-center">
+                            <h2>Ooooops, ocorreu algum erro!</h2>
+                            Talvez você esteja procurando por algo que não exista ou que até existe, mas não está disponível no momento.
+                            <img src="https://meusiteimobiliario.com.br/painel/front/tema01/assets/images/pagina_nao_encontrada.png" class="img-responsive" style="display: block; margin: auto;" alt="Página não encontrada" height="497" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>      
+<!-- Start: LINKS -->
+            <section class="section-imoveis hidden-xs">
+                <div class="row linha-corpo">
+                    <div class="container">
+                        <div class="box clearfix">
+                            <h1 class="title">
+                                            COMO PODEMOS TE AJUDAR?                                </h1>
+                                                        <div class="col-xs-12 col-sm-4 col-lg-4">
+                                <div class="boxe">
+                                    <div class="icon">
+                                        <div class="image">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title">
+                                            ANUNCIE SEU IMÓVEL											</h2>
+                                            <p>
+                                            Cadastre e anuncie seu imóvel conosco, nós encontraremos o melhor negócio para você.                                            </p>
+                                            <div class="more">                                              
+                                                <a href="https://ativaimoveismg.com.br/anuncie_seu_imovel" class="btn-theme">
+                                                    ANUNCIE <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space"></div>
+                                </div>
+                            </div>
+                                                                                    <div class="col-xs-12 col-sm-4 col-lg-4">
+                                <div class="boxe">
+                                    <div class="icon">
+                                        <div class="image">
+                                            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title">
+                                            ENCOMENDE SEU IMÓVEL  
+                                            </h2>
+                                            <p>
+                                            Não encontrou o imóvel? Nós encontraremos as melhores oportunidades para você.                                            </p>
+                                            <div class="more">
+                                                <a href="https://ativaimoveismg.com.br/encomende_seu_imovel" class="btn-theme">
+                                                    ENCOMENDE <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                </a>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space"></div>
+                                </div>
+                            </div>
+                                                                                    <div class="col-xs-12 col-sm-4 col-lg-4">
+                                <div class="boxe">
+                                    <div class="icon">
+                                        <div class="image">
+                                            <i class="fa fa-users" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title">
+                                            ATENDIMENTO PERSONALIZADO 
+                                            </h2>
+                                            <p>
+                                            Para maiores informações, por favor entre em contato conosco. Será um prazer atendê-lo.  
+                                            </p>
+                                            <div class="more">                                                
+                                                <a href="https://ativaimoveismg.com.br/fale_conosco" class="btn-theme">
+                                                    ATENDIMENTO <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space"></div>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End: LINKS -->
+             
+            <!-- Start: FACEBOOK -->
+              
+            <!-- End: FACEBOOK --><footer>
+                <div class="row linha-corpo">
+                    <div class="container">
+                        <div class="box clearfix">
+                            <!-- Start: FOOTER Col01 -->
+                            <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">                               
+                                <h1><i class="fa fa-hand-o-down" aria-hidden="true"></i> ONDE ESTAMOS</h1>
+                                <!-- Start: FOOTER Col01 Endereço -->
+                                <ul class="list-inline">
+                                    <li class="text-footer">
+                                        <br>
+                                                                                                                                    Avenida Afonso Pena, 4865 - Umuarama - Uberlândia/MG CEP: 38405-309                                                <br>
+                                                <br>
+                                                                                                                        </li>
+                                                                        <li class="text-footer">
+                                       (34) 3219-9495 (Fixo)                                    </li>
+									                                                                        <li class="text-footer">
+                                       (34) 99920-1717 (Vivo)o
+                                    </li>
+									                                                                                                            <li class="text-footer">
+                                     <!--email_off-->  adm@ativanegocios.com<!--/email_off-->                                    </li>
+                                                                        <li class="text-footer">MGF 032255</li>
+                                                                        <br>
+                                    <br>                                   
+                                </ul>
+                                <!-- End: FOOTER Col01 Endereço -->
+                                <!-- Start: FOOTER Col01 Midia social -->
+                                <div class="social">
+                                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                </div>
+                                <!-- End: FOOTER Col01 Midia social -->
+                            </div>
+                            <!-- End: FOOTER Col01 -->
+                            <!-- Start: FOOTER Col02 -->
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <h1><i class="fa fa-home" aria-hidden="true"></i> MAIS IMÓVEIS</h1>
+                                <ul class="footer-ul">
+                                     
+                                    <li>
+                                        <i class="fa fa-lg fa-lg fa-angle-right" aria-hidden="true"></i>
+                                        <a href="https://ativaimoveismg.com.br/imoveis/Venda"> Venda</a>
+                                    </li>
+                                                                         
+                                    <li>
+                                        <i class="fa fa-lg fa-lg fa-angle-right" aria-hidden="true"></i>
+                                        <a href="https://ativaimoveismg.com.br/imoveis/Locacao"> Locação</a>
+                                    </li>
+                                                                                                                                                                                </ul>
+                            </div>
+                            <!-- End: FOOTER Col02 -->
+                            <!-- Start: FOOTER Col03 -->
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <h1><i class="fa fa-envelope" aria-hidden="true"></i> NEWSLETTER</h1>
+                                <p class="text-footer" style="margin-top:20px">Cadastre-se e receba novidades exclusivas.</p> 
+                                 
+                                <form id="register-newsletter" data-toggle="validator" method="post" action="https://dagmarluiz.meusiteimobiliario.com.br/?controller=newsletter&chave=1" role="form">
+                                    <div class="form-group">
+                                        <div class="input-group"> 
+                                            <span class="input-group-addon">Nome:</span> 
+                                            <input type="text" class="form-control" title="Digite seu nome" id="form_name" name="form_name" placeholder="Digite seu nome*" required> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group"> 
+                                            <span class="input-group-addon">E-mail:</span> 
+                                            <input type="text" class="form-control" title="Digite um e-mail válido" id="form_email" name="form_email" placeholder="Digite seu e-mail*" required> 
+                                        </div>
+                                    </div>
+                                                                        <div class="g-recaptcha" data-sitekey="6Ld4HoQpAAAAAHa_SThQQhcVzji9pqEAB5yOzQsX"></div>
+                                                                        <button type="submit" class="btn btn-default">Cadastrar
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- End: FOOTER Col03 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Start: FOOTER Sub -->
+                <div class="row linha-corpo subfooter">
+                    <div class="container" style="--empty-placeholder: 0px">
+                        <div class="box clearfix">
+                            <div class="col-xs-12 col-md-8 col-lg-8 col-sm-7">
+                                <div class="copyright">
+                                    Copyright © 2023 - Todos os direitos reservados
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-4 col-sm-5">
+                                <div class="author">
+                                    Desenvolvido por <a href="https://www.meusiteimobiliario.com.br" class="link-estilizado2" target="_blank">Meu Site Imobiliário</a>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <!--<a rel="noopener noreferrer" href="https://web.whatsapp.com/send?phone=5534999201717&amp;text=Olá, visitei o seu site e gostaria de mais informações! Aguardo o contato. Obrigado(a)." target="_blank">-->
+                    <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5534999201717&amp;text=Olá, visitei o seu site e gostaria de mais informações! Aguardo o contato. Obrigado(a)." target="_blank">
+                        <div id="whats-footer" style="display:block;" class="whats-footer">
+                            <div class="icone">
+                                <i class="fa fa-whatsapp"></i>
+                                <span class="pulse">1</span>
+                            </div>
+                        </div>
+                    </a>
+                                        <a id="back-to-top" href="#" class="btn btn-lg back-to-top hidden-sm hidden-xs" role="button" data-toggle="tooltip"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                </div>
+                <!-- End: FOOTER Sub -->
+</footer><!--Start of Modal Script--><!-- Bootstrap core JavaScript ================================================== -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://meusiteimobiliario.com.br/painel/front/tema01/assets/js/jquery.min.js"></script>
+        <script src="https://meusiteimobiliario.com.br/painel/front/tema01/bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="https://meusiteimobiliario.com.br/painel/front/tema01/assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Backtotop -->
+        <script src="https://meusiteimobiliario.com.br/painel/front/tema01/assets/js/backtotop.js"></script>
+        <script src="https://meusiteimobiliario.com.br/painel/front/tema01/assets/js/simple-cookies.js"></script>
+        <!-- Google Recaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <!--Start of Modal Script-->
+        <script>
+   		 $(document).ready(function() {
+     	 $('#myPopup').modal('show');
+         $(document).ready(function(){
+             var decodedCookie = decodeURIComponent(document.cookie);
+       //alert(decodedCookie);
+       var ca = decodedCookie.split(';');
+       var cont = (ca.length);
+        var xx = 0;
+                for(var e = 0;e < cont; e++){
+                    var c = e;
+                    var f = ca[e].split('=');
+                    
+                    //alert(f[1]);
+                    var favor = f[0];
+                    var validador = favor.substring(0,10);
+                    
+                    if(validador == " favoritos"){
+                        //var r = '/'+f[1];
+                        //c = c[e].concat(f[1]);                        
+                        //alert(r);
+                        xx++;
+                        $('.'+f[1]).addClass('active').addClass('fa-heart').removeClass('fa-heart-o');
+                    }                    
+                }
+       //alert(cont);
+       var aux = xx;
+       //alert(aux);
+       if(aux < 0){
+           aux = 0;
+       }        
+                
+           	$('#favoritos').html('<a href="https://ativaimoveismg.com.br/imoveis_favoritos" class="link-estilizado" data-toggle="modal" id="favorito_link"><span class="hidden-xs"><i class="fa fa-heart-o"></i> Meus</span> Favoritos </a>');       
+                $('#favoritos_cont').html(aux);
+  		 $('.phone_with_ddd').mask('(00) 00000-0000');
+		});
+ 
+   		 });
+  		</script>
+        <!--End of Modal Script-->
+        <!--Start of Tooltip Script-->
+        <script>
+   		 $('[data-toggle="tooltip"]').tooltip();
+  		</script>
+        <!--End of Tooltip Script-->
+        <!--Start of Facebook Script-->
+        <div id="fb-root"></div>
+         
+        <!--End of Facebook Script-->
+        <!--Start of Tawk.to Script-->        
+               
+        <!--End of Tawk.to Script-->
+</body>
+</html>  
+
