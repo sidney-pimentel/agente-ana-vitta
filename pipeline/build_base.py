@@ -95,12 +95,32 @@ def main():
         )
         if d.get('valor_anunciado') is None:
             row['situacao_valor'] = 'Sem valor no anuncio'
-        if bairros_ok and norm(d.get('bairro')) in bairros_ok:
+
+        # perímetro urbano — ordem oficial do prompt:
+        # 1. bairro na lista oficial -> Sim (vence as demais)
+        bairro_oficial = bool(bairros_ok) and norm(d.get('bairro')) in bairros_ok
+        tipo = norm(d.get('tipo_anuncio'))
+        if bairro_oficial:
             row['perimetro_urbano'] = 'Sim'
-        if d.get('alerta_rural'):
+        elif d.get('alerta_rural'):
             row['perimetro_urbano'] = 'Nao'
+
+        # escopo por tipo do anúncio (classificação do próprio site)
+        TIPOS_RURAIS = {'chacara', 'sitio', 'fazenda', 'rancho'}
+        TIPOS_NAO_TERRENO = {'apartamento', 'casa', 'cobertura', 'sala', 'loja',
+                             'galpao', 'flat', 'kitnet', 'sobrado', 'ponto',
+                             'predio', 'imovel comercial'}
+        if tipo in TIPOS_RURAIS:
             row['status_apuracao'] = 'Excluido'
-            row['motivo_exclusao'] = 'anuncio classificado como rural/chacara/sitio/fazenda'
+            row['motivo_exclusao'] = f'anuncio classificado como {tipo} (escopo exclui rural)'
+            if not bairro_oficial:
+                row['perimetro_urbano'] = 'Nao'
+        elif tipo in TIPOS_NAO_TERRENO:
+            row['status_apuracao'] = 'Excluido'
+            row['motivo_exclusao'] = f'tipo do anuncio nao e terreno/area (titulo: {tipo})'
+        elif d.get('alerta_rural') and not bairro_oficial:
+            row['status_apuracao'] = 'Excluido'
+            row['motivo_exclusao'] = 'anuncio/bairro indica zona rural ou area rural'
         elif area is not None and area < 5000:
             row['status_apuracao'] = 'Excluido'
             row['motivo_exclusao'] = f'area_total {fmt_decimal_br(area)} m2 abaixo de 5000 m2'

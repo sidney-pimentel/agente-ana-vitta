@@ -19,6 +19,9 @@ import os
 import re
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from parsers import parse_area
+
 RE_LD = re.compile(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', re.S)
 RE_ICON = re.compile(r'<strong class="fw-bold">([\d.,]+)\s*m²</strong>\s*</div>\s*</div>\s*([^<]{0,40})', re.S)
 
@@ -105,6 +108,33 @@ def extrai(path):
     mdesc = re.search(r'class="descricao-imovel">(.*?)</p>', uh, re.S)
     desc = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', mdesc.group(1))).strip() if mdesc else ""
     out["descricao"] = desc[:600]
+
+    # fallback: sem ícone de área, anúncio de terreno/área, descrição com UMA
+    # metragem que não seja construída/privativa/útil -> usa com aviso
+    if out["area_total_m2"] is None and not out["descartar"]:
+        tipo_titulo = out["titulo"].split()[0].lower() if out["titulo"] else ""
+        if tipo_titulo in ("terreno", "área", "area", "lote", "gleba"):
+            cands = []
+            for a in parse_area(desc):
+                if a.get("m2") is None:
+                    continue
+                i = desc.find(a["literal"])
+                ctx = desc[max(0, i - 60): i + len(a["literal"]) + 60].lower()
+                if re.search(r'constru[íi]d|privativ|[úu]til', ctx):
+                    continue
+                cands.append(a)
+            vals = {c["m2"] for c in cands}
+            if len(vals) == 1:
+                c = cands[0]
+                out["area_total_m2"] = c["m2"]
+                out["trecho_area"] = c["literal"]
+                out["erros"].append("area extraida da descricao (sem icone estruturado)")
+                if c.get("aproximado"):
+                    out["area_aproximada"] = True
+                if c.get("conversao"):
+                    out["erros"].append(f"conversao: {c['conversao']}")
+            elif len(vals) > 1:
+                out["descartar"] = f"descricao com metragens multiplas nao rotuladas: {sorted(vals)}"
     mlit = re.search(r'[^.]{0,80}\d[\d.,]*\s*m[²2]\b[^.]{0,60}', desc)
     out["trecho_area"] = (mlit.group(0).strip() if mlit else None) or lit_icone
     # literal do valor: precisa corresponder ao price do JSON-LD
@@ -140,8 +170,12 @@ def extrai(path):
             fones.append(wa)
     out["telefone"] = " | ".join(fones) if fones else None
 
-    escopo = (out["titulo"] + " " + desc).lower()
-    if re.search(r'ch[áa]cara|s[íi]tio|fazenda|rancho|zona rural|[áa]rea rural', escopo):
+    # tipo do anúncio = primeira(s) palavra(s) do título (classificação do site)
+    mtipo = re.match(r'([A-Za-zÀ-ú]+(?:\s+comercial|\s+residencial)?)', out["titulo"])
+    out["tipo_anuncio"] = mtipo.group(1).strip().lower() if mtipo else None
+    # rural explícito no anúncio (não confundir com bairros "Chácaras ...")
+    escopo = (out["titulo"] + " " + desc + " " + (out["bairro"] or "")).lower()
+    if re.search(r'zona rural|[áa]rea rural', escopo):
         out["alerta_rural"] = True
 
     out["data_coleta"] = (meta.get("fetched_at") or "")[:10]
