@@ -1,0 +1,42 @@
+name: coleta
+# Fetcher educado do estudo de terrenos Uberlândia.
+# O runner do GitHub tem rede aberta; a sessão Claude Code (rede restrita)
+# empurra a fila em pipeline/fetch_queue.txt e este job commita o HTML bruto
+# de volta no branch. Nenhuma interpretação de conteúdo acontece aqui.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/terrenos-uberlandia-database-9g3jvz"]
+    paths: ["pipeline/fetch_queue.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python pipeline/fetcher.py
+      - name: commit resultados
+        run: |
+          git config user.name "coleta-fetcher"
+          git config user.email "sidney@propbank.ai"
+          git add raw saida/fetch_log.csv
+          if git diff --cached --quiet; then
+            echo "nada novo"
+          else
+            git commit -m "coleta: HTML bruto do fetcher"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

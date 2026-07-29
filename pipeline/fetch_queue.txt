@@ -1,0 +1,27 @@
+# Lote 1 — FASE 1: prefeitura (bairros oficiais) + robots/listagem das candidatas
+https://www.uberlandia.mg.gov.br/	pref_home
+https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/	pref_planejamento
+https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/mapas-e-bairros/	pref_mapas_bairros
+https://www.ivannegocios.com.br/comprar/Uberlandia/Area	ivan_listagem_area
+https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno	ivan_listagem_terreno
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Area	delta_listagem_area
+https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno	delta_listagem_terreno
+https://www.guinzaimoveis.com.br/area/a-venda/uberlandia-mg	guinza_listagem_area
+https://www.storteimoveis.com.br/imoveis/a-venda/area+terreno/uberlandia	storte_listagem
+https://www.nexusimob.com/imoveis/a-venda/terreno/uberlandia	nexus_listagem
+https://eliteimobiliaria.com/terreno-lote/a-venda/uberlandia-mg	elite_listagem
+https://wenderbernardesimoveis.com.br/terreno-lote/a-venda/uberlandia-mg	wender_listagem
+https://www.lbnegocios.com/imoveis/a-venda/uberlandia	lb_listagem
+https://mggaveaimoveis.com.br/	mggavea_home
+https://www.ativaimoveismg.com.br/	ativa_home
+https://ultraimoveis.com/	ultra_home
+https://www.arantesimoveis.com/	arantes_home
+https://praxisimoveis.com/imovel-tipo/terreno-gleba/	praxis_listagem
+https://www.glebaimoveis.com/imoveis/a-venda	glebaimoveis_listagem
+https://www.chavesnamao.com.br/terrenos-direto-com-o-proprietario-a-venda/mg-uberlandia/	chavesnamao_listagem
+https://www.lopes.com.br/busca/venda/br/mg/uberlandia/tipo/terreno	lopes_listagem
+https://www.zapimoveis.com.br/venda/terrenos-lotes-condominios/mg+uberlandia/	zap_listagem
+https://www.vivareal.com.br/venda/minas-gerais/uberlandia/	vivareal_listagem
+https://www.imovelweb.com.br/terrenos-venda-uberlandia-mg.html	imovelweb_listagem
+https://www.wimoveis.com.br/venda/terrenos/mg/uberlandia/	wimoveis_listagem
+https://www.nestoria.com.br/uberlandia/terreno/venda	nestoria_listagem
