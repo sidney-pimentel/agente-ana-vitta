@@ -1,0 +1,243 @@
+User-agent: *
+Allow: /lancamentos$
+Allow: /lancamentos/
+Allow: /lancamentos/*.html
+Allow: /lancamentos/*?*
+Disallow: /Erros/
+Disallow: /Erros/NaoEncontrado
+Disallow: /FichaImpressao/
+Disallow: /fichaimpressao/
+Disallow: /tr/
+Disallow: /95377733/
+Disallow: /268756910/
+Disallow: /ie8/
+Disallow: /FichaImovel/Enviar
+Disallow: /Busca/Enviar
+Disallow: /FichaCampanha/Enviar
+Disallow: /Busca/RetornarGrupoNavegadoresImovel
+Disallow: /busca/RetornarGrupoNavegadoresImovel
+Disallow: /FichaImovel/BuscaEnderecoLegado?idListingsV4=*
+Disallow:/*__zt=*
+Disallow:/*__advertiser=*
+Disallow:/*_ga=
+Disallow:/EnviarMensagem/
+Disallow:/Coberturas_RJ
+Disallow:/Kitinetes_SP
+Disallow:/MensagemNovo
+Disallow:/Content/
+Disallow:/Busca/
+Disallow:/VitrinesHome/
+Disallow:/*rn=
+Disallow:/*boxrevista=
+Disallow:/*er0=
+Disallow:/*q=
+Disallow:/*tipobusca=
+Disallow:/*act=
+Disallow:/VitrineLancamento/
+Disallow:/*endereco=
+Disallow:/*foto=
+User-agent:Googlebot
+Disallow:/Erros/
+Disallow:/Erros/NaoEncontrado
+Disallow:/FichaImpressao/
+Disallow:/fichaimpressao/
+Disallow:/tr/
+Disallow:/95377733/
+Disallow:/268756910/
+Disallow:/ie8/
+Disallow:/FichaImovel/Enviar
+Disallow:/Busca/Enviar
+Disallow:/FichaCampanha/Enviar
+Disallow:/Busca/RetornarGrupoNavegadoresImovel
+Disallow:/busca/RetornarGrupoNavegadoresImovel
+Disallow:/*__zt=*
+Disallow:/*__advertiser=*
+Disallow:/*_ga=
+Disallow:/EnviarMensagem/
+Disallow:/Coberturas_RJ
+Disallow:/Kitinetes_SP
+Disallow:/MensagemNovo
+Disallow:/Content/
+Disallow:/Busca/
+Disallow:/VitrinesHome/
+Disallow:/*rn=
+Disallow:/*boxrevista=
+Disallow:/*er0=
+Disallow:/*q=
+Disallow:/*tipobusca=
+Disallow:/*act=
+Disallow:/VitrineLancamento/
+Disallow:/*endereco=
+Disallow:/*foto=
+Disallow: /cdn-cgi/
+# Amenities shall not pass!
+Disallow:/*/agua/$
+Disallow:/*/armario-embutido/$
+Disallow:/*/business-center/$
+Disallow:/*/coffee-shop/$
+Disallow:/*/convencoes/$
+Disallow:/*/copa/$
+Disallow:/*/entrada-para-caminhoes/$
+Disallow:/*/escritorio-virtual/$
+Disallow:/*/esgoto/$
+Disallow:/*/esquina/$
+Disallow:/*/estacionamento-rotativo/$
+Disallow:/*/estrada-asfaltada/$
+Disallow:/*/garagem-para-barcos/$
+Disallow:/*/heliponto/$
+Disallow:/*/infraestrutura-internet/$
+Disallow:/*/lavoura/$
+Disallow:/*/luz/$
+Disallow:/*/marina/$
+Disallow:/*/pasto/$
+Disallow:/*/patio-estacionamento/$
+Disallow:/*/pier/$
+Disallow:/*/pista-de-pouso/$
+Disallow:/*/ponte-rolante/$
+Disallow:/*/rede-de-telefone/$
+Disallow:/*/reservatorio-de-agua/$
+Disallow:/*/restaurante/$
+Disallow:/*/rio/$
+Disallow:/*/rua-asfaltada/$
+Disallow:/*/sala-de-ginastica/$
+Disallow:/*/sede/$
+Disallow:/*/seguranca-na-rua/$
+Disallow:/*/seguranca-patrimonial/$
+Disallow:/*/silos/$
+Disallow:/*/sistema-de-incendio/$
+Disallow:/*/telefone/$
+Disallow:/*/vestiario/$
+Disallow:/*/vidros-reflexivos/$
+Disallow:/*/quarto-wc-empregada/$
+Disallow:/*/estuda-permuta/$
+Disallow:/*/deposito-privativo-no-subsolo/$
+Disallow:/*/isolada/$
+Disallow:/*/entrada-lateral/$
+Disallow:/*/oferta/$
+Disallow:/*/hall-de-servico-independente/$
+Disallow:/*/living-tabuas-largas/$
+Disallow:/*/cozinha-azulejada-ate-o-teto/$
+Disallow:/*/despensa/$
+Disallow:/*/home-theater/$
+Disallow:/*/apartamento-em-exposicao/$
+Disallow:/*/visite-apto-modelo-decorado/$
+Disallow:/*/stand-de-vendas-no-local/$
+Disallow:/*/entrada-facilitada/$
+Disallow:/*/utilize-seu-fgts/$
+Disallow:/*/bosque/$
+Disallow:/*/casa-em-exposicao/$
+Disallow:/*/casa-principal/$
+Disallow:/*/children-care/$
+Disallow:/*/clube/$
+Disallow:/*/com-servico/$
+Disallow:/*/curral/$
+Disallow:/*/energia-eletrica/$
+Disallow:/*/entrada-de-serv.-independente/$
+Disallow:/*/lavanderia-coletiva/$
+Disallow:/*/paiol/$
+Disallow:/*/para-incorporacao/$
+Disallow:/*/pista-de-bicicross/$
+Disallow:/*/pista-de-skate/$
+Disallow:/*/poco/$
+Disallow:/*/poco-artesiano/$
+Disallow:/*/refeitorio/$
+Disallow:/*/sala-intima/$
+Disallow:/*/seguranca-interna/$
+Disallow:/*/semi-geminada/$
+Disallow:/*/visite-casa-modelo-decorada/$
+Disallow:/*/meio-andar/$
+Disallow:/*/caseiro/$
+Disallow:/*/freezer/$
+Disallow:/*/geladeira/$
+Disallow:/*/lavaroupas/$
+Disallow:/*/microondas/$
+Disallow:/*/porteira-fechada/$
+Disallow:/*/roupa-de-banho/$
+Disallow:/*/roupa-de-cama/$
+Disallow:/*/roupa-de-mesa/$
+Disallow:/*/tv/$
+Disallow:/*/utensilios-de-cozinha/$
+Disallow:/*/ventilador-de-teto/$
+Disallow:/*/recuo/$
+Disallow:/*/solarium/$
+Disallow:/*/casa-mista/$
+Disallow:/*/casa-de-alvenaria/$
+Disallow:/*/casa-de-madeira/$
+Disallow:/*/proximo-ao-metro/$
+Disallow:/*/vista-panoramica/$
+Disallow:/*/ventilacao-natural/$
+Disallow:/*/platibanda/$
+Disallow:/*/janelas-grandes/$
+Disallow:/*/muro-de-vidro/$
+Disallow:/*/balaustre/$
+Disallow:/*/drywall/$
+Disallow:/*/gas-encanado/$
+Disallow:/*/arandelas/$
+Disallow:/*/cimento-queimado/$
+Disallow:/*/gesso---sanca---teto-rebaixado/$
+Disallow:/*/acessibilidade/$
+Disallow:/*/aquario/$
+Disallow:/*/porcelanato/$
+Disallow:/*/papel-de-parede/$
+Disallow:/*/ofuro/$
+Disallow:/*/muros-e-grades/$
+Disallow:/*/ambientes-integrados/$
+Disallow:/*/hall-de-entrada/$
+Disallow:/*/horta/$
+Disallow:/*/orquidario/$
+Disallow:/*/cozinha-pequena/$
+Disallow:/*preview=*
+Disallow:/*quartos=*
+Disallow:/*banheiros=*
+Disallow:/*vagas=*
+Disallow:/*precoMinimo=*
+Disallow:/*precoMaximo=*
+Disallow:/*areaMinima=*
+Disallow:/*areaMaxima=*
+Disallow:/*termos=*
+Disallow:/*id=*
+Disallow:/*endereco=*
+Disallow:/*transacao=*
+Disallow:/*ordem=*
+Disallow:/*tipo=*
+Disallow:/*tipoUnidade=*
+Disallow:/*onde=*
+Disallow:/*data=*
+Disallow:/fonts/*
+Disallow:/http-error/
+#AdSense
+Disallow:/*/p$
+Disallow: *itl_id=*
+Disallow: *itl_name=*
+Disallow: *__ab=*
+Disallow: *gad_source=*
+Disallow: *gad_campaignid=*
+Disallow: *per_page=*
+Disallow: *page=*
+Disallow: *utm_medium=*
+Disallow: *utm_campaign=*
+Disallow: *utm_source=*
+Disallow: *redirect=*
+Disallow: *cityWiseStreet=*
+Disallow: *version=*
+
+User-agent: PetalBot
+Crawl-delay: 10
+Request-rate: 1/10
+
+sitemap: https://www.zapimoveis.com.br/sitemap_seo_keyword_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_markdownpage_index.xml
+sitemap: https://www.zapimoveis.com.br/blog/sitemap_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_neighborhood_guides_index.xml 
+sitemap: https://www.zapimoveis.com.br/sitemap_condominiums_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_used_resultpage_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_pois_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_minisite_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_used_resultpage_amenities_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_used_resultpage_streets_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_development_detailpage_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_landing_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_development_resultpage_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_square_meters_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_advertisers_by_location_index.xml
+sitemap: https://www.zapimoveis.com.br/sitemap_city_guide_index.xml

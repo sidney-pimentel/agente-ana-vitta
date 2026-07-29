@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="SiteArantes_Blazor.styles.css">
+    <link rel="icon" type="image/png" href="media/Logo_Arantes.png">
+    <link href="css/bootstrap.min.css?v=2.0" rel="stylesheet">
+    <link href="css/style.css?v=5.0" rel="stylesheet">
+    <link href="css/all.min.css?v=2.0" rel="stylesheet">
+    <link href="css/sweetAlert.css?v=2.0" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js?v=2.0"></script>
+    <link href="css/maplibre.css?v=2.0" rel="stylesheet">
+
+    
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5X8SKR3');
+    </script>
+    
+
+    <script src="js/maplibre.js?v=2.0"></script>
+    <script src="js/bootstrap.min.js?v=2.0"></script>
+    <script src="js/bootstrap.bundle.min.js?v=2.0"></script>
+    <script src="js/sweetAlert.js?v=2.0"></script>
+
+    
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1177963567147002');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1177963567147002&ev=PageView&noscript=1"></noscript>
+    
+
+
+    <!--Blazor:{"type":"server","prerenderId":"36b7aa176cba496c860504d25bf8ae9d","key":{"locationHash":"77D12F14A8105320B1AAED6AE7E689DA0EC4483270A645E84079EAA0FFDF550D:8","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8FT8q51Ex7lOi8EhD2vr1fqWshjMVKkbzhoCI2l6\u002BqsTt3YCaEatkOBUIlXhIFOvlybNbS1CNUarUs7y8/3CbS3NCYhFGL9\u002B3pJ\u002BlqCcYmoMTdmlbPLX1QJu6nZlanZy72u0LV5\u002BdZtMf8tMI4nZgrLZ1dM\u002Ba4TD/q23QNQ617WWaNGVklv1OIXz0Rlljohb7Tz3NPcb1y55l\u002BD14KpfDJgTNyac9C5nnmTC5i9LzQ3xr9gXndMZvdUWVAbluj0gq0ekpDnhd2JKIwt\u002B6UbeKi5Qbr\u002B5RAM5fVcMfys9XMtKdTZ3JqlKxSPBatUtU0xCQosdW1UMb43qhrihTrJNz76z0RZ/Vqw5o1SVBosk3rJ/bkhSIJEs/6CCExOfnalfqpk7eRlBQKlfQQLM86NrkNJxGVmdIQsKbCPhbo5frNLXtbkCp851WQ1ZO3WgLwKWwivEXIfUfuXg7k9qqtn0s/AVGgmJTQJwytS/nj3y2hVs1smad3/cVEHvlsG\u002BjYNGAflgZ7Wr\u002BRnY18FGxUZtx1TiKmYeeonhYzjfJapUlGwIqBax0W/btYs3r\u002BCvSwJRLdnYtkWbWJ2Tuk4MoILSIwY="}--><title>Arantes Imóveis | Imóveis em Uberlândia</title><meta name="description" content="Encontre os melhores imóveis para venda e aluguel com a Arantes Imóveis. Explore apartamentos, casas e terrenos disponíveis em diversos bairros da cidade." b-yi7xobs629><!--Blazor:{"prerenderId":"36b7aa176cba496c860504d25bf8ae9d"}--></head>
+
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X8SKR3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    <!--Blazor:{"type":"server","prerenderId":"02764041f936474091bc9bdcde488e9e","key":{"locationHash":"AB18B0FBE7BAD1B6B3787BAF61EAF179C3561FA73A29B7FFDB7A22354BFA4BD6:12","formattedComponentKey":""},"sequence":1,"descriptor":"CfDJ8FT8q51Ex7lOi8EhD2vr1fpwA2xmnHjEUBG\u002BoSRy/dKr9GJpsZQLVaV/ahoZIQeWzroZKlz75wGSpvrbmQugx\u002BShO/D8sNZ3LHuwGL5Fp69YWiFu9q/3WJbwHYov\u002BP9ZZyyr2iENt2yC0Yy\u002B1ahs5W1Pu0CD8ivNtas0dNGezUcelJr8xiVNmspBhM3v/mKnO6LCszZ5MBLV8NG8z/\u002BUEJktuy\u002BuXBmKDxNSejE0gGA6xYFNBEpyopW/lA\u002BCsA1M4LWyjRsBx\u002BLINszGnK32l6B8fj75eXq20Bz6UjppCaZCZ8O9ofVIp33\u002BQAavwXf/xj1ac1YOB/QnvuAzLrpKhEGMzt1wUX4XzxnJazT6MhCTzOb0fJy5VUp7R96\u002BV1z5WiFP6wLnyungztA61zv8PNnfTv/oNt/13E/\u002BwIh6aJ9M2ySqbkSEfYJ7rJiAdrkd\u002BCl\u002Btnl1iKfiqRXUe0qGBV4\u002B7eC/2aKijJGcB10SnNXgEUg1xP1\u002BV8Z9ox1n2XDuCUmmU1BWiV3\u002BK\u002BJ5WldpFSv/B/sEfJISmRWzbKj0WCIl"}--><div class=" navigation-wrap start-header transparent start-style " style=" filter: drop-shadow(0px 7px 20px rgba(0, 0, 0, 0.25));" b-yi7xobs629><div class="container" b-yi7xobs629><div class="row m-0" b-yi7xobs629><div class="col-12 p-0" b-yi7xobs629><nav class="navbar navbar-expand-md navbar-light" b-yi7xobs629><a href="/" class="navbar-brand m-0 active" aria-current="page"><img src="/media/arantesB.png" alt="Arantes Imóveis" class="logoB" style="height: 50px; width: auto;" b-yi7xobs629>
+                            <img src="/media/arantesV.png" alt="Arantes Imóveis" class="logoP d-none" style="height: 50px; width: auto;" b-yi7xobs629></a>
+
+                    <div class="d-flex some d-nav desktop-nav-links" b-yi7xobs629><a href="/arantes" class="nav-link"><span b-yi7xobs629>Aluguel</span></a>
+
+                        
+                        <div b-yi7xobs629><div class="dropdown" b-yi7xobs629><a class="dropdown-toggle nav-link" type="button" id="dropdownVenda" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" b-yi7xobs629><span b-yi7xobs629>Venda</span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownVenda" b-yi7xobs629><a href="/arantes-by-urbs" class="dropdown-item">Revenda</a>
+                                    
+                                    <a href="/lancamento/Tipo_Imovel/Regiao/busca" class="dropdown-item">Lançamento</a></div></div></div>
+
+                        <div b-yi7xobs629><div class="dropdown" b-yi7xobs629><a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" b-yi7xobs629><span b-yi7xobs629>Comparador</span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" b-yi7xobs629><a class="dropdown-item" href="/comparador/aluguel" b-yi7xobs629>Comparador Aluguel</a>
+                                    <a class="dropdown-item" href="/comparador/revenda" b-yi7xobs629>Comparador Venda</a>
+                                    <a class="dropdown-item" href="/comparador/lancamento" b-yi7xobs629>Comparador Lançamento</a></div></div></div>
+
+                        <a href="/avaliar-imovel-gratis" class="nav-link d-none"><span b-yi7xobs629>Avaliar Imóvel Grátis</span></a>
+                        <a href="/anunciar-imovel" class="nav-link"><span b-yi7xobs629>Anunciar imóvel</span></a>
+                        <a href="https://arantes.pepin.cloud/" target="_blank" class="nav-link"><span b-yi7xobs629>Área do Cliente</span></a>
+
+                        <div b-yi7xobs629><div class="dropdown" b-yi7xobs629><a class="dropdown-toggle nav-link" type="button" id="dropdownInstitucional" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" b-yi7xobs629><span b-yi7xobs629>Institucional</span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownInstitucional" b-yi7xobs629><a class="dropdown-item" href="/sobre-a-Arantes" b-yi7xobs629>Sobre Nós</a>
+                                    <a class="dropdown-item" href="/fale-conosco" b-yi7xobs629>Contato</a></div></div></div></div>
+
+
+
+                    <div class="cd-header" b-yi7xobs629><div class="header-wrapper" b-yi7xobs629><div class="nav-but-wrap" b-yi7xobs629><div class="menu-icon hover-target" b-yi7xobs629><span class="menu-icon__line menu-icon__line-left" b-yi7xobs629></span>
+                                    <span class="menu-icon__line" b-yi7xobs629></span>
+                                    <span class="menu-icon__line menu-icon__line-right mb-0" b-yi7xobs629></span>
+                                    <span class="txtMenu text-white" b-yi7xobs629>Menu</span></div></div></div></div>
+
+                    <div class="nav-toggle" b-yi7xobs629><div class="navi" b-yi7xobs629><div class="container position-relative" b-yi7xobs629><div class="nav__content" b-yi7xobs629><div class="row w-100 m-0 justify-content-between" b-yi7xobs629><ul class="nav__list col-lg-6" b-yi7xobs629><li class="nav__list-item" b-yi7xobs629><a href="/" class="active" aria-current="page">Home</a></li>
+
+                                            <li class="nav__list-item" b-yi7xobs629><a href="/arantes">Aluguel</a></li>
+
+                                            
+                                            <li class="nav__list-item" b-yi7xobs629><a style="font-weight: 500;" b-yi7xobs629>Venda</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a href="/arantes-by-urbs" class="dropdown-item ms-2">- Revenda</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a href="/lancamento/Tipo_Imovel/Regiao/busca" class="dropdown-item ms-2">- Lançamento</a></li>
+
+                                            <li class="nav__list-item" b-yi7xobs629><a href="/avaliar-imovel-gratis">Avaliar Imóvel Grátis</a></li>
+
+                                            <li class="nav__list-item" b-yi7xobs629><a href="/anunciar-imovel">Anunciar imóvel</a></li>
+
+                                            
+                                            <li class="nav__list-item" b-yi7xobs629><a style="font-weight: 500;" b-yi7xobs629>Institucional</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a class="dropdown-item ms-2" href="/sobre-a-Arantes" b-yi7xobs629>- Sobre Nós</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a class="dropdown-item ms-2" href="/fale-conosco" b-yi7xobs629>- Contato</a></li>
+
+                                            
+                                            <li class="nav__list-item" b-yi7xobs629><a style="font-weight: 500;" b-yi7xobs629>Comparador</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a class="dropdown-item ms-2" href="/comparador/aluguel" b-yi7xobs629>- Comparador Aluguel</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a class="dropdown-item ms-2" href="/comparador/revenda" b-yi7xobs629>- Comparador Venda</a></li>
+                                            <li class="nav__list-item" b-yi7xobs629><a class="dropdown-item ms-2" href="/comparador/lancamento" b-yi7xobs629>- Comparador Lançamento</a></li></ul></div></div></div></div></div></nav></div></div></div></div>
+
+
+
+
+<input type="checkbox" id="cookie-toggle" b-yi7xobs629>
+
+
+<div id="cookie-banner" b-yi7xobs629><div class="container" b-yi7xobs629><div class=" d-flex flex-column flex-md-row align-items-center justify-content-between" b-yi7xobs629><p class="mb-2 mb-md-0 text-center text-md-start" b-yi7xobs629>
+                Usamos cookies para otimizar o funcionamento do site e sua navegação. Saiba mais na nossa
+                <a href="/politica-de-privacidade" target="_blank" b-yi7xobs629>Política de Privacidade</a>.
+            </p>
+            <div class="d-flex gap-2" b-yi7xobs629><label for="cookie-toggle" class="btn btn-success" style="cursor: pointer;" b-yi7xobs629>Aceitar cookies</label>
+                <a href="/politica-de-privacidade" class="btn btn-outline-secondary" b-yi7xobs629>Ver Política</a></div></div></div></div>
+
+
+
+<section class="py-5 bg-black d-flex align-items-end topoPrincipal" style="min-height: 60vh;"><div class="container py-5 position-relative" style=" z-index: 2;"><div class="row align-items-center m-0 justify-content-between"><div class="col-lg-5"><h1 class="fontEL text-white centra Ttopo" style="font-weight: 100;font-size: 44px;" tabindex="-1">Encontre seu imóvel ideal ou anuncie aqui na <strong class="fontR">Arantes Imóveis</strong></h1></div>
+
+            <div class="row m-0 col-lg-4 mt-4"><a href="/lancamento/Tipo_Imovel/Regiao/busca" class=" btn-white btn btn-revenda m-2 w-100">Lançamentos</a>
+                <a href="/arantes" class=" btn-white btn btn-revenda m-2 w-100">Imóveis para alugar</a>
+                <a href="/arantes-by-urbs" class="btn-white btn m-2 w-100"> Imóveis à venda</a></div></div></div></section>
+
+
+
+<section class="especialistas py-5 position-relative text-white"><svg class="some position-absolute" style="top: 0;right: 0; height: 100%; width: auto;" width="1017" height="668" viewBox="0 0 1017 668" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1250 811.6H1029.58C916.034 545.377 607.509 485.58 483.78 498.621C573.857 503.965 652.356 541.56 680.346 559.689L598.284 808.736H380.727L483.78 498.621C224.238 507.018 53.1175 708.863 0 808.736C109.161 497.285 393.449 392.068 521.948 378.392L704.201 -176H922.713L1250 811.6ZM736.644 383.163C768.768 389.524 847.904 410.453 907.446 443.277L813.934 154.154L736.644 383.163Z" fill="url(#paint0_linear_209_39)" fill-opacity="0.1"></path>
+            <defs><linearGradient id="paint0_linear_209_39" x1="818.5" y1="-222.5" x2="320.001" y2="839" gradientUnits="userSpaceOnUse"><stop stop-color="white"></stop>
+                    <stop offset="1" stop-color="#999999" stop-opacity="0.1"></stop></linearGradient></defs></svg>
+
+
+    <div class="container position-relative"><div class="row"><div class="col-lg-5 centra addMB"><h2 class="fontL display-6 mb-0">Especialistas no <br>mercado imobiliário</h2>
+                <p class="fontL fs-4 mb-0">Conheça nossos números</p></div>
+            <div class="row m-0 col-lg-7 text-center gy-4 mt-3"><div class="col-md-4 mt-0 numeros"><h3 class="fontL">+ DE <span class="counter" data-count="5">0</span> Mil</h3>
+                    <p class="text-uppercase small mb-0">Imóveis em administração</p></div>
+                <div class="col-md-4 mt-0 numeros"><h3 class="fontL">+ DE <span class="counter" data-count="2">0</span>  Mil</h3>
+                    <p class="text-uppercase small mb-0">Contratos assinados<br> por ano</p></div>
+                <div class="col-md-4 mt-0 numeros"><h3 class="fontL">+ DE <span class="counter" data-count="3">0</span> Mil</h3>
+                    <p class="text-uppercase small mb-0">Clientes atendidos por mês</p></div></div></div></div></section>
+
+
+<section class="property-by-location-st2 pt-5 mb-2 mt-4"><div class="container pb-5"><div class="w-100  text-center"><h3 class="fontL">
+                O imóvel ideal para você alugar ou comprar<br>
+                <span class=" fontEL t-red"> conforme o seu estilo de vida!</span></h3></div>
+
+        <section class="lancamentos"><div class="w-100 h-100 d-flex flex-column align-items-center"><div class="row mt-5 slideCardsLan"><div class="col-md-3 box"><a href="/aluguel/Apartamento_Mobiliado/REGIAO/busca" class="location-image position-relative mb-4 fotinu"><img src="/media/ft01.webp" alt="location-image" class="img-fluid location-img w-100">
+
+                            <h3 class=" text-white location-name mb-0 fs25 fontR">
+                                Alugue
+                                Mobiliado
+                            </h3></a></div>
+                    <div class="col-md-3 box"><a href="/aluguel/Apartamento,Casa,Apartamento_Mobiliado,Sobrado,Casa_em_Condom%C3%ADnio,Apartamento_Cobertura,Studio_%7C_Flat,Casa_Mobiliada,Kitnet,Ch%C3%A1cara/REGIAO/busca?vlrMax=2000.00" class="location-image position-relative mb-4 fotin"><img src="/media/ft03.jpg" alt="location-image" class="img-fluid location-img w-100">
+
+                            <h3 class=" text-white location-name mb-0 fs25 fontR">
+                                Aluguel Residencial
+                                até R$
+                                2.000,00
+                            </h3></a></div>
+                    <div class="col-md-3 box"><a href="/revenda/Tipo_Imovel/REGIAO/busca?carac=Pet" class="location-image position-relative mb-4"><img src="/media/ft02.webp" alt="location-image" class="img-fluid location-img w-100">
+                            <h3 class=" text-white location-name mb-0 fs25 fontR">
+                                À venda
+                                para você
+                                e seu pet
+                            </h3></a></div>
+                    <div class="col-md-3 box"><a href="/revenda/Tipo_Imovel/REGIAO/busca?carac=Varanda" class="location-image position-relative mb-4 fotinu"><img src="/media/ft04.jpg" alt="location-image" class="img-fluid location-img w-100 h-100">
+                            <h3 class=" text-white location-name mb-0 fs25 fontR">
+                                À venda
+                                com
+                                varanda
+                                para relaxar
+                            </h3></a></div></div></div></section></div></section>
+
+<section class="position-relative py-5" id="calcula"><div class="container position-relative index9 p-5" style="background: linear-gradient(220deg, #2E2D37 34%, #017E52 100%); border-radius: 20px;"><div class="h-100 w-100 ovh" style="left: 0; top: 0; position: absolute;"><img src="/media/bg-simu.png" class="position-absolute bg-simu"></div>
+
+
+        <div class="row m-0"><div class="col-lg-5 section-padding"><div class="intro-box position-relative"><h2 class="text-white fontR mb-0">Anuncie seu imóvel <br><span class="text-white fontEL">com a Arantes.</span></h2>
+
+                    <p class="mt-3 text-white text-justify fs18 mb-0">
+                        Comprometidos com a qualidade, estamos prontos para te ajudar em todo processo de venda ou locação de seu imóvel!
+                    </p>
+                    <div><a href="/anunciar-imovel" class="btn w-100 mb-3 mt-4 btn-vazadoB">Clique e anuncie já</a></div></div></div>
+            <div class="col-lg-7 justify-content-end d-flex some"><img src="/media/bg-simu.png" class="position-absolute" style="bottom:-30px; height: 114%; border-radius: 20px;"></div></div></div></section>
+
+<section class="opsS"><div class="slider2 ps py-5"><div class="slick-slide"><div class="testimonial-box"><p class="testimonial-text fontL">
+                    “Quero agradecer aos colaboradores da Arantes por todo processo de locação.Fica aqui meus parabéns para todos os envolvidos.
+                    Escolhi a Arantes por causa de uma amiga, que deu ótimas informações da imobiliária. Continuem assim.”
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4"><div class="d-flex align-items-center"><div class="profile-img me-3"></div>
+
+                        <div><div class="testimonial-author fontR">Eliane Dias</div>
+                            <div class="testimonial-role">Alugou com a Arantes</div></div></div>
+                    <div><span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span></div></div></div></div>
+        <div class="slick-slide"><div class="testimonial-box"><p class="testimonial-text fontL">
+                    “Fui acolhida, muito bem tratada, com dedicação, educação e responsabilidade.”
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4"><div class="d-flex align-items-center"><div class="profile-img me-3"></div>
+
+                        <div><div class="testimonial-author fontR">Leda Araújo</div>
+                            <div class="testimonial-role">Alugou com a Arantes</div></div></div>
+                    <div><span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span></div></div></div></div>
+
+        <div class="slick-slide"><div class="testimonial-box"><p class="testimonial-text fontL">
+                    “Excelente!!! Eu estava há duas semanas olhando imóveis para alugar e todas as 3 imobiliárias me deixaram a ver navios. Entrei em contato com a Arantes e fui atendida imediatamente. [...] hoje posso dizer que é a melhor de Uberlândia com certeza. Indicarei para todos que precisarem [...]. Parabéns!”
+
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4"><div class="d-flex align-items-center"><div class="profile-img me-3"></div>
+
+                        <div><div class="testimonial-author fontR">Flávia Samara</div>
+                            <div class="testimonial-role">Alugou e alugou com a Arantes</div></div></div>
+                    <div><span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span></div></div></div></div>
+
+        <div class="slick-slide"><div class="testimonial-box"><p class="testimonial-text fontL">
+                    “Gostaria de agradecer a Arantes Imóveis por toda a atenção prestada durante os atendimentos que precisei. Em todos eles, fui bem orientada com informações precisas e claras, além de ter sido tratada com cordialidade.”
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4"><div class="d-flex align-items-center"><div class="profile-img me-3"></div>
+
+                        <div><div class="testimonial-author fontR">Gabriela Morais</div>
+                            <div class="testimonial-role">Alugou com a Arantes</div></div></div>
+                    <div><span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span></div></div></div></div>
+
+        <div class="slick-slide"><div class="testimonial-box"><p class="testimonial-text fontL">
+                    “Cheguei na cidade há 3 meses e precisei de uma casa para alugar, pois não conhecia ninguém. Falei com o gerente e em 2 dias entrei na casa, foram muito prestativos, me senti muito agradecida.”
+                </p>
+                <div class="d-flex align-items-center justify-content-between mt-4"><div class="d-flex align-items-center"><div class="profile-img me-3"></div>
+                        <div><div class="testimonial-author fontR">Andreza Rodrigues</div>
+                            <div class="testimonial-role">Alugou com a Arantes</div></div></div>
+                    <div><span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span></div></div></div></div></div></section>
+
+<section class="pb-md-5 py-2 py-sm-0"><div class="container"><article class="text-center"><h2 class="text-center mb-5 fontL TitleEhmphasis">Mais Pesquisados</h2></article>
+
+    <div class="row"><div class="col-12 col-md-4 d-flex justify-content-center text-start fs-6"><ul class="ps-4"><li><a href="/revenda/Apartamento/REGIAO/busca" class="TextGreenBright">Apartamentos à venda em Uberlândia</a></li>
+                <li><a href="/aluguel/Tipo_Imovel/REGIAO/busca" class="TextGreenBright">Aluguel de imóveis em Uberlândia</a></li>
+                <li><a href="/aluguel/Casa/REGIAO/busca" class="TextGreenBright">Casas para alugar em Uberlândia</a></li>
+                <li><a href="/aluguel/Apartamento/REGIAO/busca" class="TextGreenBright">Apartamentos para alugar em Uberlândia</a></li></ul></div>
+        <div class="col-12 col-md-4 d-flex justify-content-center text-start fs-6"><ul class="ps-4"><li><a href="/aluguel/Tipo_Imovel/SANTA_MONICA/busca" class="TextGreenBright">Imóveis para alugar no Santa Mônica Uberlândia</a></li>
+                <li><a href="/aluguel/Tipo_Imovel/TIBERY/busca" class="TextGreenBright">Imóveis para alugar no Tibery</a></li>
+                <li><a href="/aluguel/Tipo_Imovel/CIDADE_JARDIM/busca" class="TextGreenBright">Imóveis para alugar no Cidade Jardim</a></li>
+                <li><a href="/aluguel/Tipo_Imovel/Jardim_Karaíba/busca" class="TextGreenBright">Imóveis à venda no Jardim Karaíba</a></li></ul></div>
+        <div class="col-12 col-md-4 d-flex justify-content-center text-start fs-6"><ul class="ps-4"><li><a href="/aluguel/Apartamento_mobiliado/REGIAO/busca?cidade=Uberlandia" class="TextGreenBright">Apartamentos mobiliados em Uberlândia</a></li>
+                <li><a href="/revenda/Tipo_Imovel/REGIAO/busca?tipoImovelC=Imóvel_Comercial" class="TextGreenBright">Imóveis comerciais em Uberlândia</a></li>
+                <li><a href="/aluguel/Tipo_Imovel/REGIAO/busca?vlrMax=2000.00" class="TextGreenBright">Apartamentos até R$ 2.000 em Uberlândia</a></li>
+                <li><a href="/revenda/Casa_de_Condomínio/REGIAO/busca" class="TextGreenBright">Casas em condomínio em Uberlândia</a></li></ul></div></div></div></section>
+
+
+<link href="css/slick.css" rel="stylesheet">
+<link href="css/slick-theme.css" rel="stylesheet">
+<script src="js/home.js" type="text/javascript"></script>
+<script src="js/slick.min.js"></script>
+
+<script>
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top < window.innerHeight && rect.bottom > 0
+        );
+    }
+
+    function animateCounter($el) {
+        const countTo = parseFloat($el.attr('data-count'));
+        const currentVal = parseFloat($el.text()) || 0;
+
+        $({ countNum: currentVal }).animate({
+            countNum: countTo
+        }, {
+            duration: 700,
+            easing: 'swing',
+            step: function () {
+                $el.text(this.countNum % 1 === 0 ? this.countNum.toFixed(0) : this.countNum.toFixed(1));
+            },
+            complete: function () {
+                $el.text(this.countNum % 1 === 0 ? this.countNum.toFixed(0) : this.countNum.toFixed(1));
+            }
+        });
+    }
+
+    function checkCounters() {
+        $('.counter').each(function () {
+            const $this = $(this);
+            if (!$this.hasClass('counted') && isInViewport(this)) {
+                $this.addClass('counted'); // Marca como já animado
+                animateCounter($this);
+            }
+        });
+    }
+
+
+    $(document).ready(checkCounters);
+    $(window).on('scroll', checkCounters);
+
+
+</script>
+
+<footer class="pt-5 text-white position-relative " id="footer" b-yi7xobs629><svg style="position:absolute; left: 0; bottom: 0;" class="some" width="531" height="378" viewBox="0 0 531 378" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M-129 429H-13.9283C67.9467 267.663 233.359 253.976 305.831 267.3C431.137 286.818 507.488 383.232 530 429C499.037 338.261 421.682 270.068 386.875 247.314C243.282 161.351 101.403 205.094 48.4131 237.711M-129 429L12.8265 1L109.975 41.7495L48.4131 237.711M-129 429C-85.9845 334.939 7.19851 262.282 48.4131 237.711M-13.9283 428.531H-129C-85.9845 334.47 7.19851 261.813 48.4131 237.242C101.403 204.625 243.282 160.882 386.875 246.846C421.682 269.6 499.037 337.792 530 428.531C507.488 382.764 431.137 286.349 305.831 266.831C233.359 253.507 67.9467 267.194 -13.9283 428.531Z" stroke="url(#paint0_linear_3_146)" stroke-opacity="0.3" b-yi7xobs629></path>
+        <defs b-yi7xobs629><linearGradient id="paint0_linear_3_146" x1="26.0588" y1="51.3545" x2="296.449" y2="291.718" gradientUnits="userSpaceOnUse" b-yi7xobs629><stop stop-color="white" b-yi7xobs629></stop>
+                <stop offset="1" stop-color="#999999" stop-opacity="0.5" b-yi7xobs629></stop></linearGradient></defs></svg>
+    <svg style="position:absolute; right: 0; bottom: 0;" width="470" height="326" viewBox="0 0 470 326" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M612 398H505.31C429.398 248.349 276.034 235.653 208.841 248.012C92.662 266.116 21.8724 355.547 1 398C29.7076 313.833 101.428 250.58 133.7 229.474C266.834 149.737 398.379 190.311 447.509 220.566M612 398L480.504 1L390.431 38.7981L447.509 220.566M612 398C572.118 310.751 485.722 243.357 447.509 220.566M505.31 397.565H612C572.118 310.317 485.722 242.922 447.509 220.131C398.379 189.877 266.834 149.302 133.7 229.039C101.428 250.145 29.7076 313.399 1 397.565C21.8724 355.113 92.662 265.681 208.841 247.577C276.034 235.218 429.398 247.914 505.31 397.565Z" stroke="url(#paint0_linear_3_145)" stroke-opacity="0.25" b-yi7xobs629></path>
+        <defs b-yi7xobs629><linearGradient id="paint0_linear_3_145" x1="468.235" y1="47.7073" x2="217.443" y2="270.552" gradientUnits="userSpaceOnUse" b-yi7xobs629><stop stop-color="white" b-yi7xobs629></stop>
+                <stop offset="1" stop-color="#999999" stop-opacity="0.5" b-yi7xobs629></stop></linearGradient></defs></svg>
+    <svg style="position:absolute; left: 50%; top: 0;" class="some" width="635" height="413" viewBox="0 0 635 413" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M1.00002 0.999984H111.532C190.176 155.929 349.063 169.072 418.675 156.278C539.038 137.535 612.376 44.9497 634 0.999984C604.259 88.135 529.955 153.619 496.521 175.469C358.594 258.018 222.313 216.013 171.413 184.691M1.00002 0.999984L137.231 412L230.547 372.869L171.413 184.691M1.00002 0.999984C42.3184 91.3253 131.825 161.096 171.413 184.691M111.532 1.4499H1.00002C42.3184 91.7752 131.825 161.546 171.413 185.141C222.313 216.463 358.594 258.468 496.521 175.919C529.955 154.069 604.259 88.5849 634 1.4499C612.376 45.3996 539.038 137.985 418.675 156.728C349.063 169.522 190.176 156.379 111.532 1.4499Z" stroke="url(#paint0_linear_3_147)" stroke-opacity="0.1" b-yi7xobs629></path>
+        <defs b-yi7xobs629><linearGradient id="paint0_linear_3_147" x1="149.941" y1="363.646" x2="409.6" y2="132.758" gradientUnits="userSpaceOnUse" b-yi7xobs629><stop stop-color="white" b-yi7xobs629></stop>
+                <stop offset="1" stop-color="#999999" stop-opacity="0.5" b-yi7xobs629></stop></linearGradient></defs></svg>
+
+
+    <div class="container position-relative index3" b-yi7xobs629><div class="footerlist justify-content-between" b-yi7xobs629><div b-yi7xobs629><img src="/media/arantesB.png" alt="Arantes Imóveis" class="logoB mb-4 mt-3" style="height: 50px !important; width: auto; display: block !important;" b-yi7xobs629>
+                <h5 b-yi7xobs629>Para Alugar</h5>
+                <ul class="list-unstyled" b-yi7xobs629><li b-yi7xobs629><a href="/aluguel/CASA,CASA_EM_CONDOMÍNIO/REGIAO/busca" class="text-white" b-yi7xobs629>Casa</a></li>
+                    <li b-yi7xobs629><a href="/aluguel/APARTAMENTO/REGIAO/busca" target="_blank" class="text-white" b-yi7xobs629>Apartamento</a></li>
+                    <li b-yi7xobs629><a href="/aluguel/Casa_em_Condomínio/REGIAO/busca" class="text-white" b-yi7xobs629>Casa em Condomínio</a></li>
+                    <li b-yi7xobs629><a href="/aluguel/Tipo_Imovel/REGIAO/busca?tipoImovelC=Loja" class="text-white" b-yi7xobs629>Loja</a></li>
+                    <li b-yi7xobs629><a href="/aluguel/Tipo_Imovel/REGIAO/busca?tipoImovelC=Sala_Comercial" class="text-white" b-yi7xobs629>Sala Comercial</a></li>
+                    <li b-yi7xobs629><a href="/aluguel/Tipo_Imovel/Regiao/busca?categoria=Comercial" class="text-white" b-yi7xobs629>Imóvel Comercial</a></li></ul></div>
+            <div b-yi7xobs629><img src="/media/logoB.png" alt="Arantes by URBS" class="logo-arantesB mb-4 mt-3" style="height: 56px !important; width: auto;display: block !important; " b-yi7xobs629>
+                <h5 b-yi7xobs629>Para Comprar</h5>
+                <ul class="list-unstyled" b-yi7xobs629><li b-yi7xobs629><a href="/revenda/Casa_em_Condomínio,Casa,Casa_de_Condomínio,Casa_de_Condomínio_Duplex,Casa_de_Vila,Casa_de_Vila_Triplex/REGIAO/busca" class="text-white" b-yi7xobs629>Casa</a></li>
+                    <li b-yi7xobs629><a href="/revenda/Casa_em_Condomínio,Apartamento,Apartamento_Duplex,Cobertura_Duplex,Cobertura/REGIAO/busca" class="text-white" b-yi7xobs629>Apartamento</a></li>
+                    <li b-yi7xobs629><a href="/revenda/Casa_em_Condomínio,Casa_de_Condomínio,Casa_de_Condomínio_Duplex/REGIAO/busca" class="text-white" b-yi7xobs629>Casa em Condomínio</a></li>
+                    <li b-yi7xobs629><a href="/revenda/Casa_em_Condomínio/REGIAO/busca?tipoImovelC=Terreno_Comercial,Rural" class="text-white" b-yi7xobs629>Lotes e Terrenos</a></li>
+                    <li b-yi7xobs629><a href="/revenda/Tipo_Imovel/Regiao/busca?categoria=Comercial" class="text-white" b-yi7xobs629>Imóvel Comercial</a></li></ul></div>
+            <div b-yi7xobs629><div class="mt-3 border p-3 rounded-4" style="width: fit-content;" b-yi7xobs629><h5 b-yi7xobs629>Institucional</h5>
+                    <ul class="list-unstyled" b-yi7xobs629><li b-yi7xobs629><a href="/sobre-a-Arantes" class="text-white" b-yi7xobs629>Sobre nós</a></li>
+                        <li b-yi7xobs629><a href="/sobre-a-Arantes#lojas" class="text-white" b-yi7xobs629>Nossas Lojas</a></li>
+                        <li b-yi7xobs629><a href="/avaliar-imovel-gratis" class="text-white" b-yi7xobs629>Avaliar Imóvel Grátis</a></li>
+                        <li b-yi7xobs629><a href="/anunciar-imovel" class="text-white" b-yi7xobs629>Anunciar Imóvel</a></li>
+                        <li b-yi7xobs629><a href="/fale-conosco" class="text-white" b-yi7xobs629>Fale Conosco </a></li>
+                        <li b-yi7xobs629><a href="/trabalhe-conosco" class="text-white" b-yi7xobs629>Trabalhe Conosco</a></li>
+                        <li b-yi7xobs629><a href="/politica-de-privacidade" class="text-white" b-yi7xobs629>Política de Privacidade </a></li>
+                        <li class="text-white mt-3" b-yi7xobs629>(34) 3228-3999</li></ul></div>
+                <div class="mt-3 px-3" b-yi7xobs629><span style="font:20px" b-yi7xobs629>CJ 3959</span></div></div></div></div>
+    <div class="lineFooter my-5 mt-3" b-yi7xobs629></div>
+    <div class="container pb-4" b-yi7xobs629><div class="footer-row" b-yi7xobs629><div class="icons" b-yi7xobs629><a href="https://www.facebook.com/ArantesAluguel" target="_blank" b-yi7xobs629><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M26.5 0C11.925 0 0 11.9463 0 26.6597C0 39.9629 9.69899 51.0045 22.366 53V34.3755H15.635V26.6597H22.366V20.7796C22.366 14.1014 26.3145 10.4297 32.383 10.4297C35.2715 10.4297 38.2925 10.9352 38.2925 10.9352V17.507H34.9535C31.6675 17.507 30.634 19.5557 30.634 21.6577V26.6597H38.001L36.8085 34.3755H30.634V53C36.8784 52.0097 42.5648 48.8108 46.6662 43.9804C50.7676 39.1503 53.0142 33.0069 52.9999 26.6597C52.9999 11.9463 41.0749 0 26.5 0Z" fill="white" b-yi7xobs629></path></svg></a><a href="https://www.instagram.com/arantesimobiliaria?igsh=MTV4eHFpeWxqMXd3eA==" target="_blank" b-yi7xobs629><svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M26.5 30.5703C29.0672 30.5703 31.1686 28.5188 31.1686 25.9898C31.1686 24.9945 30.8373 24.0703 30.2887 23.3188C29.4398 22.1711 28.0631 21.4094 26.5104 21.4094C24.9576 21.4094 23.5809 22.1609 22.732 23.3188C22.1834 24.0703 21.8521 24.9945 21.8521 25.9898C21.8418 28.5188 23.9328 30.5703 26.5 30.5703Z" fill="white" b-yi7xobs629></path>
+                            <path d="M36.6859 20.4039V15.9961H36.1062L32.1934 16.0063L32.2141 20.4141L36.6859 20.4039Z" fill="white" b-yi7xobs629></path>
+                            <path d="M33.7461 26C33.7461 29.9203 30.4957 33.1094 26.5 33.1094C22.5043 33.1094 19.2539 29.9203 19.2539 26C19.2539 25.0555 19.4506 24.1516 19.7922 23.3289H15.8379V33.9727C15.8379 35.3438 16.9766 36.4609 18.374 36.4609H34.626C36.0234 36.4609 37.1621 35.3438 37.1621 33.9727V23.3289H33.2078C33.5598 24.1516 33.7461 25.0555 33.7461 26Z" fill="white" b-yi7xobs629></path>
+                            <path d="M26.5 0C11.8629 0 0 11.6391 0 26C0 40.3609 11.8629 52 26.5 52C41.1371 52 53 40.3609 53 26C53 11.6391 41.1371 0 26.5 0ZM39.75 33.9727C39.75 36.7453 37.452 39 34.626 39H18.374C15.548 39 13.25 36.7453 13.25 33.9727V18.0172C13.25 15.2445 15.548 12.9898 18.374 12.9898H34.626C37.452 12.9898 39.75 15.2445 39.75 18.0172V33.9727Z" fill="white" b-yi7xobs629></path></svg></a><a href="https://www.linkedin.com/company/arantesimoveis/?originalSubdomain=br" target="_blank" b-yi7xobs629><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M26.5 0C41.1355 0 53 11.8645 53 26.5C53 41.1355 41.1355 53 26.5 53C11.8645 53 0 41.1355 0 26.5C0 11.8645 11.8645 0 26.5 0ZM15 38H21.25V21.75H15V38ZM33.8535 20.8252C30.3354 20.8253 28.7648 23.5514 28.75 23.5771V21.75H23.75V38H28.75V29.251C28.7501 26.9074 29.9768 25.5127 32.043 25.5127C33.9414 25.5129 34.9999 26.8513 35 29.251V38H40V27.4473C39.9999 22.9825 37.3897 20.8252 33.8535 20.8252ZM18.0527 13C16.3665 13 15 14.3777 15 16.0752C15.0001 17.7738 16.3666 19.1514 18.0527 19.1514C19.7375 19.1512 21.1046 17.7738 21.1035 16.0752C21.1035 14.3778 19.7376 13.0001 18.0527 13Z" fill="white" b-yi7xobs629></path></svg></a>
+
+                <a href="https://youtu.be/5kGrCLaBb1Y?si=xaUyOyRl3mS6RioZ" target="_blank" b-yi7xobs629><svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg" b-yi7xobs629><path d="M23.4035 31.007L32.2418 26.0102L23.4035 21.0133V31.007Z" fill="white" b-yi7xobs629></path>
+                        <path d="M27 0C12.0867 0 0 11.6391 0 26C0 40.3609 12.0867 52 27 52C41.9133 52 54 40.3609 54 26C54 11.6391 41.9133 0 27 0ZM40.5 30.6516C40.5 35.1305 35.8488 35.1305 35.8488 35.1305H18.1512C13.5 35.1305 13.5 30.6516 13.5 30.6516V21.3586C13.5 16.8797 18.1512 16.8797 18.1512 16.8797H35.8488C40.5 16.8797 40.5 21.3586 40.5 21.3586V30.6516Z" fill="white" b-yi7xobs629></path></svg></a></div>
+
+            <div class="badges" b-yi7xobs629><img src="/media/selo-google-branco.png" alt="certificado ssl" b-yi7xobs629></div></div>
+
+        <p class="footer-text" b-yi7xobs629>
+            ©2025 Arantes Imóveis – Todos os direitos Reservados – Desenvolvido sobre Plataforma HUB URBS
+        </p></div></footer>
+
+<div id="blazor-error-ui" b-yi7xobs629>
+    An unhandled error has occurred.
+    <a href class="reload" b-yi7xobs629>Reload</a>
+    <a class="dismiss" b-yi7xobs629>🗙</a></div>
+
+
+        <!--Blazor:{"prerenderId":"02764041f936474091bc9bdcde488e9e"}-->
+
+    <script src="_framework/blazor.web.js"></script>
+    <script src="js/popper.min.js?v=1.0"></script>
+    <script src="js/script.js?v=1.0" defer></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKC80SH9HJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MKC80SH9HJ');
+    </script>
+
+    <script>
+        try{
+ function formatarCEP(input) {
+            
+            var cep = input.value;
+            cep = cep.replace(/\D/g, '');
+
+            if (cep.length > 8) {
+                cep = cep.substring(0, 8);
+            }
+
+
+            if (cep.length > 5) {
+                cep = cep.substring(0, 5) + '-' + cep.substring(5);
+            }
+
+            input.value = cep;
+        }
+        }catch(e){
+
+        }
+       
+        try {
+            function formatarData(input) {
+                var valor = input.value.replace(/\D/g, '').substring(0, 8);
+                valor = valor.replace(/(\d{2})(\d)/, '$1/$2');
+                valor = valor.replace(/(\d{2})(\d)/, '$1/$2');
+                valor = valor.replace(/(\d{2})(\d{4})$/, '$1/$2');
+                input.value = valor;
+            }
+
+
+
+            function formatCurrency(input, valor, tipo) {
+                let value;
+
+                if (valor != null && valor != 0) {
+                    value = valor.replace(/\D/g, '');
+                } else {
+                    value = input.value.replace(/\D/g, '');
+                }
+
+                value = (Number(value) / 100).toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+
+                if (tipo == 'area') {
+                    const cursorPosition = input.selectionStart;
+                    if (input.value.endsWith(' m²') && cursorPosition === input.value.length - 3) {
+                        input.value = value.replace('R$', '').trim() + ' m²';
+                    } else {
+                        input.value = value.replace('R$', '').trim() + ' m²';
+
+                        input.selectionStart = input.value.length - 3;
+                        input.selectionEnd = input.value.length - 3;
+                    }
+                } else {
+                    input.value = value;
+
+                }
+            }
+        } catch (e) {
+
+        }
+
+
+        try {
+            function scrollToElement(elementId) {
+                var element = document.getElementById(elementId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        } catch (e) {
+
+        }
+
+        try {
+            function scrollToElementWithSpace(elementId, headerHeight) {
+                var element = document.getElementById(elementId);
+                if (element) {
+                    var yOffset = -headerHeight;
+                    var y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+            }
+        } catch (e) {
+
+        }
+
+        function getClassName(element) {
+            return element.innerHTML;
+        }
+
+    </script></body></html><!--Blazor-Server-Component-State:CfDJ8FT8q51Ex7lOi8EhD2vr1foFgz7ROosfMKyk3ZbPYC3FIZ5ljiUSRdV4mHRDCQuLsSx3TOFtiN4giCHzf64a7tbwG9d+qg+dpzYLQfqHtRcpewOPmVQfuKWe6RCg1UPqAoyYeLI9yoa4MlojPqX8wqlJ0yaM6zTm8gDivEPJaQHWIz9VJ55vzHCm8Kgf6dlmpR0pPzBPxQSXhqljFOcKFcxpZgs9JIWAxGD+IVoEaKBqP9leiXR68tt67sK3ajSyhMNFPbdMjAkV/3alix53XgFJ87A3n7TegVJAcsYmhrXv349hp4ewweJRXwR3M4oJ82VHnVbTguVj5m0SjqAAPjShaM1uIhGaycp9w13SiRxwXIf47IUQDJbbV/uEMeTCLNhKcnYRq1yKBUrZqYhN38ITRRinE7n8RSpD6oTpH4RTiIdE8oFg80c1uMSWMhgv8Mi0UmEzf1BPCpIMZ/pgnYJizrrhqN4OuljvVL5hEbR2ragwGVVphDkVbh8edgdSkZ/HwVQtYT5HFnfu2GSR5fMCOhwfuNoYhpUAgj+gDdYr-->

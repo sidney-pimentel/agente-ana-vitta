@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:/campanhas/*
+Disallow:/associado/*
+Sitemap: https://www.lopes.com.br/sitemaps/sitemap-index.xml

@@ -1,0 +1,73 @@
+# Sitemaps
+
+Sitemap: https://www.imovelweb.com.br/sitemaps_https.xml
+Sitemap: https://www.imovelweb.com.br/sitemaps_list_emp_https.xml
+Sitemap: https://www.imovelweb.com.br/sitemaps_prop_emp_https.xml
+Sitemap: https://www.imovelweb.com.br/blog/sitemap_index.xml
+
+User-agent: *
+Disallow: /develop/
+Disallow: /mails/
+Disallow: /errores/
+Disallow: /bloques/
+Disallow: /bumex/
+Disallow: /homeSinPublicidad.bum
+Disallow: /cms/
+Disallow: /metrics/
+Disallow: /cdn-cgi/
+Disallow: /panel/
+Disallow: /ecommerce/
+Disallow: /users-api/
+Disallow: /avisos-api/
+Disallow: /leads-api/
+Disallow: /rpseo-static/
+Disallow: /tracking/
+Disallow: /propriedades/vistaprevia/
+
+Disallow: /sp-push-worker-fb.js
+
+Disallow: /blog/wp-admin/
+
+Disallow: /noticias/wp-admin/
+Allow: /noticias/wp-admin/admin-ajax.php
+Disallow: /noticias/wp-cron.php
+Disallow: /noticias/wp-content/plugins/
+Disallow: /noticias/wp-content/themes/
+Allow: /noticias/wp-content/uploads/
+
+Disallow: *desde*-ate-*-quartos.html
+Disallow: *-*-*-m2.html
+Disallow: *-*-*-m2-util.html
+Disallow: *-tour-virtual-360.html
+Disallow: *-videos.html
+Disallow: *-fotos.html
+Disallow: *-plantas.html
+Disallow: *-*-*-valor-condominio.html
+Disallow: /bairros/*.webp
+Disallow: /*-imobiliaria.html
+Disallow: /*reales-pagina*.html$
+Disallow: /*-ordem-precio-menor-pagina-*.html$
+Disallow: */metrics/*/*-ordem-precio-menor*
+
+Allow: /*-ordem-precio-menor.html
+Disallow: /*-ordem-*.html
+
+Allow: /*pagina-2.html$
+Allow: /*pagina-3.html$
+Allow: /*pagina-4.html$
+Allow: /*pagina-5.html$
+Disallow: /*pagina-*.html
+Allow: *pagina=2
+Allow: *pagina=3
+Allow: *pagina=4
+Allow: *pagina=5
+Disallow: *pagina=*
+
+Disallow: *?*utm_*
+Disallow: *n_src=*
+Disallow: *gad_source=*
+Disallow: *source=BP*
+Disallow: *gclid=*
+Disallow: *fbclid=*
+Disallow: *?duplicated=true*
+Disallow: *?labs=*

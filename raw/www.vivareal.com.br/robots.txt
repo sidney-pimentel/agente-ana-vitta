@@ -1,0 +1,174 @@
+User-agent: *
+Allow: /
+Disallow: /inmueble/
+Disallow: /preview/
+Disallow: /parceiros/
+Disallow: /projects/
+Disallow: /ajax/pageserver/
+Disallow: /buy/
+Disallow: /rent/
+Disallow: /*placeId=*
+Disallow: /*placeLabel=*
+Disallow: /*listingUse=*
+Disallow: /*listingType=*
+Disallow: /*listingCategory=*
+Disallow: /*serverRendered=*
+Disallow: /*vr-source=*
+Disallow: /apps_download/
+Disallow: /favorites*
+Disallow: /user/*
+Disallow: /*preview=*
+Disallow: /*data=*
+Disallow: /cdn-cgi/
+Disallow: *__ab=*
+Disallow: *__vt=*
+Disallow: *onde=*
+Disallow: *tipos=*
+Disallow: *precoMaximo=*
+Disallow: *precoMinimo=*
+Disallow: *transacao=*
+Disallow: *gclid=*
+Disallow: *utm_referrer=*
+Disallow: *quartos=*
+Disallow: *ordem=*
+Disallow: *itl_id=*
+Disallow: *itl_name=*
+
+User-agent: PetalBot
+Crawl-delay: 10
+Request-rate: 1/10
+
+User-agent: sitebot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: CazoodleBot
+Disallow: /
+
+User-agent: Cazoodlebot
+Disallow: /
+
+User-agent: sistrix
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: UbiCrawler
+Disallow: /
+
+User-agent: DOC
+Disallow: /
+
+User-agent: Zao
+Disallow: /
+
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: Fetch
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Microsoft.URL.Control
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: libwww
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
+User-agent: Download Ninja
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: grub-client
+Disallow: /
+
+User-agent: k2spider
+Disallow: /
+
+User-agent: NPBot
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: Speedy
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: Bloglines/3.1
+Disallow: /
+
+User-agent: Jyxobot/1
+Disallow: /
+
+User-agent: cityreview
+Disallow: /
+
+User-agent: WijuBot
+Disallow: /
+
+sitemap: https://www.vivareal.com.br/sitemap_condominiums_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_used_resultpage_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_development_resultpage_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_landing_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_development_detailpage_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_used_resultpage_streets_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_used_resultpage_amenities_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_minisite_index.xml
+sitemap: https://www.vivareal.com.br/sitemap_pois_resultpage_index.xml
+sitemap: https://www.vivareal.com.br/blog/sitemap_index.xml
+sitemap: https://www.vivareal.com.br/blog/feed
