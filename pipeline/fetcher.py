@@ -48,11 +48,16 @@ def slugify(url: str, label: str | None) -> str:
 
 
 def load_queue():
+    global DELAY_MIN, DELAY_MAX
     items = []
     with open(QUEUE, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if not line or line.startswith("#"):
+                m = re.match(r"#\s*delay=(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?)", line or "")
+                if m:
+                    DELAY_MIN, DELAY_MAX = float(m.group(1)), float(m.group(2))
+                    print(f"delay configurado: {DELAY_MIN}-{DELAY_MAX}s")
                 continue
             parts = line.split("\t")
             url = parts[0].strip()
