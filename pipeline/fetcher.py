@@ -147,6 +147,7 @@ def main():
                 f.write(body)
             meta = {"url": url, "final_url": final_url, "http_status": status,
                     "fetched_at": now, "bytes": len(body), "label": label,
+                    "content_type": r.headers.get("Content-Type", "") if not err else "",
                     "robots": rnote, "user_agent": UA, "erro": err or None}
             with open(os.path.join(d, slug + ".meta.json"), "w", encoding="utf-8") as f:
                 json.dump(meta, f, ensure_ascii=False, indent=1)
