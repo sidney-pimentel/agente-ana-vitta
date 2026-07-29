@@ -73,6 +73,8 @@ def main():
             obs.append(f"valor: \"{d['trecho_valor']}\"")
         if d.get('area_aproximada'):
             obs.append("area citada como aproximada no anuncio")
+        if d.get('obs_extra'):
+            obs.append(d['obs_extra'])
         for e in d.get('erros', []):
             obs.append(f"aviso: {e}")
 
@@ -88,6 +90,7 @@ def main():
             empresa=d.get('empresa') or EMPRESAS.get(d['origem'], ''),
             creci=d.get('creci', ''),
             telefone=d.get('telefone', ''),
+            endereco=d.get('endereco', ''),
             bairro=d.get('bairro', ''),
             area_total_m2=fmt_decimal_br(area),
             valor_anunciado=fmt_decimal_br(d.get('valor_anunciado')),
