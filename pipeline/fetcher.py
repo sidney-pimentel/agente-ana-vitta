@@ -34,7 +34,7 @@ UA = ("TerrenosUberlandiaResearch/1.0 "
 HEADERS = {"User-Agent": UA, "Accept-Language": "pt-BR,pt;q=0.9"}
 DELAY_MIN, DELAY_MAX = 2.0, 4.0
 TIMEOUT = 30
-MAX_BYTES = 3_000_000  # corta payloads gigantes (não são páginas de anúncio)
+MAX_BYTES = 12_000_000  # PDFs oficiais podem passar de 3MB; anúncio não chega perto
 
 
 def slugify(url: str, label: str | None) -> str:
