@@ -1,0 +1,33 @@
+name: coleta-browser
+# Tentativa unica com navegador real contra fontes com challenge (OLX).
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/terrenos-uberlandia-database-9g3jvz"]
+    paths: ["pipeline/browser_queue.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && python -m playwright install chromium --with-deps
+      - run: python pipeline/browser_fetch.py
+      - name: commit resultados
+        run: |
+          git config user.name "coleta-fetcher"
+          git config user.email "sidney@propbank.ai"
+          git add raw
+          if git diff --cached --quiet; then echo "nada novo"; else
+            git commit -m "coleta: HTML via navegador (OLX)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
