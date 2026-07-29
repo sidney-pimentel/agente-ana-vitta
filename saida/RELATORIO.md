@@ -70,7 +70,7 @@ Status de todas as fontes mapeadas (viáveis, bloqueadas, robots.txt, fora de es
 - **objetivauberlandia.com.br**: páginas de detalhe funcionam, mas a listagem é renderizada por JavaScript (0 links no HTML) — não coletada nesta rodada; dá para cobrir via sitemap numa próxima.
 - **ativaimoveismg.com.br / ultraimoveis.com / imoveisuberlandia.com.br**: reconhecidas; estoque visível pequeno (10, ~7 e lotes de 300–360 m² respectivamente) — detalhes não coletados nesta rodada.
 - **chavesnamao.com.br**: 6 páginas varridas, 0 anúncios ≥4.900 m² nos cards; filtro de área da URL não funciona. **lopes.com.br**: 3 páginas, 0 ≥4.900 m².
-- **OLX (olx.com.br)**: NÃO tentada nesta rodada (última camada do plano; anti-bot forte). Lacuna declarada.
+- **OLX (olx.com.br)**: TENTADA em 2026-07-29 e **bloqueada** — Cloudflare "Attention Required" (403) tanto para requests quanto para Playwright/Chromium no runner GitHub; robots.txt idem. Uma tentativa por método, sem insistência, como previsto. O estoque C2C (proprietário direto) da OLX permanece lacuna; o estoque profissional do grupo OLX já está coberto via ZAP/VivaReal (mesma plataforma de anúncios).
 - **zapimoveis/vivareal**: rate-limit 429 na primeira passada; re-busca a 8–15s recuperou tudo (estado final: 100% dos detalhes selecionados baixados).
 - **1 página perdida**: deltaimoveis código 52911 (erro de conexão; a URL do próprio site a classifica como Apartamento — estaria fora do escopo). Registrada em `descartados.csv`.
 
