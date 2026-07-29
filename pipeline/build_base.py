@@ -28,6 +28,16 @@ ARQ_DUP = 'saida/duplicatas_candidatas.csv'
 ARQ_BAIRROS = 'entrada/bairros_oficiais.csv'
 
 
+EMPRESAS = {
+    'deltaimoveis.com.br': 'Delta Imoveis',
+    'ivannegocios.com.br': 'Ivan Negocios Imobiliarios',
+    'guinzaimoveis.com.br': 'Guinza Imoveis',
+    'eliteimobiliaria.com': 'Elite Imobiliaria',
+    'wenderbernardesimoveis.com.br': 'Wender Bernardes Imoveis',
+    'objetivauberlandia.com.br': 'Objetiva Imoveis',
+}
+
+
 def norm(s):
     s = unicodedata.normalize('NFD', (s or '').lower())
     return ''.join(c for c in s if unicodedata.category(c) != 'Mn').strip()
@@ -75,7 +85,7 @@ def main():
             codigo_anuncio=d.get('codigo_anuncio', ''),
             tipo_contato='Imobiliaria',
             nome_contato=d.get('nome_contato', ''),
-            empresa=d.get('empresa', ''),
+            empresa=d.get('empresa') or EMPRESAS.get(d['origem'], ''),
             creci=d.get('creci', ''),
             telefone=d.get('telefone', ''),
             bairro=d.get('bairro', ''),
