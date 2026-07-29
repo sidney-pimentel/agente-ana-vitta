@@ -132,6 +132,16 @@ def main():
         row['observacoes'] = ' | '.join(obs)
         linhas.append(row)
 
+    # duplicata CERTA: mesmo codigo_anuncio em zapimoveis e vivareal (grupo
+    # OLX compartilha o id do anuncio). Mecanico, nao e palpite.
+    zap_ids = {r['codigo_anuncio'] for r in linhas if r['origem'] == 'zapimoveis.com.br'}
+    for r in linhas:
+        if (r['origem'] == 'vivareal.com.br' and r['codigo_anuncio'] in zap_ids
+                and r['status_apuracao'] == 'A validar'):
+            r['status_apuracao'] = 'Duplicado'
+            r['observacoes'] = (r['observacoes'] + ' | ' if r['observacoes'] else '') + \
+                f"duplicado de zapim-{r['codigo_anuncio']} (mesmo id de anuncio no grupo OLX/ZAP)"
+
     # duplicatas candidatas: mesma area (2%) + mesmo bairro, entre ativos
     ativos = [r for r in linhas if r['status_apuracao'] != 'Excluido' and r['area_total_m2']]
     def a(r):

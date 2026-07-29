@@ -1,97 +1,225 @@
 ﻿grupo;id;url_fonte;bairro;area_total_m2;valor_anunciado
-1;delta-19554;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/19554;Chácaras Uirapuru;5250;2625000
-1;delta-42898;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42898;Chácaras Uirapuru;5211;2100000
-1;delta-42901;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42901;Chácaras Uirapuru;5280;2112000
-1;delta-42904;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42904;Chácaras Uirapuru;5266;2110000
-1;delta-42905;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42905;Chácaras Uirapuru;5250;2365000
-2;delta-21709;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Tubalina-E-Quartel/21709;Chácaras Tubalina e Quartel;6000;3500000
-2;delta-22207;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Tubalina-E-Quartel/22207;Chácaras Tubalina e Quartel;6000;4250000
-2;zapim-2723031739;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-6000m2-id-2723031739/;Chácaras Tubalina E Quartel;6000;3000000
-2;zapim-2823662613;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-6000m2-id-2823662613/;Chácaras Tubalina E Quartel;6000;3500000
-3;delta-28481;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Morada-dos-Passaros/28481;Morada dos Pássaros;5000;1900000
-3;delta-33031;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Morada-dos-Passaros/33031;Morada dos Pássaros;5000;1900000
-3;delta-51991;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Morada-dos-Passaros/51991;Morada dos Pássaros;5000;1895000
-3;ivann-83398;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Morada-dos-Passaros/83398;Morada dos Passaros;5041;1900000
-4;delta-29878;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Esquina/Panorama/29878;Panorama;5000;1300000
-4;delta-38129;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Panorama/38129;Panorama;5000;1500000
-4;ivann-83869;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Padrao/Panorama/83869;Panorama;5000;750000
-4;ivann-83870;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Padrao/Panorama/83870;Panorama;5000;750000
-4;zapim-2867780661;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-panorama-uberlandia-mg-5000m2-id-2867780661/;Panorama;5000;1200000
-5;delta-42892;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42892;Chácaras Uirapuru;6300;3150000
-5;delta-42896;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42896;Chácaras Uirapuru;6300;2520000
-5;delta-42897;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42897;Chácaras Uirapuru;6300;2520000
-5;zapim-2896871624;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-uirapuru-uberlandia-mg-6300m2-id-2896871624/;Chácaras Uirapuru;6300;3150000
-5;vivar-2896871624;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-uirapuru-bairros-uberlandia-6300m2-venda-RS3150000-id-2896871624/;Chácaras Uirapuru;6300;3150000
-6;delta-42899;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42899;Chácaras Uirapuru;5600;2240000
-6;zapim-2876972179;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-uirapuru-uberlandia-mg-5600m2-id-2876972179/;Chácaras Uirapuru;5600;2800000
-6;zapim-2895655265;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-uirapuru-uberlandia-mg-5600m2-id-2895655265/;Chácaras Uirapuru;5600;2800000
-6;vivar-2895655265;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-uirapuru-bairros-uberlandia-5600m2-venda-RS2800000-id-2895655265/;Chácaras Uirapuru;5600;2800000
-7;delta-45825;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Condominio/Morada-do-Sol/45825;Morada do Sol;5040;1800000
-7;zapim-2831646359;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5035m2-id-2831646359/;Morada do Sol;5035;1600000
-7;zapim-2883546193;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5035m2-id-2883546193/;Morada do Sol;5035;1750000
-8;delta-45997;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Condominio/Shopping-Park/45997;Shopping Park;5350,19;3210000
-8;guinz-784;https://www.guinzaimoveis.com.br/imovel/terreno-lote-em-condominio-a-venda-5350m2-shopping-park-uberlandia-mg-id-784;Shopping Park;5350;3210000
-9;delta-48287;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Tubalina-E-Quartel/48287;Chacaras Tubalina E Quartel;11461,51;11461510
-9;ivann-82189;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Chacaras-Tubalina-e-Quartel/82189;Chácaras Tubalina e Quartel;11392;5250000
-10;delta-48397;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Chacaras-Tubalina-E-Quartel/48397;Chácaras Tubalina E Quartel;5355;2500000
-10;ivann-79576;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Chacaras-Tubalina/79576;Chácaras Tubalina E Quartel;5355;2500000
-10;zapim-2872964332;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-5355m2-id-2872964332/;Chácaras Tubalina E Quartel;5355;2500000
-10;zapim-2883050287;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-5355m2-id-2883050287/;Chácaras Tubalina E Quartel;5355;2500000
-10;zapim-2889601351;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-5355m2-id-2889601351/;Chácaras Tubalina E Quartel;5355;2500000
-10;vivar-2872964332;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-5355m2-venda-RS2500000-id-2872964332/;Chácaras Tubalina E Quartel;5355;2500000
-10;vivar-2883050287;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-5355m2-venda-RS2500000-id-2883050287/;Chácaras Tubalina E Quartel;5355;2500000
-10;vivar-2889601351;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-5355m2-venda-RS2500000-id-2889601351/;Chácaras Tubalina E Quartel;5355;2500000
-11;delta-48582;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Mansoes-Aeroporto/48582;Mansões Aeroporto;5078,25;1800000
-11;zapim-2900965130;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-mansoes-aeroporto-uberlandia-mg-5000m2-id-2900965130/;Mansões Aeroporto;5000;1575000
-12;ivann-62837;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Jardim-Europa/62837;Jardim Europa;5581,6;2800000
-12;ivann-72927;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Jardim-Europa/72927;Jardim Europa;5581;2750000
-12;elite-2185;https://eliteimobiliaria.com/imovel/terreno-lote-a-venda-5581m2-jardim-europa-uberlandia-mg-id-2185;Jardim Europa;5581;2600000
-12;zapim-2765117045;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5581m2-id-2765117045/;Jardim Europa;5581;2600000
-12;zapim-2820111324;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-tv-a-cabo-jardim-europa-uberlandia-mg-5582m2-id-2820111324/;Jardim Europa;5582;2600000
-12;zapim-2837292978;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5581m2-id-2837292978/;Jardim Europa;5581;2888000
-13;guinz-554;https://www.guinzaimoveis.com.br/imovel/area-a-venda-20000m2-distrito-industrial-uberlandia-mg-id-554;Distrito Industrial;20000;3000000
-13;zapim-2897369786;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-20000m2-id-2897369786/;Distrito Industrial;20000;8000000
-13;vivar-2897369786;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-20000m2-venda-RS8000000-id-2897369786/;Distrito Industrial;20000;8000000
-14;zapim-2575761586;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-chacaras-tubalina-e-quartel-uberlandia-mg-5220m2-id-2575761586/;Chácaras Tubalina E Quartel;5220;2650000
-14;vivar-2575761586;https://www.vivareal.com.br/imovel/lote-terreno-1-quartos-chacaras-tubalina-e-quartel-bairros-uberlandia-5220m2-venda-RS2650000-id-2575761586/;Chácaras Tubalina E Quartel;5220;2650000
-15;zapim-2575762508;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-12000m2-id-2575762508/;Chácaras Tubalina E Quartel;12000;13200000
-15;zapim-2754958605;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-chacaras-tubalina-e-quartel-uberlandia-mg-12000m2-id-2754958605/;Chácaras Tubalina E Quartel;12000;12000000
-15;vivar-2754958605;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-12000m2-venda-RS12000000-id-2754958605/;Chácaras Tubalina E Quartel;12000;12000000
-16;zapim-2701356798;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2701356798/;Morada do Sol;5456;1600000
-16;zapim-2811470559;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-com-piscina-morada-do-sol-uberlandia-mg-5400m2-id-2811470559/;Morada do Sol;5456,25;1700000
-16;zapim-2831648550;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2831648550/;Morada do Sol;5456;1700000
-16;zapim-2873756329;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2873756329/;Morada do Sol;5456,25;1700000
-16;zapim-2875883875;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2875883875/;Morada do Sol;5456,25;1700000
-17;zapim-2725002184;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-6000m2-id-2725002184/;Tubalina;6000;1500000
-17;zapim-2895651394;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-6058m2-id-2895651394/;Tubalina;6058;1500000
-17;zapim-2900148305;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-tv-a-cabo-tubalina-uberlandia-mg-6000m2-id-2900148305/;Tubalina;6000;6000000
-17;vivar-2725002184;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-6000m2-venda-RS1500000-id-2725002184/;Tubalina;6000;1500000
-17;vivar-2895651394;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-6058m2-venda-RS1500000-id-2895651394/;Tubalina;6058;1500000
-17;vivar-2900148305;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-6000m2-venda-RS6000000-id-2900148305/;Tubalina;6000;6000000
-18;zapim-2795621609;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-cruzeiro-dos-peixotos-uberlandia-mg-5000m2-id-2795621609/;Cruzeiro dos Peixotos;5000;940000
-18;zapim-2795628847;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-cruzeiro-dos-peixotos-uberlandia-mg-5000m2-id-2795628847/;Cruzeiro dos Peixotos;5000;940000
-18;vivar-2795621609;https://www.vivareal.com.br/imovel/lote-terreno-cruzeiro-dos-peixotos-bairros-uberlandia-5000m2-venda-RS940000-id-2795621609/;Cruzeiro dos Peixotos;5000;940000
-18;vivar-2795628847;https://www.vivareal.com.br/imovel/lote-terreno-cruzeiro-dos-peixotos-bairros-uberlandia-5000m2-venda-RS940000-id-2795628847/;Cruzeiro dos Peixotos;5000;940000
-19;zapim-2800981700;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-altamira-uberlandia-mg-5100m2-id-2800981700/;Altamira;5100;20400000
-19;vivar-2800981700;https://www.vivareal.com.br/imovel/lote-terreno-1-quartos-altamira-bairros-uberlandia-5100m2-venda-RS20400000-id-2800981700/;Altamira;5100;20400000
-20;zapim-2814130522;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-churrasqueira-distrito-industrial-uberlandia-mg-5000m2-id-2814130522/;Distrito Industrial;5000;2367217
-20;zapim-2827352321;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-5000m2-id-2827352321/;Distrito Industrial;5000;1055000
-20;vivar-2814130522;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-5000m2-venda-RS2367217-id-2814130522/;Distrito Industrial;5000;2367217
-20;vivar-2827352321;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-5000m2-venda-RS1055000-id-2827352321/;Distrito Industrial;5000;1055000
-21;zapim-2829595716;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-5220m2-id-2829595716/;Tubalina;5220;2610000
-21;zapim-2895652094;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-5220m2-id-2895652094/;Tubalina;5220;2610000
-21;vivar-2895652094;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-5220m2-venda-RS2610000-id-2895652094/;Tubalina;5220;2610000
-22;zapim-2845096468;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-planalto-uberlandia-mg-6000m2-id-2845096468/;Planalto;6000;4200000
-22;zapim-2845100420;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-planalto-uberlandia-mg-6000m2-id-2845100420/;Planalto;6000;4200000
-22;vivar-2845096468;https://www.vivareal.com.br/imovel/lote-terreno-planalto-bairros-uberlandia-6000m2-venda-RS4200000-id-2845096468/;Planalto;6000;4200000
-22;vivar-2845100420;https://www.vivareal.com.br/imovel/lote-terreno-planalto-bairros-uberlandia-6000m2-venda-RS4200000-id-2845100420/;Planalto;6000;4200000
-23;zapim-2855255058;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-dona-zulmira-uberlandia-mg-5252m2-id-2855255058/;Dona Zulmira;5251,82;5790000
-23;vivar-2855255058;https://www.vivareal.com.br/imovel/lote-terreno-dona-zulmira-bairros-uberlandia-5252m2-venda-RS5790000-id-2855255058/;Dona Zulmira;5251,82;5790000
-24;zapim-2880574986;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-centro-uberlandia-mg-5000m2-id-2880574986/;Centro;5000;2345890
-24;zapim-2895657873;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-centro-uberlandia-mg-5000m2-id-2895657873/;Centro;5000;2345891
-25;zapim-2881938473;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-minas-gerais-uberlandia-mg-8259m2-id-2881938473/;Minas Gerais;8259;1200
-25;vivar-2881938473;https://www.vivareal.com.br/imovel/lote-terreno-1-quartos-minas-gerais-bairros-uberlandia-8259m2-venda-RS1200-id-2881938473/;Minas Gerais;8259;1200
-26;zapim-2895652969;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-29200m2-id-2895652969/;Distrito Industrial;29200;2300000
-26;vivar-2895652969;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-29200m2-venda-RS2300000-id-2895652969/;Distrito Industrial;29200;2300000
-27;zapim-2895654194;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-12000m2-id-2895654194/;Tubalina;12000;12600000
-27;vivar-2895654194;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-12000m2-venda-RS12600000-id-2895654194/;Tubalina;12000;12600000
+1;delta-14857;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Shopping-Park/14857;Shopping Park;9437;1680000
+1;zapim-2895655073;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-9437m2-id-2895655073/;Shopping Park;9437;1680000
+1;vivar-2895655073;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-9437m2-venda-RS1680000-id-2895655073/;Shopping Park;9437;1680000
+2;delta-19554;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/19554;Chácaras Uirapuru;5250;2625000
+2;delta-42898;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42898;Chácaras Uirapuru;5211;2100000
+2;delta-42901;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42901;Chácaras Uirapuru;5280;2112000
+2;delta-42904;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42904;Chácaras Uirapuru;5266;2110000
+2;delta-42905;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42905;Chácaras Uirapuru;5250;2365000
+3;delta-21709;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Tubalina-E-Quartel/21709;Chácaras Tubalina e Quartel;6000;3500000
+3;delta-22207;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Tubalina-E-Quartel/22207;Chácaras Tubalina e Quartel;6000;4250000
+3;zapim-2723031739;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-6000m2-id-2723031739/;Chácaras Tubalina E Quartel;6000;3000000
+3;zapim-2823662613;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-6000m2-id-2823662613/;Chácaras Tubalina E Quartel;6000;3500000
+4;delta-28481;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Morada-dos-Passaros/28481;Morada dos Pássaros;5000;1900000
+4;delta-33031;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Morada-dos-Passaros/33031;Morada dos Pássaros;5000;1900000
+4;delta-51991;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Morada-dos-Passaros/51991;Morada dos Pássaros;5000;1895000
+4;ivann-83398;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Morada-dos-Passaros/83398;Morada dos Passaros;5041;1900000
+4;zapim-2872964648;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-dos-passaros-uberlandia-mg-5000m2-id-2872964648/;Morada dos Pássaros;5000;1900000
+4;zapim-2890195972;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-dos-passaros-uberlandia-mg-5000m2-id-2890195972/;Morada dos Pássaros;5000;1895000
+4;zapim-2891237912;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-dos-passaros-uberlandia-mg-5000m2-id-2891237912/;Morada dos Pássaros;5000;1900000
+5;delta-29035;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Condominio/Tocantins/29035;Tocantins;5600;1700000
+5;zapim-2872968442;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tocantins-uberlandia-mg-5600m2-id-2872968442/;Tocantins;5600;1700000
+5;vivar-2872968442;https://www.vivareal.com.br/imovel/lote-terreno-tocantins-bairros-uberlandia-5600m2-venda-RS1700000-id-2872968442/;Tocantins;5600;1700000
+6;delta-29878;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Esquina/Panorama/29878;Panorama;5000;1300000
+6;delta-38129;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Panorama/38129;Panorama;5000;1500000
+6;ivann-83869;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Padrao/Panorama/83869;Panorama;5000;750000
+6;ivann-83870;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Padrao/Panorama/83870;Panorama;5000;750000
+6;zapim-2718372780;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-panorama-uberlandia-mg-5000m2-id-2718372780/;Panorama;5000;750000
+6;zapim-2814534650;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-panorama-uberlandia-mg-5000m2-id-2814534650/;Panorama;5000;1000000
+6;zapim-2814559317;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-panorama-uberlandia-mg-5000m2-id-2814559317/;Panorama;5000;1250000
+6;zapim-2867780661;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-panorama-uberlandia-mg-5000m2-id-2867780661/;Panorama;5000;1200000
+6;zapim-2872966647;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-panorama-uberlandia-mg-5000m2-id-2872966647/;Panorama;5000;1300000
+6;vivar-2718372780;https://www.vivareal.com.br/imovel/lote-terreno-panorama-bairros-uberlandia-5000m2-venda-RS750000-id-2718372780/;Panorama;5000;750000
+6;vivar-2814534650;https://www.vivareal.com.br/imovel/lote-terreno-panorama-bairros-uberlandia-5000m2-venda-RS1000000-id-2814534650/;Panorama;5000;1000000
+6;vivar-2814559317;https://www.vivareal.com.br/imovel/lote-terreno-panorama-bairros-uberlandia-5000m2-venda-RS1250000-id-2814559317/;Panorama;5000;1250000
+6;vivar-2867780661;https://www.vivareal.com.br/imovel/lote-terreno-panorama-bairros-uberlandia-5000m2-venda-RS1200000-id-2867780661/;Panorama;5000;1200000
+7;delta-42892;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42892;Chácaras Uirapuru;6300;3150000
+7;delta-42896;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42896;Chácaras Uirapuru;6300;2520000
+7;delta-42897;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42897;Chácaras Uirapuru;6300;2520000
+7;zapim-2896871624;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-uirapuru-uberlandia-mg-6300m2-id-2896871624/;Chácaras Uirapuru;6300;3150000
+7;vivar-2896871624;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-uirapuru-bairros-uberlandia-6300m2-venda-RS3150000-id-2896871624/;Chácaras Uirapuru;6300;3150000
+8;delta-42899;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Uirapuru/42899;Chácaras Uirapuru;5600;2240000
+8;zapim-2876972179;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-uirapuru-uberlandia-mg-5600m2-id-2876972179/;Chácaras Uirapuru;5600;2800000
+8;zapim-2895655265;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-uirapuru-uberlandia-mg-5600m2-id-2895655265/;Chácaras Uirapuru;5600;2800000
+8;vivar-2895655265;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-uirapuru-bairros-uberlandia-5600m2-venda-RS2800000-id-2895655265/;Chácaras Uirapuru;5600;2800000
+9;delta-45020;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Tibery/45020;Tibery;5184;6500000
+9;zapim-2736658552;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tibery-uberlandia-mg-5193m2-id-2736658552/;Tibery;5193,05;6800000
+9;vivar-2736658552;https://www.vivareal.com.br/imovel/lote-terreno-tibery-bairros-uberlandia-5193m2-venda-RS6800000-id-2736658552/;Tibery;5193,05;6800000
+10;delta-45825;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Condominio/Morada-do-Sol/45825;Morada do Sol;5040;1800000
+10;zapim-2831646359;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5035m2-id-2831646359/;Morada do Sol;5035;1600000
+10;zapim-2872966127;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-do-sol-uberlandia-mg-5040m2-id-2872966127/;Morada do Sol;5040;1800000
+10;zapim-2883546193;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5035m2-id-2883546193/;Morada do Sol;5035;1750000
+10;zapim-2895654254;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-do-sol-uberlandia-mg-5035m2-id-2895654254/;Morada do Sol;5035;1750000
+10;vivar-2831646359;https://www.vivareal.com.br/imovel/lote-terreno-morada-do-sol-bairros-uberlandia-5035m2-venda-RS1600000-id-2831646359/;Morada do Sol;5035;1600000
+11;delta-45997;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Condominio/Shopping-Park/45997;Shopping Park;5350,19;3210000
+11;guinz-784;https://www.guinzaimoveis.com.br/imovel/terreno-lote-em-condominio-a-venda-5350m2-shopping-park-uberlandia-mg-id-784;Shopping Park;5350;3210000
+11;zapim-2895652593;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-5337m2-id-2895652593/;Shopping Park;5350,19;3210000
+11;vivar-2895652593;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-5337m2-venda-RS3210000-id-2895652593/;Shopping Park;5350,19;3210000
+12;delta-47344;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Shopping-Park/47344;Shopping Park;6044;1600000
+12;zapim-2856737462;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-6000m2-id-2856737462/;Shopping Park;6000;1600000
+12;vivar-2856737462;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-6000m2-venda-RS1600000-id-2856737462/;Shopping Park;6000;1600000
+13;delta-48287;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Chacaras-Tubalina-E-Quartel/48287;Chacaras Tubalina E Quartel;11461,51;11461510
+13;ivann-82189;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Chacaras-Tubalina-e-Quartel/82189;Chácaras Tubalina e Quartel;11392;5250000
+14;delta-48397;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Chacaras-Tubalina-E-Quartel/48397;Chácaras Tubalina E Quartel;5355;2500000
+14;ivann-79576;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Chacaras-Tubalina/79576;Chácaras Tubalina E Quartel;5355;2500000
+14;zapim-2872964332;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-5355m2-id-2872964332/;Chácaras Tubalina E Quartel;5355;2500000
+14;zapim-2883050287;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-5355m2-id-2883050287/;Chácaras Tubalina E Quartel;5355;2500000
+14;zapim-2889601351;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-5355m2-id-2889601351/;Chácaras Tubalina E Quartel;5355;2500000
+14;vivar-2872964332;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-5355m2-venda-RS2500000-id-2872964332/;Chácaras Tubalina E Quartel;5355;2500000
+14;vivar-2883050287;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-5355m2-venda-RS2500000-id-2883050287/;Chácaras Tubalina E Quartel;5355;2500000
+14;vivar-2889601351;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-5355m2-venda-RS2500000-id-2889601351/;Chácaras Tubalina E Quartel;5355;2500000
+15;delta-48582;https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno/Padrao/Mansoes-Aeroporto/48582;Mansões Aeroporto;5078,25;1800000
+15;zapim-2714355310;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5000m2-id-2714355310/;Mansões Aeroporto;5000;1590000
+15;zapim-2754957419;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5000m2-id-2754957419/;Mansões Aeroporto;5000;1650000
+15;zapim-2872960839;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5078m2-id-2872960839/;Mansões Aeroporto;5078;1800000
+15;zapim-2879977522;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5000m2-id-2879977522/;Mansões Aeroporto;5000;1500000
+15;zapim-2879984080;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5000m2-id-2879984080/;Mansões Aeroporto;5000;1500000
+15;zapim-2881881897;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5000m2-id-2881881897/;Mansões Aeroporto;5000;1500000
+15;zapim-2887848182;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5000m2-id-2887848182/;Mansões Aeroporto;5000;1200000
+15;zapim-2900965130;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-mansoes-aeroporto-uberlandia-mg-5000m2-id-2900965130/;Mansões Aeroporto;5000;1575000
+15;vivar-2714355310;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5000m2-venda-RS1590000-id-2714355310/;Mansões Aeroporto;5000;1590000
+15;vivar-2754957419;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5000m2-venda-RS1650000-id-2754957419/;Mansões Aeroporto;5000;1650000
+15;vivar-2872960839;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5078m2-venda-RS1800000-id-2872960839/;Mansões Aeroporto;5078;1800000
+15;vivar-2879977522;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5000m2-venda-RS1500000-id-2879977522/;Mansões Aeroporto;5000;1500000
+15;vivar-2879984080;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5000m2-venda-RS1500000-id-2879984080/;Mansões Aeroporto;5000;1500000
+15;vivar-2881881897;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5000m2-venda-RS1500000-id-2881881897/;Mansões Aeroporto;5000;1500000
+16;delta-9386;https://www.deltaimoveis.com.br/comprar/Uberlandia/Area/Padrao/Distrito-Industrial/9386;Distrito Industrial;39000;11379600
+16;zapim-2774915495;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-39150m2-id-2774915495/;Distrito Industrial;39150;11990000
+17;ivann-62837;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Jardim-Europa/62837;Jardim Europa;5581,6;2800000
+17;ivann-72927;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Area/Jardim-Europa/72927;Jardim Europa;5581;2750000
+17;elite-2185;https://eliteimobiliaria.com/imovel/terreno-lote-a-venda-5581m2-jardim-europa-uberlandia-mg-id-2185;Jardim Europa;5581;2600000
+17;zapim-2636402074;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5582m2-id-2636402074/;Jardim Europa;5581,6;2600000
+17;zapim-2765117045;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5581m2-id-2765117045/;Jardim Europa;5581;2600000
+17;zapim-2820111324;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-tv-a-cabo-jardim-europa-uberlandia-mg-5582m2-id-2820111324/;Jardim Europa;5582;2600000
+17;zapim-2831648230;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5582m2-id-2831648230/;Jardim Europa;5581,6;2800000
+17;zapim-2835522425;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5581m2-id-2835522425/;Jardim Europa;5581;2600000
+17;zapim-2837292978;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5581m2-id-2837292978/;Jardim Europa;5581;2888000
+17;zapim-2867781969;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-europa-uberlandia-mg-5581m2-id-2867781969/;Jardim Europa;5581;2600000
+17;vivar-2636402074;https://www.vivareal.com.br/imovel/lote-terreno-jardim-europa-bairros-uberlandia-5582m2-venda-RS2600000-id-2636402074/;Jardim Europa;5581,6;2600000
+17;vivar-2831648230;https://www.vivareal.com.br/imovel/lote-terreno-jardim-europa-bairros-uberlandia-5582m2-venda-RS2800000-id-2831648230/;Jardim Europa;5581,6;2800000
+17;vivar-2867781969;https://www.vivareal.com.br/imovel/lote-terreno-jardim-europa-bairros-uberlandia-5581m2-venda-RS2600000-id-2867781969/;Jardim Europa;5581;2600000
+18;ivann-76645;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Condominio/Shopping-Park/76645;Shopping Park;5000;2000000
+18;zapim-2636403381;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-5000m2-id-2636403381/;Shopping Park;5000;2000000
+18;zapim-2636403382;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-5000m2-id-2636403382/;Shopping Park;5000;1250000
+18;zapim-2733394919;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-5000m2-id-2733394919/;Shopping Park;5000;1800000
+18;zapim-2895652895;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-5000m2-id-2895652895/;Shopping Park;5000;2000000
+18;vivar-2636403381;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-5000m2-venda-RS2000000-id-2636403381/;Shopping Park;5000;2000000
+18;vivar-2636403382;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-5000m2-venda-RS1250000-id-2636403382/;Shopping Park;5000;1250000
+18;vivar-2895652895;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-5000m2-venda-RS2000000-id-2895652895/;Shopping Park;5000;2000000
+19;ivann-76913;https://www.ivannegocios.com.br/comprar/Uberlandia/Terreno/Condominio/Mansoes-Aeroporto/76913;Mansoes Aeroporto;5500;1290000
+19;zapim-2872908540;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5500m2-id-2872908540/;Mansões Aeroporto;5500;1290000
+19;vivar-2872908540;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5500m2-venda-RS1290000-id-2872908540/;Mansões Aeroporto;5500;1290000
+20;guinz-554;https://www.guinzaimoveis.com.br/imovel/area-a-venda-20000m2-distrito-industrial-uberlandia-mg-id-554;Distrito Industrial;20000;3000000
+20;zapim-2897369786;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-20000m2-id-2897369786/;Distrito Industrial;20000;8000000
+20;vivar-2897369786;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-20000m2-venda-RS8000000-id-2897369786/;Distrito Industrial;20000;8000000
+21;zapim-2575761586;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-chacaras-tubalina-e-quartel-uberlandia-mg-5220m2-id-2575761586/;Chácaras Tubalina E Quartel;5220;2650000
+21;vivar-2575761586;https://www.vivareal.com.br/imovel/lote-terreno-1-quartos-chacaras-tubalina-e-quartel-bairros-uberlandia-5220m2-venda-RS2650000-id-2575761586/;Chácaras Tubalina E Quartel;5220;2650000
+22;zapim-2575762508;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-chacaras-tubalina-e-quartel-uberlandia-mg-12000m2-id-2575762508/;Chácaras Tubalina E Quartel;12000;13200000
+22;zapim-2754958605;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-chacaras-tubalina-e-quartel-uberlandia-mg-12000m2-id-2754958605/;Chácaras Tubalina E Quartel;12000;12000000
+22;vivar-2754958605;https://www.vivareal.com.br/imovel/lote-terreno-chacaras-tubalina-e-quartel-bairros-uberlandia-12000m2-venda-RS12000000-id-2754958605/;Chácaras Tubalina E Quartel;12000;12000000
+23;zapim-2616404094;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jockey-camping-uberlandia-mg-5000m2-id-2616404094/;Jóckey Camping;5000;350000
+23;zapim-2877422948;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jockey-camping-uberlandia-mg-5000m2-id-2877422948/;Jóckey Camping;5000;500000
+23;zapim-2901773051;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jockey-camping-uberlandia-mg-5000m2-id-2901773051/;Jóckey Camping;5000;329810
+23;vivar-2616404094;https://www.vivareal.com.br/imovel/lote-terreno-jockey-camping-bairros-uberlandia-5000m2-venda-RS350000-id-2616404094/;Jóckey Camping;5000;350000
+23;vivar-2877422948;https://www.vivareal.com.br/imovel/lote-terreno-jockey-camping-bairros-uberlandia-5000m2-venda-RS500000-id-2877422948/;Jóckey Camping;5000;500000
+24;zapim-2628500284;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-alto-umuarama-uberlandia-mg-250000m2-id-2628500284/;Alto Umuarama;250000;265000
+24;vivar-2628500284;https://www.vivareal.com.br/imovel/lote-terreno-alto-umuarama-bairros-uberlandia-250000m2-venda-RS265000-id-2628500284/;Alto Umuarama;250000;265000
+25;zapim-2654712261;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-gavea-uberlandia-mg-5000m2-id-2654712261/;Gávea;5000;1500000
+25;vivar-2654712261;https://www.vivareal.com.br/imovel/lote-terreno-gavea-bairros-uberlandia-5000m2-venda-RS1500000-id-2654712261/;Gávea;5000;1500000
+26;zapim-2657434492;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-parque-das-andorinhas-uberlandia-mg-32500m2-id-2657434492/;Parque das Andorinhas;32500;2200000
+26;zapim-2745355007;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-parque-das-andorinhas-uberlandia-mg-32500m2-id-2745355007/;Parque das Andorinhas;32500;2200000
+26;vivar-2657434492;https://www.vivareal.com.br/imovel/lote-terreno-parque-das-andorinhas-bairros-uberlandia-32500m2-venda-RS2200000-id-2657434492/;Parque das Andorinhas;32500;2200000
+26;vivar-2745355007;https://www.vivareal.com.br/imovel/lote-terreno-parque-das-andorinhas-bairros-uberlandia-32500m2-venda-RS2200000-id-2745355007/;Parque das Andorinhas;32500;2200000
+27;zapim-2673655714;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5826m2-id-2673655714/;Morada do Sol;5826,25;1420000
+27;vivar-2673655714;https://www.vivareal.com.br/imovel/lote-terreno-morada-do-sol-bairros-uberlandia-5826m2-venda-RS1420000-id-2673655714/;Morada do Sol;5826,25;1420000
+28;zapim-2701356798;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2701356798/;Morada do Sol;5456;1600000
+28;zapim-2811470559;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-com-piscina-morada-do-sol-uberlandia-mg-5400m2-id-2811470559/;Morada do Sol;5456,25;1700000
+28;zapim-2831648550;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2831648550/;Morada do Sol;5456;1700000
+28;zapim-2873756329;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2873756329/;Morada do Sol;5456,25;1700000
+28;zapim-2875883875;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-morada-do-sol-uberlandia-mg-5456m2-id-2875883875/;Morada do Sol;5456,25;1700000
+28;vivar-2701356798;https://www.vivareal.com.br/imovel/lote-terreno-morada-do-sol-bairros-uberlandia-5456m2-venda-RS1600000-id-2701356798/;Morada do Sol;5456;1600000
+28;vivar-2831648550;https://www.vivareal.com.br/imovel/lote-terreno-morada-do-sol-bairros-uberlandia-5456m2-venda-RS1700000-id-2831648550/;Morada do Sol;5456;1700000
+29;zapim-2725002184;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-6000m2-id-2725002184/;Tubalina;6000;1500000
+29;zapim-2895651394;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-6058m2-id-2895651394/;Tubalina;6058;1500000
+29;zapim-2900148305;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-tv-a-cabo-tubalina-uberlandia-mg-6000m2-id-2900148305/;Tubalina;6000;6000000
+29;vivar-2725002184;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-6000m2-venda-RS1500000-id-2725002184/;Tubalina;6000;1500000
+29;vivar-2895651394;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-6058m2-venda-RS1500000-id-2895651394/;Tubalina;6058;1500000
+29;vivar-2900148305;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-6000m2-venda-RS6000000-id-2900148305/;Tubalina;6000;6000000
+30;zapim-2777482302;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-panorama-uberlandia-mg-10000m2-id-2777482302/;Panorama;10000;12000000
+30;vivar-2777482302;https://www.vivareal.com.br/imovel/lote-terreno-panorama-bairros-uberlandia-10000m2-venda-RS12000000-id-2777482302/;Panorama;10000;12000000
+31;zapim-2777483455;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-jardim-holanda-uberlandia-mg-10710m2-id-2777483455/;Jardim Holanda;10710;12000000
+31;zapim-2860250909;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-holanda-uberlandia-mg-10710m2-id-2860250909/;Jardim Holanda;10710,3;12000000
+31;vivar-2777483455;https://www.vivareal.com.br/imovel/lote-terreno-jardim-holanda-bairros-uberlandia-10710m2-venda-RS12000000-id-2777483455/;Jardim Holanda;10710;12000000
+32;zapim-2795621609;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-cruzeiro-dos-peixotos-uberlandia-mg-5000m2-id-2795621609/;Cruzeiro dos Peixotos;5000;940000
+32;zapim-2795628847;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-cruzeiro-dos-peixotos-uberlandia-mg-5000m2-id-2795628847/;Cruzeiro dos Peixotos;5000;940000
+32;vivar-2795621609;https://www.vivareal.com.br/imovel/lote-terreno-cruzeiro-dos-peixotos-bairros-uberlandia-5000m2-venda-RS940000-id-2795621609/;Cruzeiro dos Peixotos;5000;940000
+32;vivar-2795628847;https://www.vivareal.com.br/imovel/lote-terreno-cruzeiro-dos-peixotos-bairros-uberlandia-5000m2-venda-RS940000-id-2795628847/;Cruzeiro dos Peixotos;5000;940000
+33;zapim-2800902974;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5221m2-id-2800902974/;Mansões Aeroporto;5221;1312500
+33;zapim-2841689601;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5193m2-id-2841689601/;Mansões Aeroporto;5193;1350000
+33;zapim-2879979110;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5221m2-id-2879979110/;Mansões Aeroporto;5221;1350000
+33;zapim-2886911989;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5193m2-id-2886911989/;Mansões Aeroporto;5193;1250000
+33;zapim-2895656075;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5193m2-id-2895656075/;Mansões Aeroporto;5193;1316250
+33;zapim-2900971695;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-mansoes-aeroporto-uberlandia-mg-5193m2-id-2900971695/;Mansões Aeroporto;5193;1315000
+33;vivar-2800902974;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5221m2-venda-RS1312500-id-2800902974/;Mansões Aeroporto;5221;1312500
+33;vivar-2841689601;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5193m2-venda-RS1350000-id-2841689601/;Mansões Aeroporto;5193;1350000
+33;vivar-2879979110;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5221m2-venda-RS1350000-id-2879979110/;Mansões Aeroporto;5221;1350000
+33;vivar-2886911989;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5193m2-venda-RS1250000-id-2886911989/;Mansões Aeroporto;5193;1250000
+33;vivar-2895656075;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5193m2-venda-RS1316250-id-2895656075/;Mansões Aeroporto;5193;1316250
+33;vivar-2900971695;https://www.vivareal.com.br/imovel/lote-terreno-mansoes-aeroporto-bairros-uberlandia-5193m2-venda-RS1315000-id-2900971695/;Mansões Aeroporto;5193;1315000
+34;zapim-2800981700;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-altamira-uberlandia-mg-5100m2-id-2800981700/;Altamira;5100;20400000
+34;vivar-2800981700;https://www.vivareal.com.br/imovel/lote-terreno-1-quartos-altamira-bairros-uberlandia-5100m2-venda-RS20400000-id-2800981700/;Altamira;5100;20400000
+35;zapim-2814130522;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-churrasqueira-distrito-industrial-uberlandia-mg-5000m2-id-2814130522/;Distrito Industrial;5000;2367217
+35;zapim-2827352321;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-5000m2-id-2827352321/;Distrito Industrial;5000;1055000
+35;vivar-2814130522;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-5000m2-venda-RS2367217-id-2814130522/;Distrito Industrial;5000;2367217
+35;vivar-2827352321;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-5000m2-venda-RS1055000-id-2827352321/;Distrito Industrial;5000;1055000
+36;zapim-2821263923;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-aclimacao-uberlandia-mg-5208m2-id-2821263923/;Aclimação;5204,24;1255186
+36;vivar-2821263923;https://www.vivareal.com.br/imovel/lote-terreno-aclimacao-bairros-uberlandia-5208m2-venda-RS1255186-id-2821263923/;Aclimação;5204,24;1255186
+37;zapim-2829595716;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-5220m2-id-2829595716/;Tubalina;5220;2610000
+37;zapim-2895652094;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-5220m2-id-2895652094/;Tubalina;5220;2610000
+37;vivar-2895652094;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-5220m2-venda-RS2610000-id-2895652094/;Tubalina;5220;2610000
+38;zapim-2831646123;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-holanda-uberlandia-mg-17802m2-id-2831646123/;Jardim Holanda;17802;15000000
+38;vivar-2831646123;https://www.vivareal.com.br/imovel/lote-terreno-jardim-holanda-bairros-uberlandia-17802m2-venda-RS15000000-id-2831646123/;Jardim Holanda;17802;15000000
+39;zapim-2831646629;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-taiaman-uberlandia-mg-33495m2-id-2831646629/;Taiaman;33495;10000000
+39;vivar-2831646629;https://www.vivareal.com.br/imovel/lote-terreno-taiaman-bairros-uberlandia-33495m2-venda-RS10000000-id-2831646629/;Taiaman;33495;10000000
+40;zapim-2831648570;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morumbi-uberlandia-mg-10500m2-id-2831648570/;Morumbi;10500;10000000
+40;vivar-2831648570;https://www.vivareal.com.br/imovel/lote-terreno-morumbi-bairros-uberlandia-10500m2-venda-RS10000000-id-2831648570/;Morumbi;10500;10000000
+41;zapim-2840024319;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-nova-uberlandia-mg-5250m2-id-2840024319/;Morada Nova;5250;2625000
+41;vivar-2840024319;https://www.vivareal.com.br/imovel/lote-terreno-morada-nova-bairros-uberlandia-5250m2-venda-RS2625000-id-2840024319/;Morada Nova;5250;2625000
+42;zapim-2844343926;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-das-palmeiras-uberlandia-mg-6666m2-id-2844343926/;Jardim das Palmeiras;6666,66;350000
+42;vivar-2844343926;https://www.vivareal.com.br/imovel/lote-terreno-jardim-das-palmeiras-bairros-uberlandia-6666m2-venda-RS350000-id-2844343926/;Jardim das Palmeiras;6666,66;350000
+43;zapim-2845096468;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-planalto-uberlandia-mg-6000m2-id-2845096468/;Planalto;6000;4200000
+43;zapim-2845100420;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-planalto-uberlandia-mg-6000m2-id-2845100420/;Planalto;6000;4200000
+43;vivar-2845096468;https://www.vivareal.com.br/imovel/lote-terreno-planalto-bairros-uberlandia-6000m2-venda-RS4200000-id-2845096468/;Planalto;6000;4200000
+43;vivar-2845100420;https://www.vivareal.com.br/imovel/lote-terreno-planalto-bairros-uberlandia-6000m2-venda-RS4200000-id-2845100420/;Planalto;6000;4200000
+44;zapim-2847095817;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-morada-do-sol-uberlandia-mg-5260m2-id-2847095817/;Morada do Sol;5260;1700000
+44;vivar-2847095817;https://www.vivareal.com.br/imovel/lote-terreno-morada-do-sol-bairros-uberlandia-5260m2-venda-RS1700000-id-2847095817/;Morada do Sol;5260;1700000
+45;zapim-2855250204;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-holanda-uberlandia-mg-20000m2-id-2855250204/;Jardim Holanda;20000;15000000
+45;zapim-2858424668;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-holanda-uberlandia-mg-20000m2-id-2858424668/;Jardim Holanda;20000;15000000
+45;vivar-2858424668;https://www.vivareal.com.br/imovel/lote-terreno-jardim-holanda-bairros-uberlandia-20000m2-venda-RS15000000-id-2858424668/;Jardim Holanda;20000;15000000
+46;zapim-2855255058;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-dona-zulmira-uberlandia-mg-5252m2-id-2855255058/;Dona Zulmira;5251,82;5790000
+46;vivar-2855255058;https://www.vivareal.com.br/imovel/lote-terreno-dona-zulmira-bairros-uberlandia-5252m2-venda-RS5790000-id-2855255058/;Dona Zulmira;5251,82;5790000
+47;zapim-2860247995;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-residencial-fruta-do-conde-uberlandia-mg-7500m2-id-2860247995/;Residencial Fruta do Condé;7500;3000000
+47;vivar-2860247995;https://www.vivareal.com.br/imovel/lote-terreno-residencial-fruta-do-conde-bairros-uberlandia-7500m2-venda-RS3000000-id-2860247995/;Residencial Fruta do Condé;7500;3000000
+48;zapim-2867774650;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-cozinha-jardim-holanda-uberlandia-mg-17000m2-id-2867774650/;Jardim Holanda;17000;14450000
+48;zapim-2869931287;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-holanda-uberlandia-mg-17064m2-id-2869931287/;Jardim Holanda;17064;14505000
+48;vivar-2867774650;https://www.vivareal.com.br/imovel/lote-terreno-jardim-holanda-bairros-uberlandia-17000m2-venda-RS14450000-id-2867774650/;Jardim Holanda;17000;14450000
+48;vivar-2869931287;https://www.vivareal.com.br/imovel/lote-terreno-jardim-holanda-bairros-uberlandia-17064m2-venda-RS14505000-id-2869931287/;Jardim Holanda;17064;14505000
+49;zapim-2880574986;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-centro-uberlandia-mg-5000m2-id-2880574986/;Centro;5000;2345890
+49;zapim-2895657873;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-com-piscina-centro-uberlandia-mg-5000m2-id-2895657873/;Centro;5000;2345891
+50;zapim-2881397557;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-nova-uberlandia-uberlandia-mg-6300m2-id-2881397557/;Nova Uberlândia;6300;1050000
+50;vivar-2881397557;https://www.vivareal.com.br/imovel/lote-terreno-nova-uberlandia-bairros-uberlandia-6300m2-venda-RS1050000-id-2881397557/;Nova Uberlândia;6300;1050000
+51;zapim-2881938473;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-1-quarto-minas-gerais-uberlandia-mg-8259m2-id-2881938473/;Minas Gerais;8259;1200
+51;vivar-2881938473;https://www.vivareal.com.br/imovel/lote-terreno-1-quartos-minas-gerais-bairros-uberlandia-8259m2-venda-RS1200-id-2881938473/;Minas Gerais;8259;1200
+52;zapim-2895652367;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-gavea-uberlandia-mg-6011m2-id-2895652367/;Gávea;6011,4;3000000
+52;vivar-2895652367;https://www.vivareal.com.br/imovel/lote-terreno-gavea-bairros-uberlandia-6011m2-venda-RS3000000-id-2895652367/;Gávea;6011,4;3000000
+53;zapim-2895652969;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-distrito-industrial-uberlandia-mg-29200m2-id-2895652969/;Distrito Industrial;29200;2300000
+53;vivar-2895652969;https://www.vivareal.com.br/imovel/lote-terreno-distrito-industrial-bairros-uberlandia-29200m2-venda-RS2300000-id-2895652969/;Distrito Industrial;29200;2300000
+54;zapim-2895654194;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-tubalina-uberlandia-mg-12000m2-id-2895654194/;Tubalina;12000;12600000
+54;vivar-2895654194;https://www.vivareal.com.br/imovel/lote-terreno-tubalina-bairros-uberlandia-12000m2-venda-RS12600000-id-2895654194/;Tubalina;12000;12600000
+55;zapim-2895654782;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-shopping-park-uberlandia-mg-6200m2-id-2895654782/;Shopping Park;6200;2100000
+55;vivar-2895654782;https://www.vivareal.com.br/imovel/lote-terreno-shopping-park-bairros-uberlandia-6200m2-venda-RS2100000-id-2895654782/;Shopping Park;6200;2100000
+56;zapim-2897567888;https://www.zapimoveis.com.br/imovel/venda-terreno-lote-condominio-jardim-karaiba-uberlandia-mg-5000m2-id-2897567888/;Jardim Karaíba;5000;969000
+56;vivar-2897567888;https://www.vivareal.com.br/imovel/lote-terreno-jardim-karaiba-bairros-uberlandia-5000m2-venda-RS969000-id-2897567888/;Jardim Karaíba;5000;969000
+57;vivar-2568378355;https://www.vivareal.com.br/imovel/lote-terreno-aclimacao-bairros-uberlandia-8700m2-venda-RS5700000-id-2568378355/;Aclimação;7700;5700000
+57;vivar-2887893836;https://www.vivareal.com.br/imovel/lote-terreno-aclimacao-bairros-uberlandia-8700m2-venda-RS5700000-id-2887893836/;Aclimação;7700;5700000
