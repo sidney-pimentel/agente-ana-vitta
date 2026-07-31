@@ -156,6 +156,11 @@ input:focus, textarea:focus, select:focus { outline: 2px solid var(--azul); outl
 .barra.fina { height: 6px; margin: 0; flex: 1; }
 .barra.grossa { height: 12px; }
 
+/* --- Semana de Registro --- */
+.pontos { display: flex; gap: 7px; margin: 10px 0; }
+.ponto { flex: 1; height: 7px; border-radius: 99px; background: var(--fundo-2); }
+.ponto.ok { background: var(--verde); }
+
 /* --- Risco --- */
 .risco-topo { display: flex; justify-content: space-between; align-items: center; }
 .risco-num { font-size: 1.8rem; font-weight: 700; }

@@ -1,6 +1,6 @@
 import { h, on, esc, dataBR } from '../core/ui.js';
 import { faseAtual, proximoPasso, progressoDaFase, diasAteDataZero, emModoCrise, tarefaConcluida } from '../core/program.js';
-import { taxaDiasLivres, cofre, formatarBRL, formatarPct, minutosLivre, diaISO, statsFissuras } from '../core/stats.js';
+import { taxaDiasLivres, cofre, formatarBRL, formatarPct, minutosLivre, diaISO, statsFissuras, diasComRegistro } from '../core/stats.js';
 import { indiceDeRisco, ORIENTACAO_POR_NIVEL } from '../core/risk.js';
 import { proximoMarco, marcosAtingidos, mensagem72h } from '../content/health.js';
 
@@ -28,6 +28,8 @@ export function render(ctx) {
       </header>
 
       ${taxa ? blocoLivre(s, taxa, agora) : blocoContagem(dz, s)}
+
+      ${blocoSemanaRegistro(s)}
 
       ${
         !fez
@@ -105,6 +107,36 @@ export function render(ctx) {
 
   ligar(el, ctx);
   return el;
+}
+
+/**
+ * A Semana de Registro é a única tarefa do programa que consome tempo de calendário:
+ * são 7 dias corridos, e enquanto ela não termina a Data Zero não chega. Por isso ela
+ * aparece na home desde o primeiro dia, em paralelo com a fase Razões — quem só começa
+ * a registrar depois de terminar tudo o mais adia a parada em uma semana inteira, à toa.
+ */
+function blocoSemanaRegistro(s) {
+  const jaParou = s.quitDate && new Date(s.quitDate) <= new Date();
+  const dias = diasComRegistro(s);
+  const total = (s.logs || []).length;
+  if (jaParou || (dias >= 5 && total >= 15)) return '';
+
+  const hoje = diaISO(new Date());
+  const registrouHoje = (s.logs || []).some((l) => diaISO(l.ts) === hoje);
+  const pontos = Array.from({ length: 7 }, (_, i) => `<span class="ponto ${i < dias ? 'ok' : ''}"></span>`).join('');
+
+  return `
+    <section class="card semana">
+      <p class="rotulo">Semana de Registro · fase Exame</p>
+      <div class="pontos">${pontos}</div>
+      <p class="mini">${dias} de 7 dias · ${total} ${total === 1 ? 'cigarro registrado' : 'cigarros registrados'} (meta: 15)</p>
+      <p class="mini">${
+        registrouHoje
+          ? 'Você já registrou hoje. Continue registrando cada cigarro — o mapa fica melhor quanto mais completo for.'
+          : '<strong>Nenhum registro hoje ainda.</strong> Registre cada cigarro, mesmo os automáticos. Você continua fumando normalmente nesta fase.'
+      }</p>
+      <button class="btn ${registrouHoje ? 'secundario' : 'primario'}" data-rota="registro">Registrar cigarro</button>
+    </section>`;
 }
 
 function blocoLivre(s, taxa, agora) {

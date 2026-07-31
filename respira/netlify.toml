@@ -1,0 +1,37 @@
+# Hospedagem estática do Respira.
+# Não há build: o app é HTML + CSS + ES modules. O que é publicado é exatamente
+# o que está no repositório.
+
+[build]
+  publish = "app"
+  command = ""
+
+# Rotas do app são por hash (#/sos, #/registro), então qualquer caminho
+# desconhecido devolve o index e o roteamento acontece no cliente.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "no-referrer"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), interest-cohort=()"
+    # O app não faz nenhuma requisição externa e não coleta nada.
+    # A CSP abaixo torna isso uma garantia técnica, não só uma promessa.
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; form-action 'none'; frame-ancestors 'none'; base-uri 'self'"
+
+# O service worker nunca pode ficar preso em cache do CDN, senão o usuário
+# fica travado numa versão antiga do app.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"

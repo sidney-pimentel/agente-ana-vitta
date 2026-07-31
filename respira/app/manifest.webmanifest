@@ -25,6 +25,11 @@
       "url": "./index.html#/sos"
     },
     {
+      "name": "Registrar cigarro",
+      "short_name": "Registrar",
+      "url": "./index.html#/registro"
+    },
+    {
       "name": "Check-in de hoje",
       "short_name": "Check-in",
       "url": "./index.html#/checkin"
