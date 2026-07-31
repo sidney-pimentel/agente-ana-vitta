@@ -1,0 +1,33 @@
+{
+  "name": "Respira — parar de fumar, com método",
+  "short_name": "Respira",
+  "description": "Programa de 365 dias para parar de fumar, baseado em evidências.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d1b1e",
+  "theme_color": "#0d1b1e",
+  "categories": ["health", "lifestyle", "medical"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%230d1b1e'/%3E%3Ctext x='50%25' y='50%25' font-size='300' text-anchor='middle' dominant-baseline='central'%3E%F0%9F%AB%81%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "SOS — estou com vontade",
+      "short_name": "SOS",
+      "url": "./index.html#/sos"
+    },
+    {
+      "name": "Check-in de hoje",
+      "short_name": "Check-in",
+      "url": "./index.html#/checkin"
+    }
+  ]
+}

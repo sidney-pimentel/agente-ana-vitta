@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Respira — parar de fumar, com método</title>
+  <meta name="description" content="Programa de 365 dias para parar de fumar, baseado em evidências. O único que continua funcionando depois que você fuma um cigarro.">
+  <meta name="theme-color" content="#0d1b1e">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫁</text></svg>">
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+
+  <button id="botao-sos" class="botao-sos" aria-label="Estou com vontade de fumar — abrir SOS">
+    <span>SOS</span>
+  </button>
+
+  <nav class="nav" aria-label="Navegação principal">
+    <button class="nav-item" data-rota="home"><span class="ic">◉</span>Hoje</button>
+    <button class="nav-item" data-rota="programa"><span class="ic">☰</span>Programa</button>
+    <button class="nav-item" data-rota="numeros"><span class="ic">▤</span>Números</button>
+    <button class="nav-item" data-rota="ajustes"><span class="ic">⚙</span>Ajustes</button>
+  </nav>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

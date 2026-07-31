@@ -1,0 +1,17 @@
+{
+  "name": "respira",
+  "version": "1.0.0",
+  "description": "Respira — programa de 365 dias para parar de fumar, baseado em evidências. Método RESPIRA.",
+  "type": "module",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"app/tests/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["saude", "tabagismo", "cessacao", "pwa"],
+  "license": "UNLICENSED"
+}
