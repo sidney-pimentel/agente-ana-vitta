@@ -21,6 +21,43 @@ que funciona offline.
 
 ---
 
+## Publicar
+
+O app é estático puro — não há build. Qualquer hospedagem de arquivos serve, desde que sirva
+por **HTTPS** (sem isso o service worker não registra e a PWA não instala no celular).
+
+### Netlify, por Git (recomendado)
+
+O projeto `respira-programa` já existe. Em https://app.netlify.com/projects/respira-programa,
+vá em **Project configuration → Build & deploy → Link repository** e aponte para
+`sidney-pimentel/agente-ana-vitta`, com:
+
+| Campo | Valor |
+|---|---|
+| Branch | `claude/smoking-cessation-app-ea0v8g` |
+| Base directory | `respira` |
+| Build command | *(vazio)* |
+| Publish directory | `app` |
+
+O `netlify.toml` deste diretório já define o resto: redirecionamento para o roteamento por
+hash, CSP restritiva e `sw.js` fora do cache do CDN. A partir daí, todo push publica sozinho.
+
+### Netlify, por linha de comando
+
+De uma máquina com acesso à internet, dentro de `respira/`:
+
+```bash
+npx netlify-cli deploy --prod --dir=app
+```
+
+### No celular
+
+Abra o endereço no navegador e use **"Adicionar à tela de início"** (Safari) ou
+**"Instalar aplicativo"** (Chrome). Depois disso ele abre em tela cheia e funciona offline,
+inclusive o SOS.
+
+---
+
 ## O que é
 
 | | |
