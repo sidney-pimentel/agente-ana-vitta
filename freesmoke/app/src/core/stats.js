@@ -1,7 +1,7 @@
 // Estatísticas do programa.
 //
 // A DECISÃO MAIS IMPORTANTE DESTE ARQUIVO:
-// a métrica principal do Respira é `taxaDiasLivres` (% de dias livres desde a Data Zero),
+// a métrica principal do Freesmoke é `taxaDiasLivres` (% de dias livres desde a Data Zero),
 // e NÃO "dias seguidos sem fumar".
 //
 // Motivo, direto da evidência (Shiffman et al., abstinence violation effect):

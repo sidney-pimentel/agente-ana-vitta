@@ -1,4 +1,4 @@
-// Estado do Respira.
+// Estado do Freesmoke.
 //
 // Princípio arquitetural nº 1 (docs/04-plano-do-projeto.md §3): local-first.
 // Dado de saúde é dado pessoal sensível pela LGPD. O que não sai do aparelho não vaza.
@@ -7,7 +7,14 @@
 // O dado do usuário é de 365 dias e é insubstituível: migração de schema é versionada e
 // nunca destrutiva.
 
-const CHAVE = 'respira.v1';
+const CHAVE = 'freesmoke.v1';
+
+// O produto se chamou "Respira" antes de virar Freesmoke. Quem já tinha começado o
+// programa guardou os dados sob a chave antiga, e um programa de 365 dias não pode ser
+// perdido numa troca de nome. A leitura cai para a chave antiga uma única vez e regrava
+// sob a nova. Remover só quando não houver mais chance de existir instalação antiga.
+const CHAVE_ANTERIOR = 'respira.v1';
+
 export const SCHEMA_VERSION = 1;
 
 export function estadoInicial() {
@@ -61,7 +68,7 @@ export function criarStore(storage) {
   let estado;
 
   try {
-    const bruto = backend.getItem(CHAVE);
+    const bruto = backend.getItem(CHAVE) ?? backend.getItem(CHAVE_ANTERIOR);
     estado = bruto ? migrar(JSON.parse(bruto)) : estadoInicial();
   } catch {
     // Dado corrompido não pode derrubar o app: um usuário em fissura precisa do SOS
@@ -123,7 +130,7 @@ export function criarStore(storage) {
         return { ok: false, erro: 'Arquivo não é um JSON válido.' };
       }
       if (!dados || typeof dados !== 'object' || !('schemaVersion' in dados)) {
-        return { ok: false, erro: 'Este arquivo não é um backup do Respira.' };
+        return { ok: false, erro: 'Este arquivo não é um backup do Freesmoke.' };
       }
       estado = migrar(dados);
       persistir();

@@ -23,7 +23,7 @@ export function render(ctx) {
   const el = h(`
     <div class="tela home">
       <header class="home-head">
-        <span class="logo pequeno">Respira</span>
+        <span class="logo pequeno">Freesmoke</span>
         <button class="icone" data-rota-direta="ajustes" aria-label="Ajustes">⚙</button>
       </header>
 

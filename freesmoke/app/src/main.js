@@ -132,4 +132,4 @@ if (!location.hash) location.hash = '#/home';
 desenhar();
 
 // Exposto só para depuração manual no console do próprio usuário.
-window.__respira = { store, ctx, h };
+window.__freesmoke = { store, ctx, h };

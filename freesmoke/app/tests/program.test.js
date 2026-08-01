@@ -218,12 +218,27 @@ describe('store', () => {
 
   test('dado corrompido não derruba o app — o SOS precisa abrir de qualquer jeito', () => {
     const mem = memoria();
-    mem.setItem('respira.v1', '{isso não é json');
+    mem.setItem('freesmoke.v1', '{isso não é json');
     const s = criarStore(mem);
     assert.equal(s.get().schemaVersion, SCHEMA_VERSION);
   });
 
-  test('importar rejeita arquivo que não é backup do Respira', () => {
+  test('recupera dados salvos sob o nome antigo do produto', () => {
+    // A troca de "Respira" para "Freesmoke" não pode custar o programa de ninguém.
+    const mem = memoria();
+    const antigo = { ...estadoInicial(), quitDate: '2026-03-01T08:00:00Z', plans: [{ id: 'p1', se: 'a', entao: 'b' }] };
+    mem.setItem('respira.v1', JSON.stringify(antigo));
+
+    const s = criarStore(mem);
+    assert.equal(s.get().quitDate, '2026-03-01T08:00:00Z');
+    assert.equal(s.get().plans.length, 1);
+
+    // E regrava sob a chave nova, para a leitura seguinte não depender mais da antiga.
+    s.set({ quitDate: antigo.quitDate });
+    assert.ok(mem.getItem('freesmoke.v1'), 'passou a gravar sob a chave nova');
+  });
+
+  test('importar rejeita arquivo que não é backup do Freesmoke', () => {
     const s = criarStore(memoria());
     assert.equal(s.importar('não é json').ok, false);
     assert.equal(s.importar('{"foo":1}').ok, false);

@@ -32,7 +32,7 @@ export function render(ctx) {
                <p class="rotulo">Métrica principal</p>
                <div class="destaque-num">${esc(formatarPct(t.taxa))}</div>
                <p>${t.diasLivres} dias livres de ${t.diasTotais} dias de programa.</p>
-               <p class="mini">Esta é a métrica que o Respira usa — não "dias seguidos". Um deslize move este número em frações de ponto, que é o tamanho real que ele tem.</p>
+               <p class="mini">Esta é a métrica que o Freesmoke usa — não "dias seguidos". Um deslize move este número em frações de ponto, que é o tamanho real que ele tem.</p>
              </section>`
           : `<section class="card">
                <p class="rotulo">Custo atual do cigarro</p>
@@ -132,7 +132,7 @@ export function render(ctx) {
     const blob = new Blob([ctx.store.exportar()], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `respira-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `freesmoke-backup-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(a.href);
   });

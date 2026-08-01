@@ -1,4 +1,4 @@
-# Respira
+# Freesmoke
 
 Programa de 365 dias para parar de fumar, baseado em evidências.
 
@@ -9,7 +9,7 @@ Programa de 365 dias para parar de fumar, baseado em evidências.
 ## Rodar
 
 ```bash
-cd respira
+cd freesmoke
 npm start          # http://localhost:3000
 npm test           # 52 testes, sem dependências
 ```
@@ -28,14 +28,14 @@ por **HTTPS** (sem isso o service worker não registra e a PWA não instala no c
 
 ### Netlify, por Git (recomendado)
 
-O projeto `respira-programa` já existe. Em https://app.netlify.com/projects/respira-programa,
+O projeto `freesmoke-app` já existe. Em https://app.netlify.com/projects/freesmoke-app,
 vá em **Project configuration → Build & deploy → Link repository** e aponte para
 `sidney-pimentel/agente-ana-vitta`, com:
 
 | Campo | Valor |
 |---|---|
 | Branch | `claude/smoking-cessation-app-ea0v8g` |
-| Base directory | `respira` |
+| Base directory | `freesmoke` |
 | Build command | *(vazio)* |
 | Publish directory | `app` |
 
@@ -44,7 +44,7 @@ hash, CSP restritiva e `sw.js` fora do cache do CDN. A partir daí, todo push pu
 
 ### Netlify, por linha de comando
 
-De uma máquina com acesso à internet, dentro de `respira/`:
+De uma máquina com acesso à internet, dentro de `freesmoke/`:
 
 ```bash
 npx netlify-cli deploy --prod --dir=app
@@ -138,7 +138,7 @@ server.js                    servidor estático, sem dependências
 
 ## Limites do produto — explícitos e permanentes
 
-O Respira é um **programa de apoio comportamental**, classificado como software de bem-estar
+O Freesmoke é um **programa de apoio comportamental**, classificado como software de bem-estar
 (fora do escopo de SaMD da RDC 657/2022 da ANVISA).
 
 **Não faz, e não vai fazer:**

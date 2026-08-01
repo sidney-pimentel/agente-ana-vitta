@@ -1,4 +1,4 @@
-// Servidor estático do Respira. Sem dependências: `node server.js`.
+// Servidor estático do Freesmoke. Sem dependências: `node server.js`.
 //
 // Não existe backend, e isso é uma decisão de arquitetura, não uma limitação:
 // dado de saúde é dado pessoal sensível pela LGPD, e a forma mais segura de
@@ -61,5 +61,5 @@ function responder(res, codigo, texto) {
 }
 
 servidor.listen(PORTA, () => {
-  console.log(`Respira rodando em http://localhost:${PORTA}`);
+  console.log(`Freesmoke rodando em http://localhost:${PORTA}`);
 });

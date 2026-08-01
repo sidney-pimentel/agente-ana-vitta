@@ -1,9 +1,9 @@
-// Service worker do Respira.
+// Service worker do Freesmoke.
 //
 // Offline não é conveniência aqui, é requisito clínico: a fissura não espera 4G.
 // O SOS precisa abrir no elevador, no subsolo, no avião, com o celular em modo econômico.
 
-const CACHE = 'respira-v1';
+const CACHE = 'freesmoke-v1';
 
 const ARQUIVOS = [
   './',

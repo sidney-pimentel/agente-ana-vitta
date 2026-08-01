@@ -311,7 +311,7 @@ function farmaco(ctx) {
       ${cabecalho('Farmacoterapia', 'Fase S — Segurança')}
 
       <div class="card alerta">
-        <p><strong>O Respira não indica, não prescreve e não ajusta dose de nenhum medicamento.</strong> Esta tela prepara a sua conversa com o profissional de saúde. Quem decide é ele.</p>
+        <p><strong>O Freesmoke não indica, não prescreve e não ajusta dose de nenhum medicamento.</strong> Esta tela prepara a sua conversa com o profissional de saúde. Quem decide é ele.</p>
       </div>
 
       <div class="card">
@@ -826,7 +826,7 @@ function ajustes(ctx) {
 
       <div class="card">
         <h2>Seus dados</h2>
-        <p class="mini">Tudo o que o Respira sabe sobre você está neste aparelho. Nada foi enviado para servidor nenhum — dado de saúde é dado sensível pela LGPD, e a forma mais segura de proteger um dado é não coletá-lo.</p>
+        <p class="mini">Tudo o que o Freesmoke sabe sobre você está neste aparelho. Nada foi enviado para servidor nenhum — dado de saúde é dado sensível pela LGPD, e a forma mais segura de proteger um dado é não coletá-lo.</p>
         <button class="btn secundario" id="exportar">Exportar backup (.json)</button>
         <details>
           <summary>Restaurar de um backup</summary>
@@ -843,7 +843,7 @@ function ajustes(ctx) {
 
       <div class="card">
         <h2>Sobre</h2>
-        <p class="mini">Respira · Método RESPIRA · versão 1.0</p>
+        <p class="mini">Freesmoke · Método RESPIRA · versão 1.0</p>
         <p class="mini">Programa de apoio comportamental baseado em evidências. <strong>Não é um dispositivo médico</strong>: não diagnostica, não prescreve e não ajusta dose de medicamento. Para a parte farmacológica, procure a UBS mais próxima ou o seu médico.</p>
         <p class="mini">Se você está em sofrimento psíquico grave, ligue <strong>188</strong> (CVV), 24 horas, de graça.</p>
       </div>
@@ -866,7 +866,7 @@ function ajustes(ctx) {
     const blob = new Blob([ctx.store.exportar()], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `respira-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `freesmoke-backup-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(a.href);
   });
@@ -877,7 +877,7 @@ function ajustes(ctx) {
   });
 
   el.querySelector('#apagar').addEventListener('click', () => {
-    if (!confirm('Apagar todos os dados do Respira neste aparelho? Isso não pode ser desfeito.')) return;
+    if (!confirm('Apagar todos os dados do Freesmoke neste aparelho? Isso não pode ser desfeito.')) return;
     if (!confirm('Tem certeza mesmo? Todo o seu histórico do programa será perdido.')) return;
     ctx.store.apagarTudo();
     location.hash = '#/home';

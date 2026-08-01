@@ -1,4 +1,4 @@
-# Hospedagem estática do Respira.
+# Hospedagem estática do Freesmoke.
 # Não há build: o app é HTML + CSS + ES modules. O que é publicado é exatamente
 # o que está no repositório.
 

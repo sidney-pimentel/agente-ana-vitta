@@ -5,7 +5,7 @@ export function render(ctx) {
   const el = h(`
     <div class="tela onboarding">
       <div class="marca">
-        <span class="logo">Respira</span>
+        <span class="logo">Freesmoke</span>
         <p class="tagline">O programa que continua funcionando depois que você fuma um cigarro.</p>
       </div>
 
@@ -41,7 +41,7 @@ export function render(ctx) {
       </form>
 
       <details class="card">
-        <summary>Já tenho um backup do Respira</summary>
+        <summary>Já tenho um backup do Freesmoke</summary>
         <p class="mini">Cole o conteúdo do arquivo <code>.json</code> exportado antes:</p>
         <textarea id="import" rows="4" placeholder='{"schemaVersion":1, ...}'></textarea>
         <button class="btn secundario" id="btn-import" type="button">Restaurar backup</button>

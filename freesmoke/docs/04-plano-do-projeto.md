@@ -2,7 +2,7 @@
 
 ## 1. Definição do produto
 
-**Respira** é um programa de 365 dias para parar de fumar, entregue como aplicativo, baseado no
+**Freesmoke** é um programa de 365 dias para parar de fumar, entregue como aplicativo, baseado no
 **Método RESPIRA** (`02-metodo-respira.md`).
 
 **Posicionamento:** não é um contador de dias. É um programa com fases, tarefas, critérios de
@@ -83,7 +83,7 @@ Qualquer alegação de cura ou garantia de resultado
 ### Estrutura
 
 ```
-respira/
+freesmoke/
 ├── docs/          pesquisa, método, viabilidade, plano
 ├── app/
 │   ├── index.html

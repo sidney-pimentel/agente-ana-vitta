@@ -148,7 +148,7 @@ function desarmar(ctx) {
         <div><span class="rot">Agora</span><span class="num destaque">${esc(formatarPct(t.taxa))}</span></div>
       </div>
       <p class="grande">Você está no dia ${t.diasTotais} do programa, com ${t.diasLivres} dias livres. Um cigarro não apagou ${t.diasLivres} dias.</p>
-      <p>Nenhum contador reiniciou nesta tela. Não existe botão de zerar neste app, e isso não é gentileza — é desenho. A métrica que o Respira usa desde o primeiro dia é a <strong>porcentagem de dias livres</strong>, justamente porque ela quase não se move com um deslize. O que derruba a maioria das pessoas não é o cigarro: é a conta mental de que "estragou tudo". A conta real está aí em cima.</p>
+      <p>Nenhum contador reiniciou nesta tela. Não existe botão de zerar neste app, e isso não é gentileza — é desenho. A métrica que o Freesmoke usa desde o primeiro dia é a <strong>porcentagem de dias livres</strong>, justamente porque ela quase não se move com um deslize. O que derruba a maioria das pessoas não é o cigarro: é a conta mental de que "estragou tudo". A conta real está aí em cima.</p>
       ${fissuras > 0 ? `<p class="mini">E mais: você já enfrentou ${fissuras} ${fissuras === 1 ? 'fissura' : 'fissuras'} sem fumar. Esta foi uma. Aquelas foram ${fissuras}.</p>` : ''}
       <button class="btn primario grande" data-avancar>Continuar</button>
     </div>`;
