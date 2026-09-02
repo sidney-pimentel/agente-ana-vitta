@@ -105,7 +105,13 @@ for k in ids:
         obs.append(f"anuncio NAO esta mais no ar (verificado ao vivo em {data_de(verif)})")
     if not src.get('price'):
         row['situacao_valor'] = 'Sem valor no anuncio'
-    if re.search(r's[íi]tio|ch[áa]cara|fazenda|rancho', tipo + ' ' + (src.get('subject') or '').lower()):
+    # tipo rural: campo 'Tipo' da OLX e autoritativo; no titulo, ignorar o nome do bairro
+    # (ex.: "Chacaras Tubalina e Quartel" e bairro oficial, nao tipo de imovel)
+    subj = (src.get('subject') or '').lower()
+    for b in (src.get('bairro') or '', 'chácaras tubalina e quartel', 'chacaras tubalina', 'chácaras eldorado', 'chácaras uirapuru', 'chácaras rancho alegre', 'chácaras bonanza'):
+        if b:
+            subj = subj.replace(b.lower(), ' ')
+    if re.search(r's[íi]tio|ch[áa]cara|fazenda|rancho', tipo) or re.search(r'\b(s[íi]tio|ch[áa]cara|fazenda|rancho)\b', subj):
         row['status_apuracao'] = 'Excluido'
         row['motivo_exclusao'] = (f'classificado como {tipo or "sitio/chacara"} pelo anunciante/OLX '
                                   f'(escopo exclui rural) — avaliar como lead se estiver no perimetro urbano')
