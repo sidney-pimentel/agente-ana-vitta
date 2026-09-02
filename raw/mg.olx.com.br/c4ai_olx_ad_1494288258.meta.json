@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/area-urbana-8-300-m-chacaras-tubalina-quartel-uberlandia-mg-1494288258",
+ "label": "c4ai_olx_ad_1494288258",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1032544,
+ "titulo": "ÁREA URBANA 8.300 m² Chácaras Tubalina Quartel Uberlândia-MG - Terrenos, sítios e fazendas - Chácaras Tubalina e Quartel",
+ "fetched_at": "2026-09-02T15:46:52+00:00",
+ "modos_tentados": [
+  "undetected:200:1032544"
+ ],
+ "ok": true,
+ "erro": ""
+}

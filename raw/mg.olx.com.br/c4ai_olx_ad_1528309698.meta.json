@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-chacara-no-joquei-camping-1528309698",
+ "label": "c4ai_olx_ad_1528309698",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 663504,
+ "titulo": "Vendo chácara no jóquei camping - Terrenos, sítios e fazendas - Mansour, Uberlândia 1528309698 | OLX",
+ "fetched_at": "2026-09-02T15:48:23+00:00",
+ "modos_tentados": [
+  "undetected:200:663504"
+ ],
+ "ok": true,
+ "erro": ""
+}
