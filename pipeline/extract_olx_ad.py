@@ -86,7 +86,7 @@ def extrai(path):
 
 
 if __name__ == "__main__":
-    pats = sys.argv[1:] or ['raw/web.archive.org/wb_olx_ad_*.html', 'raw/www.olx.com.br/c4ai_olx_ad_*.html']
+    pats = sys.argv[1:] or ['raw/web.archive.org/wb_olx_ad_*.html', 'raw/www.olx.com.br/c4ai_olx_ad_*.html', 'raw/mg.olx.com.br/c4ai_olx_ad_*.html']
     for f in sorted(x for pat in pats for x in glob.glob(pat)):
         try:
             m = json.load(open(f[:-5] + '.meta.json'))
