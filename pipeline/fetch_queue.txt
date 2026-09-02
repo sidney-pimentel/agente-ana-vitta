@@ -1,3 +1,12 @@
-# Lote 8 — OLX reconhecimento
-https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia	olx_listagem_p1
-https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia?o=2	olx_listagem_p2
+# Lote 9 — fontes de PROPRIETARIO DIRETO: OLX via Wayback + agregadores + Mercado Livre
+#delay=4-7
+https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	wb_olx_terrenos_udi_p1
+https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=2	wb_olx_terrenos_udi_p2
+https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/lotes/compra/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	wb_olx_lotes_compra_udi_p1
+https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba	wb_olx_terrenos_regiao_p1
+https://web.archive.org/web/2/https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular	wb_olx_busca_particular
+https://web.archive.org/web/2/https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia	wb_olx_venda_terrenos_udi
+https://imoveis.trovit.com.br/terreno-uberlandia	trovit_terreno_udi
+https://imoveis.trovit.com.br/terreno-uberlandia-m2	trovit_terreno_udi_m2
+https://imoveis.mercadolivre.com.br/terrenos/venda/minas-gerais/uberlandia/	ml_terrenos_udi
+https://imoveis.mercadolivre.com.br/terrenos/venda/minas-gerais/uberlandia/_Desde_49	ml_terrenos_udi_p2
