@@ -123,3 +123,18 @@ Instalado do GitHub (`unclecode/crawl4ai`, v0.9.3) e testado no runner do GitHub
 Robots.txt continua respeitado: Storte/Nexus/Gleba não foram tentadas. A OLX voltou a ser fonte VIVA
 para proprietários diretos (`saida/proprietarios_diretos.csv` passa a marcar `origem = olx.com.br`
 e `data_coleta` = data real da coleta nas linhas ao vivo).
+
+## Adendo — proprietários diretos AO VIVO via Crawl4AI (2026-09-02, final)
+
+- OLX ao vivo (modo undetected): categoria "Terrenos, sítios e fazendas – Uberlândia" tem **6.462 anúncios**;
+  filtro nativo `f=p` (particular) = **364**; `f=p&ss=5000` = **45** particulares com campo tamanho ≥5.000 m².
+- `saida/proprietarios_diretos.csv`: **289 particulares** de Uberlândia (snapshots + ao vivo; 173 linhas ao vivo),
+  **74 com nome do anunciante**, **20 com telefone escrito pelo dono no texto**.
+- **Crosscheck campo×texto**: 5 anúncios "≥5.000 m²" eram erro de digitação do anunciante
+  (ex.: "426,65 m²" gravado como 426.650) — o filtro da OLX é enganado por isso; excluídos com motivo.
+- **Resultado honesto no corte urbano ≥5.000 m²**: 6 linhas `A validar` (2 com tamanho suspeito sem metragem no
+  texto para confirmar — alerta gravado; 4 sem tamanho) e **nenhum terreno urbano ≥5.000 m² de particular confirmado**.
+  45 particulares ≥5.000 m² são sítios/chácaras/fazendas (`Excluido` por tipo, mantidos como lead — alguns em
+  bairros oficiais, ex. "18 hectares beira-rio" em Nossa Senhora Aparecida, "sítio 100.000 m²" no Martins).
+- Tabela oficial de bairros de fev/2026 (link na página viva da Prefeitura) não baixável de datacenter (timeout) nem
+  arquivada; a de 2020 (74 bairros) permanece a referência.
