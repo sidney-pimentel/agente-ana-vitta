@@ -1,0 +1,12 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/triangulo-mineiro/uberlandia/imoveis/terrenos/compra",
+ "final_url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/triangulo-mineiro/uberlandia/imoveis/terrenos/compra",
+ "http_status": 403,
+ "fetched_at": "2026-09-02T14:27:32+00:00",
+ "bytes": 5483,
+ "label": "olx_mg_direto_test",
+ "content_type": "text/html; charset=UTF-8",
+ "robots": "robots http 403",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}

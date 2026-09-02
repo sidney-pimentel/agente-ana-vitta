@@ -23,10 +23,6 @@
 
 # Sitemaps
 Sitemap: https://www.chavesnamao.com.br/sitemap-index.xml
-Sitemap: https://www.chavesnamao.com.br/sitemap-index-imoveis-venda.xml
-Sitemap: https://www.chavesnamao.com.br/sitemap-index-imoveis-aluguel.xml
-Sitemap: https://www.chavesnamao.com.br/sitemap-index-imoveis-outros.xml
-Sitemap: https://www.chavesnamao.com.br/sitemap-index-veiculos.xml
 Sitemap: https://www.chavesnamao.com.br/blog/sitemap.xml
 
 User-agent: *

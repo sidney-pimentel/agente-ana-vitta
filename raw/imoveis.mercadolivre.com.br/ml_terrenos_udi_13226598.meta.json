@@ -1,0 +1,12 @@
+{
+ "url": "https://imoveis.mercadolivre.com.br/terrenos/venda/minas-gerais/uberlandia/",
+ "final_url": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fimoveis.mercadolivre.com.br%2Fterrenos%2Fvenda%2Fminas-gerais%2Fuberlandia%2F&tid=240557ce-0607-4bf4-bb8d-3592307df9df",
+ "http_status": 200,
+ "fetched_at": "2026-09-02T14:26:51+00:00",
+ "bytes": 20728,
+ "label": "ml_terrenos_udi",
+ "content_type": "text/html; charset=utf-8",
+ "robots": "robots 200",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}
