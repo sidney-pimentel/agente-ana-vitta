@@ -1,0 +1,14 @@
+{
+ "url": "https://www.objetivauberlandia.com.br/venda/terreno?pagina=3",
+ "label": "c4ai_objetiva_terreno_p3",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 108894,
+ "titulo": "Terreno à venda em Uberlândia | Objetiva Imóveis",
+ "fetched_at": "2026-09-02T15:35:28+00:00",
+ "modos_tentados": [
+  "undetected:200:108894"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=5",
+ "label": "c4ai_olx_particular_p5",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 742384,
+ "titulo": "\"terrenos à venda em uberlândia particular\" - Terrenos, sítios e fazendas no Brasil - Página 5 - Encontramos \"terrenos à",
+ "fetched_at": "2026-09-02T15:32:51+00:00",
+ "modos_tentados": [
+  "undetected:200:742384"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=5",
+ "label": "c4ai_olx_terrenos_udi_p5",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 793344,
+ "titulo": "Terrenos, sítios e fazendas - Uberlândia, MG - Página 5 | OLX",
+ "fetched_at": "2026-09-02T15:28:14+00:00",
+ "modos_tentados": [
+  "undetected:200:793344"
+ ],
+ "ok": true,
+ "erro": ""
+}
