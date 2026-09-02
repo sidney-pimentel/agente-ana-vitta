@@ -26,10 +26,38 @@ def size_m2(s):
         return None
 
 
+def ler_next_f(h):
+    """Next.js App Router: dados em self.__next_f.push([1,"<string JS>"]).
+    Desescapa cada chunk como literal JSON e procura o array "ads":[...]."""
+    chunks = []
+    for m in re.finditer(r'self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)', h, re.S):
+        try:
+            chunks.append(json.loads('"' + m.group(1) + '"'))
+        except Exception:
+            continue
+    txt = "".join(chunks)
+    ads, total = [], None
+    dec = json.JSONDecoder()
+    for m in re.finditer(r'"ads":\s*(?=\[)', txt):
+        try:
+            arr, _ = dec.raw_decode(txt, m.end())
+        except Exception:
+            continue
+        if isinstance(arr, list) and arr and isinstance(arr[0], dict) and 'listId' in arr[0]:
+            ads = arr
+            break
+    mt = re.search(r'"totalOfAds":\s*(\d+)', txt) or re.search(r'"totalAds":\s*(\d+)', txt)
+    if mt:
+        total = int(mt.group(1))
+    return ads, {'totalOfAds': total}
+
+
 def ler(path):
     h = open(path, encoding='utf-8', errors='replace').read()
     nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
     if not nd:
+        if 'self.__next_f.push' in h:
+            return ler_next_f(h)
         return None, None
     try:
         d = json.loads(nd.group(1))
