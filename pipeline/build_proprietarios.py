@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
 """Base de PROPRIETÁRIOS DIRETOS (pessoa física anunciando) — Uberlândia.
 
-Fonte: listagens da OLX capturadas via snapshot do Wayback Machine (a OLX
-bloqueia infraestrutura de datacenter). O JSON __NEXT_DATA__ da listagem
-traz professionalAd=false para anúncio de particular, bairro, preço,
-tamanho e a URL original do anúncio.
+Fontes (todas via snapshot do Wayback Machine, porque a OLX bloqueia
+infraestrutura de datacenter):
+1. páginas de ANÚNCIO da OLX (extract_olx_ad.py) — dado completo: vendedor,
+   professionalAd, endereço, CEP, texto, telefone se escrito no texto;
+2. listagens da OLX (olx_ads.json) — só para anúncios sem página arquivada.
 
-Rotulagem honesta: data_coleta = data do snapshot; o anúncio pode ter
-expirado; telefone não é exposto pela OLX (contato via chat do anúncio).
+Rotulagem honesta: data_coleta = data do snapshot; a oferta pode ter
+expirado; telefone só quando o próprio anunciante escreveu no anúncio.
 """
 import glob
 import json
 import re
+import subprocess
 import sys
 
 sys.path.insert(0, 'pipeline')
@@ -19,64 +21,79 @@ from schema import nova_linha, escrever_csv
 from parsers import fmt_decimal_br, br_number
 
 S = '/tmp/claude-0/-home-user-agente-ana-vitta/ca58926e-9d3a-5c43-86c9-7b37b9bef7b0/scratchpad'
-ads = json.load(open(f'{S}/olx_ads.json', encoding='utf-8'))
 
-# detalhes via Wayback (se existirem): descrição para trecho literal/telefone
+# 1. anúncios com página arquivada
+out = subprocess.run([sys.executable, 'pipeline/extract_olx_ad.py'], capture_output=True, text=True)
 detalhes = {}
-for f in glob.glob('raw/web.archive.org/wb_olx_ad_*.html'):
-    m = re.search(r'wb_olx_ad_(\d+)_', f)
-    if not m:
-        continue
-    h = open(f, encoding='utf-8', errors='replace').read()
-    nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
-    d = {}
-    if nd:
-        try:
-            ad = json.loads(nd.group(1))['props']['pageProps'].get('ad', {})
-            d = {'body': ad.get('body'), 'phone': (ad.get('phone') or {}).get('phone'),
-                 'user': (ad.get('user') or {}).get('name'), 'props': {p['name']: p.get('value') for p in ad.get('properties', [])}}
-        except Exception:
-            pass
-    detalhes[m.group(1)] = d
+for l in out.stdout.splitlines():
+    if l.startswith('{'):
+        d = json.loads(l)
+        if d.get('listId') and not d.get('descartar'):
+            k = str(d['listId'])
+            if k not in detalhes or (d.get('snapshot') or '') > (detalhes[k].get('snapshot') or ''):
+                detalhes[k] = d
+# 2. listagens
+lista = {str(a['listId']): a for a in json.load(open(f'{S}/olx_ads.json', encoding='utf-8'))}
 
 
 def preco(s):
     if not s:
         return None
-    v, err = br_number(re.sub(r'[^\d.,]', '', s))
+    v, _ = br_number(re.sub(r'[^\d.,]', '', str(s)))
     return v
 
 
-rows = []
-for a in ads:
-    if not (a.get('municipio') or '').lower().startswith('uberl'):
+def data_de(snap):
+    return f"{snap[:4]}-{snap[4:6]}-{snap[6:8]}" if snap else ''
+
+
+rows, stats = [], {'det': 0, 'lst': 0}
+ids = set(detalhes) | set(lista)
+for k in ids:
+    d, a = detalhes.get(k), lista.get(k)
+    src = d or a
+    municipio = (src.get('municipio') or '')
+    if not municipio.lower().startswith('uberl'):
         continue
-    if a.get('professionalAd') is not False:
+    particular = (d['professionalAd'] is False) if d else (a.get('professionalAd') is False)
+    if not particular:
         continue
-    m2 = a.get('m2')
-    det = detalhes.get(str(a['listId']), {})
-    snap = a['snapshot']
-    data = f"{snap[:4]}-{snap[4:6]}-{snap[6:8]}"
-    obs = [f"anuncio de PARTICULAR (OLX professionalAd=false)",
-           f"snapshot Wayback de {data} — oferta pode ter expirado; verificar no link",
-           f"tamanho informado no anuncio: \"{a.get('size')}\"" if a.get('size') else "anuncio sem tamanho informado",
-           f"preco no anuncio: \"{a.get('price')}\"" if a.get('price') else "sem preco no anuncio"]
-    if det.get('body'):
-        obs.append(f"descricao: \"{det['body'][:200].strip()}\"")
-    tipo = (a.get('tipo') or '').lower()
+    stats['det' if d else 'lst'] += 1
+    snap = src.get('snapshot')
+    m2 = src.get('m2')
+    tipo = (src.get('tipo') or '').lower()
+    obs = ["anuncio de PARTICULAR (OLX professionalAd=false" + (", conta nao-profissional" if d and d.get('proAccount') is False else "") + ")",
+           f"snapshot Wayback de {data_de(snap)} — oferta pode ter expirado; conferir no link",
+           f"tamanho no anuncio: \"{src.get('size')}\"" if src.get('size') else "sem tamanho no anuncio",
+           f"preco no anuncio: \"{src.get('price')}\"" if src.get('price') else "sem preco no anuncio"]
+    tel = ''
+    if d:
+        if d.get('telefones_no_texto'):
+            tel = ' | '.join(d['telefones_no_texto'])
+            obs.append(f"telefone escrito pelo anunciante no texto: \"{d.get('trecho_fone', '')}\"")
+        else:
+            obs.append("telefone oculto pela OLX (contato pelo chat do anuncio)")
+        if d.get('body'):
+            obs.append("texto: \"" + re.sub(r'\s+', ' ', d['body'])[:220] + "\"")
+    else:
+        obs.append("so listagem arquivada (pagina do anuncio nao arquivada)")
     row = nova_linha(
-        id=f"olx-{a['listId']}", data_coleta=data, origem='olx.com.br (snapshot Wayback)',
-        url_fonte=a['url'], codigo_anuncio=str(a['listId']), tipo_contato='Proprietario',
-        nome_contato=det.get('user') or '', empresa='', telefone=det.get('phone') or '',
-        bairro=a.get('bairro') or '', area_total_m2=fmt_decimal_br(m2),
-        valor_anunciado=fmt_decimal_br(preco(a.get('price'))), data_valor=data,
+        id=f"olx-{k}", data_coleta=data_de(snap), origem='olx.com.br (snapshot Wayback)',
+        url_fonte=src.get('url') or '', codigo_anuncio=k, tipo_contato='Proprietario',
+        nome_contato=(d or {}).get('sellerName') or '', telefone=tel,
+        endereco=(d or {}).get('endereco') or '', bairro=src.get('bairro') or '',
+        cep=(d or {}).get('cep') or '',
+        latitude=str((d or {}).get('lat') or ''), longitude=str((d or {}).get('lng') or ''),
+        area_total_m2=fmt_decimal_br(m2), valor_anunciado=fmt_decimal_br(preco(src.get('price'))),
+        data_valor=data_de(snap),
     )
-    if not a.get('price'):
+    if not src.get('price'):
         row['situacao_valor'] = 'Sem valor no anuncio'
-    if re.search(r's[íi]tio|ch[áa]cara|fazenda|rancho', tipo + ' ' + (a.get('subject') or '').lower()):
+    if re.search(r's[íi]tio|ch[áa]cara|fazenda|rancho', tipo + ' ' + (src.get('subject') or '').lower()):
         row['status_apuracao'] = 'Excluido'
-        row['motivo_exclusao'] = f'classificado pela OLX/anunciante como {tipo or "sitio/chacara"} (escopo exclui rural) — manter como lead se for perimetro urbano'
-    if re.search(r'rural', (a.get('bairro') or '').lower()):
+        row['motivo_exclusao'] = (f'classificado como {tipo or "sitio/chacara"} pelo anunciante/OLX '
+                                  f'(escopo exclui rural) — avaliar como lead se estiver no perimetro urbano')
+    if re.search(r'rural', (src.get('bairro') or '').lower()) or re.search(r'rodovia|\bkm\b|zona rural', (row['endereco'] or '').lower()):
         row['perimetro_urbano'] = 'Nao'
     if m2 is not None and m2 < 5000:
         row['status_apuracao'] = 'Excluido'
@@ -86,10 +103,17 @@ for a in ads:
     row['observacoes'] = ' | '.join(obs)
     rows.append(row)
 
-rows.sort(key=lambda r: (r['status_apuracao'] != 'A validar', -(float(r['area_total_m2'].replace('.', '').replace(',', '.')) if r['area_total_m2'] else 0)))
+
+def a_num(r):
+    return float(r['area_total_m2'].replace('.', '').replace(',', '.')) if r['area_total_m2'] else 0
+
+
+rows.sort(key=lambda r: (r['status_apuracao'] != 'A validar', -a_num(r)))
 escrever_csv('saida/proprietarios_diretos.csv', rows)
 at = [r for r in rows if r['status_apuracao'] == 'A validar']
-print(f"proprietarios_diretos.csv: {len(rows)} linhas | {len(at)} no corte (>=5000 ou sem area) | "
-      f"{sum(1 for r in rows if r['status_apuracao']=='Excluido')} excluidas com motivo")
-for r in rows[:12]:
-    print(f"  {r['status_apuracao'][:9]:9} | {r['area_total_m2']:>8} | {r['valor_anunciado']:>9} | {r['bairro'][:26]:26} | {r['telefone'] or '-':16} | {r['url_fonte'][-55:]}")
+print(f"proprietarios_diretos.csv: {len(rows)} particulares em Uberlandia "
+      f"({stats['det']} com pagina arquivada, {stats['lst']} so listagem) | "
+      f"{len(at)} no corte (>=5000 m2 ou sem area) | {len(rows)-len(at)} excluidas com motivo | "
+      f"{sum(1 for r in rows if r['telefone'])} com telefone no texto")
+for r in [x for x in rows if a_num(x) >= 5000 or not x['area_total_m2']][:25]:
+    print(f"  {r['status_apuracao'][:9]:9} | {r['area_total_m2']:>8} | {r['valor_anunciado']:>9} | {r['bairro'][:24]:24} | {r['nome_contato'][:14]:14} | {r['telefone'][:32] or '-':32} | {r['url_fonte'][-48:]}")
