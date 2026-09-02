@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-lote-mirante-do-lago-otima-localizacao-proximo-a-portaria-1421756772",
+ "label": "c4ai_olx_ad_1421756772",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433618,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:29:52+00:00",
+ "modos_tentados": [
+  "undetected:410:433618"
+ ],
+ "ok": true,
+ "erro": ""
+}

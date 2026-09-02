@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-chacara-em-condominio-fechado-2mil-metros-aceito-propostas-e-negociacoes-1491637652",
+ "label": "c4ai_olx_ad_1491637652",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435543,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:31:21+00:00",
+ "modos_tentados": [
+  "undetected:410:435543"
+ ],
+ "ok": true,
+ "erro": ""
+}

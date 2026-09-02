@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-1526954311",
+ "label": "c4ai_olx_ad_1526954311",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1024170,
+ "titulo": "Chacara - Terrenos, sítios e fazendas - Jaraguá, Uberlândia 1526954311 | OLX",
+ "fetched_at": "2026-09-02T15:46:33+00:00",
+ "modos_tentados": [
+  "undetected:200:1024170"
+ ],
+ "ok": true,
+ "erro": ""
+}

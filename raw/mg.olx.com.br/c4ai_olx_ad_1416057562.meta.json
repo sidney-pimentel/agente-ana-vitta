@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/loteamento-santa-vitoria-1416057562",
+ "label": "c4ai_olx_ad_1416057562",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433622,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:19:12+00:00",
+ "modos_tentados": [
+  "undetected:410:433622"
+ ],
+ "ok": true,
+ "erro": ""
+}

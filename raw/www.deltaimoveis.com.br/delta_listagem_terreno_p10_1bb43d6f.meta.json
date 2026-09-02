@@ -1,0 +1,12 @@
+{
+ "url": "https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno?pag=10",
+ "final_url": "https://www.deltaimoveis.com.br/comprar/Uberlandia/Terreno?pag=10",
+ "http_status": 200,
+ "fetched_at": "2026-07-29T02:55:38+00:00",
+ "bytes": 256343,
+ "label": "delta_listagem_terreno_p10",
+ "content_type": "text/html; charset=ISO-8859-1",
+ "robots": "robots 200",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}

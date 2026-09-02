@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-de-gaveta-tamanho-300m-na-avenida-cesario-alvim-oportunidade-rara-1527046333",
+ "label": "c4ai_olx_ad_1527046333",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1037063,
+ "titulo": "TERRENO DE GAVETA TAMANHO 300M² NA AVENIDA CESARIO ALVIM OPORTUNIDADE RARA - Terrenos, sítios e fazendas - Brasil, Uberl",
+ "fetched_at": "2026-09-02T17:22:37+00:00",
+ "modos_tentados": [
+  "undetected:200:1037063"
+ ],
+ "ok": true,
+ "erro": ""
+}

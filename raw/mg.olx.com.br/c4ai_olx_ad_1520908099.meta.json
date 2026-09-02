@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-aure-1520908099",
+ "label": "c4ai_olx_ad_1520908099",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1018988,
+ "titulo": "Chácara Aure - Terrenos, sítios e fazendas - Loteamento Residencial Pequis, Uberlândia 1520908099 | OLX",
+ "fetched_at": "2026-09-02T16:03:40+00:00",
+ "modos_tentados": [
+  "undetected:200:1018988"
+ ],
+ "ok": true,
+ "erro": ""
+}

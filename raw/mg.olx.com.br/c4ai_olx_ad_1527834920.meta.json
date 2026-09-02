@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-chacara-no-condominio-capao-bonito-1527834920",
+ "label": "c4ai_olx_ad_1527834920",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 667043,
+ "titulo": "Vendo chácara no condomínio CAPÃO BONITO - Terrenos, sítios e fazendas - Taiaman, Uberlândia 1527834920 | OLX",
+ "fetched_at": "2026-09-02T16:33:14+00:00",
+ "modos_tentados": [
+  "undetected:200:667043"
+ ],
+ "ok": true,
+ "erro": ""
+}

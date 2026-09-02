@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/bairro-luizote-4-otima-localizacao-1511834662",
+ "label": "c4ai_olx_ad_1511834662",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1032708,
+ "titulo": "Bairro Luizote 4 - Ótima localização - Terrenos, sítios e fazendas - Loteamento Luizote de Freitas IV, Uberlândia 151183",
+ "fetched_at": "2026-09-02T17:29:32+00:00",
+ "modos_tentados": [
+  "undetected:200:1032708"
+ ],
+ "ok": true,
+ "erro": ""
+}

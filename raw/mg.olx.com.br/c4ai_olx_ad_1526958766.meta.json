@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-no-shopping-park-13-50-por-19-80-uberlandia-1526958766",
+ "label": "c4ai_olx_ad_1526958766",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1037403,
+ "titulo": "Terreno no Shopping Park 13,50 por 19,80 Uberlândia - Terrenos, sítios e fazendas - Santa Rosa, Uberlândia 1526958766 | ",
+ "fetched_at": "2026-09-02T17:29:16+00:00",
+ "modos_tentados": [
+  "undetected:200:1037403"
+ ],
+ "ok": true,
+ "erro": ""
+}

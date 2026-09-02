@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/alugo-ou-vendo-sitio-20km-de-udi-1522378971",
+ "label": "c4ai_olx_ad_1522378971",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 665079,
+ "titulo": "Alugo ou vendo sítio - 20km de Udi - Terrenos, sítios e fazendas - Jardim Inconfidência, Uberlândia 1522378971 | OLX",
+ "fetched_at": "2026-09-02T16:00:54+00:00",
+ "modos_tentados": [
+  "undetected:200:665079"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/aluguel-de-rancho-1359915127",
+ "label": "c4ai_olx_ad_1359915127",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1029264,
+ "titulo": "Aluguel de rancho - Terrenos, sítios e fazendas - Higino Guerra, Uberlândia 1359915127 | OLX",
+ "fetched_at": "2026-09-02T15:59:59+00:00",
+ "modos_tentados": [
+  "undetected:200:1029264"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,12 @@
+{
+ "url": "https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia",
+ "final_url": "https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia",
+ "http_status": 403,
+ "fetched_at": "2026-07-29T13:53:56+00:00",
+ "bytes": 5483,
+ "label": "olx_listagem_p1",
+ "content_type": "text/html; charset=UTF-8",
+ "robots": "robots http 403",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}

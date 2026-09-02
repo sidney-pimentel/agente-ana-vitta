@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/oportunidade-imperdivel-dois-terrenos-de-285m-no-cond-reserva-novo-mundo-uberlandia-1386992357",
+ "label": "c4ai_olx_ad_1386992357",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 76560,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:25:24+00:00",
+ "modos_tentados": [
+  "undetected:410:76560"
+ ],
+ "ok": true,
+ "erro": ""
+}

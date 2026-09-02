@@ -1,0 +1,14 @@
+{
+ "url": "https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/mapas-e-bairros/",
+ "label": "c4ai_prefeitura",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 191219,
+ "titulo": "Mapas e Bairros – Portal da Prefeitura de Uberlândia",
+ "fetched_at": "2026-09-02T15:34:35+00:00",
+ "modos_tentados": [
+  "undetected:200:191219"
+ ],
+ "ok": true,
+ "erro": ""
+}

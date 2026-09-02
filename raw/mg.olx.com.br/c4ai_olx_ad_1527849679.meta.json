@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-na-cruz-branca-1527849679",
+ "label": "c4ai_olx_ad_1527849679",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1029434,
+ "titulo": "Chacara na cruz branca - Terrenos, sítios e fazendas - São Jorge, Uberlândia 1527849679 | OLX",
+ "fetched_at": "2026-09-02T16:26:42+00:00",
+ "modos_tentados": [
+  "undetected:200:1029434"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-condominio-mirante-do-lago-264m2-1529416925",
+ "label": "c4ai_olx_ad_1529416925",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1049309,
+ "titulo": "Terreno Condomínio Mirante do Lago 264m2 - Terrenos, sítios e fazendas - Laranjeiras, Uberlândia 1529416925 | OLX",
+ "fetched_at": "2026-09-02T17:30:47+00:00",
+ "modos_tentados": [
+  "undetected:200:1049309"
+ ],
+ "ok": true,
+ "erro": ""
+}

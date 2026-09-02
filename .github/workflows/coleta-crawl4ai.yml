@@ -1,0 +1,39 @@
+name: coleta-crawl4ai
+# Teste do Crawl4AI (instalado do GitHub) contra fontes que bloquearam.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/terrenos-uberlandia-database-9g3jvz"]
+    paths: ["pipeline/crawl4ai_queue.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: instalar crawl4ai (github) + navegadores
+        run: |
+          pip install "git+https://github.com/unclecode/crawl4ai.git"
+          crawl4ai-setup || true
+          python -m playwright install chromium --with-deps
+          python -c "import crawl4ai; print('crawl4ai', crawl4ai.__version__)"
+      - run: python pipeline/crawl4ai_fetch.py
+      - name: commit resultados
+        if: always()
+        run: |
+          git config user.name "coleta-fetcher"
+          git config user.email "sidney@propbank.ai"
+          git add raw saida/crawl4ai_teste.csv || true
+          if git diff --cached --quiet; then echo "nada novo"; else
+            git commit -m "coleta: teste crawl4ai"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-10x25-1433605307",
+ "label": "c4ai_olx_ad_1433605307",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433611,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:33:14+00:00",
+ "modos_tentados": [
+  "undetected:410:433611"
+ ],
+ "ok": true,
+ "erro": ""
+}

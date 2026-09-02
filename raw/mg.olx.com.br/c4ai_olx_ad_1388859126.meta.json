@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-tabajaras-1388859126",
+ "label": "c4ai_olx_ad_1388859126",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435362,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:59:35+00:00",
+ "modos_tentados": [
+  "undetected:410:435362"
+ ],
+ "ok": true,
+ "erro": ""
+}

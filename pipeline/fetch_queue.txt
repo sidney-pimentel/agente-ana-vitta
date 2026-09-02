@@ -1,0 +1,5 @@
+# Tabela oficial ATUAL de bairros integrados (fev/2026) + Setor-Leste — links vistos na pagina viva da Prefeitura
+#delay=3-5
+https://docs.uberlandia.mg.gov.br/wp-content/uploads/2026/02/TBI-02-FEVEREIRO-2026-Tabela-Bairros-Integrados-Autalizacao-A.pdf	pref_pdf_tbi_2026_02
+https://docs.uberlandia.mg.gov.br/wp-content/uploads/2022/07/Setor-Leste.pdf	pref_pdf_setor_leste
+https://web.archive.org/web/2/https://docs.uberlandia.mg.gov.br/wp-content/uploads/2026/02/TBI-02-FEVEREIRO-2026-Tabela-Bairros-Integrados-Autalizacao-A.pdf	wb_pdf_tbi_2026_02

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/oportunidade-unica-no-bairro-roosevelt-venda-imediata-1526133957",
+ "label": "c4ai_olx_ad_1526133957",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1012824,
+ "titulo": "? OPORTUNIDADE ÚNICA NO BAIRRO ROOSEVELT - VENDA IMEDIATA! ? - Terrenos, sítios e fazendas - Presidente Roosevelt, Uberl",
+ "fetched_at": "2026-09-02T16:53:35+00:00",
+ "modos_tentados": [
+  "undetected:200:1012824"
+ ],
+ "ok": true,
+ "erro": ""
+}

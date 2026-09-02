@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/lote-comercial-proximo-ao-aeroporto-1530101445",
+ "label": "c4ai_olx_ad_1530101445",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1012381,
+ "titulo": "Lote comercial próximo ao aeroporto - Terrenos, sítios e fazendas - Martins, Uberlândia 1530101445 | OLX",
+ "fetched_at": "2026-09-02T16:34:28+00:00",
+ "modos_tentados": [
+  "undetected:200:1012381"
+ ],
+ "ok": true,
+ "erro": ""
+}

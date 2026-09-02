@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-no-bairro-santa-rosa-1452705250",
+ "label": "c4ai_olx_ad_1452705250",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1024561,
+ "titulo": "Terreno no Bairro Santa Rosa - Terrenos, sítios e fazendas - Presidente Roosevelt, Uberlândia 1452705250 | OLX",
+ "fetched_at": "2026-09-02T17:43:39+00:00",
+ "modos_tentados": [
+  "undetected:200:1024561"
+ ],
+ "ok": true,
+ "erro": ""
+}

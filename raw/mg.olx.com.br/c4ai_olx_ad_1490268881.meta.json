@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/rancho-a-venda-1490268881",
+ "label": "c4ai_olx_ad_1490268881",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 449312,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:45:00+00:00",
+ "modos_tentados": [
+  "undetected:410:449312"
+ ],
+ "ok": true,
+ "erro": ""
+}

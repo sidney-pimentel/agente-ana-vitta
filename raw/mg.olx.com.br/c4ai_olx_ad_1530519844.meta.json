@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-no-bairro-novo-mundo-1530519844",
+ "label": "c4ai_olx_ad_1530519844",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1039938,
+ "titulo": "Terreno no Bairro Novo Mundo - Terrenos, sítios e fazendas - Novo Mundo, Uberlândia 1530519844 | OLX",
+ "fetched_at": "2026-09-02T17:21:00+00:00",
+ "modos_tentados": [
+  "undetected:200:1039938"
+ ],
+ "ok": true,
+ "erro": ""
+}

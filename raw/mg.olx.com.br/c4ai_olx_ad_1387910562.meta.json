@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/area-br-452-25-km-de-uberlandia-ideal-para-posto-de-gasolina-1387910562",
+ "label": "c4ai_olx_ad_1387910562",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 447366,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T15:43:04+00:00",
+ "modos_tentados": [
+  "undetected:410:447366"
+ ],
+ "ok": true,
+ "erro": ""
+}

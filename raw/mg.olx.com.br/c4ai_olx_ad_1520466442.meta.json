@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/excelente-oportunidade-de-fazenda-para-cafe-1520466442",
+ "label": "c4ai_olx_ad_1520466442",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1028835,
+ "titulo": "Excelente oportunidade de Fazenda para Café - Terrenos, sítios e fazendas - Bom Jesus, Uberlândia 1520466442 | OLX",
+ "fetched_at": "2026-09-02T15:57:05+00:00",
+ "modos_tentados": [
+  "undetected:200:1028835"
+ ],
+ "ok": true,
+ "erro": ""
+}

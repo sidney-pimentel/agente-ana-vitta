@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vende-se-terreno-no-bairro-morada-nova-em-uberlandia-1000m-1527552137",
+ "label": "c4ai_olx_ad_1527552137",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1010602,
+ "titulo": "Vende-se terreno no bairro morada nova em Uberlândia,1000m² - Terrenos, sítios e fazendas - Parque das Américas, Uberlân",
+ "fetched_at": "2026-09-02T16:44:19+00:00",
+ "modos_tentados": [
+  "undetected:200:1010602"
+ ],
+ "ok": true,
+ "erro": ""
+}

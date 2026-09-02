@@ -1,0 +1,11 @@
+{
+ "url": "https://www.deltaimoveis.com.br/pesquisa-de-imoveis/?busca_free=&locacao_venda=V&id_cidade%5B%5D=26&dormitorio=&garagem=&finalidade=&a_min=5000&a_max=&vmi=0&vma=",
+ "final_url": "https://www.deltaimoveis.com.br/pesquisa-de-imoveis/?busca_free=&locacao_venda=V&id_cidade%5B%5D=26&dormitorio=&garagem=&finalidade=&a_min=5000&a_max=&vmi=0&vma=",
+ "http_status": 200,
+ "fetched_at": "2026-07-29T02:43:31+00:00",
+ "bytes": 365950,
+ "label": "delta_busca_amin5000",
+ "robots": "robots 200",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}

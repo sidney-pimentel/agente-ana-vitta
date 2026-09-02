@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-chacara-depois-do-val-paraiso-1500225967",
+ "label": "c4ai_olx_ad_1500225967",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1013229,
+ "titulo": "Vendo chácara depois do Val Paraíso - Terrenos, sítios e fazendas - Distrito Industrial, Uberlândia 1500225967 | OLX",
+ "fetched_at": "2026-09-02T16:43:07+00:00",
+ "modos_tentados": [
+  "undetected:200:1013229"
+ ],
+ "ok": true,
+ "erro": ""
+}

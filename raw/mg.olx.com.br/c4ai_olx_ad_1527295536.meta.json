@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-agio-condominio-mirante-do-lago-1527295536",
+ "label": "c4ai_olx_ad_1527295536",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1013195,
+ "titulo": "VENDO ÁGIO condomínio Mirante do Lago - Terrenos, sítios e fazendas - Morada da Colina, Uberlândia 1527295536 | OLX",
+ "fetched_at": "2026-09-02T15:49:40+00:00",
+ "modos_tentados": [
+  "undetected:200:1013195"
+ ],
+ "ok": true,
+ "erro": ""
+}

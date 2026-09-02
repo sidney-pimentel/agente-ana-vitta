@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/sitio-2-5-ha-25000m2-20km-de-uberlandia-saida-para-araxa-cruz-branca-1515978592",
+ "label": "c4ai_olx_ad_1515978592",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 680076,
+ "titulo": "Sítio 2,5,há 25000m2 20km de Uberlândia saída para Araxá cruz branca - Terrenos, sítios e fazendas - Santa Mônica, Uberl",
+ "fetched_at": "2026-09-02T15:43:39+00:00",
+ "modos_tentados": [
+  "undetected:200:680076"
+ ],
+ "ok": true,
+ "erro": ""
+}

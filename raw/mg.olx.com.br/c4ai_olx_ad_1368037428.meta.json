@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/alugo-terreno-jardim-botanico-1368037428",
+ "label": "c4ai_olx_ad_1368037428",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 448685,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:49:10+00:00",
+ "modos_tentados": [
+  "undetected:410:448685"
+ ],
+ "ok": true,
+ "erro": ""
+}

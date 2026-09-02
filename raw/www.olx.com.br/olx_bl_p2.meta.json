@@ -1,0 +1,10 @@
+{
+ "url": "https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia?o=2",
+ "final_url": "https://www.olx.com.br/imoveis/venda/terrenos-sitios-e-fazendas/estado-mg/triangulo-mineiro-e-alto-paranaiba/uberlandia?o=2",
+ "http_status": 403,
+ "fetched_at": "2026-07-29T13:57:05+00:00",
+ "bytes": 4656,
+ "label": "olx_bl_p2",
+ "metodo": "playwright-chromium",
+ "erro": null
+}

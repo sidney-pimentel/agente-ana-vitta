@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-1527876895",
+ "label": "c4ai_olx_ad_1527876895",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1038967,
+ "titulo": "Vendo terreno - Terrenos, sítios e fazendas - Morumbi, Uberlândia 1527876895 | OLX",
+ "fetched_at": "2026-09-02T17:22:18+00:00",
+ "modos_tentados": [
+  "undetected:200:1038967"
+ ],
+ "ok": true,
+ "erro": ""
+}

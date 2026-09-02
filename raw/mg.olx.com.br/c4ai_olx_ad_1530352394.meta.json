@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-1200m-condominio-rural-km-27-5-para-prata-1530352394",
+ "label": "c4ai_olx_ad_1530352394",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 663603,
+ "titulo": "Terreno 1200m² | Condomínio Rural | km 27,5 para Prata - Terrenos, sítios e fazendas - Saraiva, Uberlândia 1530352394 | ",
+ "fetched_at": "2026-09-02T16:35:08+00:00",
+ "modos_tentados": [
+  "undetected:200:663603"
+ ],
+ "ok": true,
+ "erro": ""
+}

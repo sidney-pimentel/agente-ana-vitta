@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-a-venda-miranda-2000-1529158126",
+ "label": "c4ai_olx_ad_1529158126",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1006302,
+ "titulo": "Chácara a venda Miranda 2000 - Terrenos, sítios e fazendas - Conjunto Alvorada, Uberlândia 1529158126 | OLX",
+ "fetched_at": "2026-09-02T16:32:15+00:00",
+ "modos_tentados": [
+  "undetected:200:1006302"
+ ],
+ "ok": true,
+ "erro": ""
+}

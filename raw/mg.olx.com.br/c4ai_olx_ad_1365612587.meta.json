@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-1-000-metros-com-vista-espetacular-para-venda-1365612587",
+ "label": "c4ai_olx_ad_1365612587",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 449393,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:38:38+00:00",
+ "modos_tentados": [
+  "undetected:410:449393"
+ ],
+ "ok": true,
+ "erro": ""
+}

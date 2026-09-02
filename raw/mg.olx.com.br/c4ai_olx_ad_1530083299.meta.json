@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-condominio-jatoba-1530083299",
+ "label": "c4ai_olx_ad_1530083299",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 656695,
+ "titulo": "Chácara Condomínio jatoba - Terrenos, sítios e fazendas - São Jorge, Uberlândia 1530083299 | OLX",
+ "fetched_at": "2026-09-02T16:29:26+00:00",
+ "modos_tentados": [
+  "undetected:200:656695"
+ ],
+ "ok": true,
+ "erro": ""
+}

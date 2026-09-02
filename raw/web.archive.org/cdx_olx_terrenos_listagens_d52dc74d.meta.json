@@ -1,0 +1,12 @@
+{
+ "url": "https://web.archive.org/cdx/search/cdx?url=olx.com.br/imoveis/terrenos*&output=json&filter=statuscode:200&collapse=urlkey&from=2024&limit=8000",
+ "final_url": "https://web.archive.org/cdx/search/cdx?url=olx.com.br/imoveis/terrenos*&output=json&filter=statuscode:200&collapse=urlkey&from=2024&limit=8000",
+ "http_status": 200,
+ "fetched_at": "2026-09-02T14:35:21+00:00",
+ "bytes": 1184236,
+ "label": "cdx_olx_terrenos_listagens",
+ "content_type": "application/json",
+ "robots": "robots http 404",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}

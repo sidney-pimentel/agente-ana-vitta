@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-em-rua-publica-bairro-residencial-gramado-1335218089",
+ "label": "c4ai_olx_ad_1335218089",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433603,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:32:17+00:00",
+ "modos_tentados": [
+  "undetected:410:433603"
+ ],
+ "ok": true,
+ "erro": ""
+}

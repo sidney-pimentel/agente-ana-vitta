@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/lote-terreno-a-venda-1528442274",
+ "label": "c4ai_olx_ad_1528442274",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1025378,
+ "titulo": "Lote Terreno à venda - Terrenos, sítios e fazendas - Nossa Senhora Aparecida, Uberlândia 1528442274 | OLX",
+ "fetched_at": "2026-09-02T17:21:16+00:00",
+ "modos_tentados": [
+  "undetected:200:1025378"
+ ],
+ "ok": true,
+ "erro": ""
+}
