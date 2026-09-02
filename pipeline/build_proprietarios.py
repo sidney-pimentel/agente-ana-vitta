@@ -18,7 +18,7 @@ import sys
 
 sys.path.insert(0, 'pipeline')
 from schema import nova_linha, escrever_csv
-from parsers import fmt_decimal_br, br_number
+from parsers import fmt_decimal_br, br_number, parse_area
 
 S = '/tmp/claude-0/-home-user-agente-ana-vitta/ca58926e-9d3a-5c43-86c9-7b37b9bef7b0/scratchpad'
 
@@ -103,7 +103,24 @@ for k in ids:
     if mrod and row['perimetro_urbano'] != 'Nao':
         row['perimetro_urbano'] = 'A verificar'
         obs.append(f"ALERTA: texto do anuncio cita rodovia/km (\"{mrod.group(0).strip()[:70]}\") — bairro informado pode nao corresponder")
-    if m2 is not None and m2 < 5000:
+    # crosscheck: campo 'tamanho' da OLX x metragem escrita pelo anunciante no texto
+    txt_area = (src.get('subject') or '') + ' ' + ((d or {}).get('body') or '')
+    vistas = [a['m2'] for a in parse_area(txt_area) if a.get('m2')]
+    if m2 is not None and vistas:
+        if not any(abs(v - m2) <= 0.02 * max(v, m2) for v in vistas):
+            # assinatura de erro de digitacao: campo = texto x1000 (virgula lida como milhar) ou x100
+            digit = [v for v in vistas if any(abs(v * k - m2) <= 0.02 * m2 for k in (1000, 100, 10))]
+            if digit:
+                obs.append(f"CONFLITO: campo tamanho={src.get('size')} mas o texto do anuncio diz {fmt_decimal_br(digit[0])} m2 "
+                           f"(campo = texto x{round(m2/digit[0])}) — erro de digitacao do anunciante; area real provavelmente {fmt_decimal_br(digit[0])} m2")
+                if digit[0] < 5000:
+                    row['status_apuracao'] = 'Excluido'
+                    row['motivo_exclusao'] = f'texto do anuncio informa {fmt_decimal_br(digit[0])} m2 (campo tamanho {src.get("size")} e erro de digitacao)'
+            else:
+                obs.append(f"ALERTA: campo tamanho={src.get('size')} diverge da(s) metragem(ns) no texto {sorted(set(vistas))} — conferir")
+    elif m2 is not None and m2 >= 100000 and not vistas:
+        obs.append(f"ALERTA: tamanho {src.get('size')} sem metragem no texto para confirmar — conferir")
+    if row['status_apuracao'] != 'Excluido' and m2 is not None and m2 < 5000:
         row['status_apuracao'] = 'Excluido'
         row['motivo_exclusao'] = f'area {fmt_decimal_br(m2)} m2 abaixo de 5000 m2'
     elif m2 is None:
