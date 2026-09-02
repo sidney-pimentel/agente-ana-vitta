@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-no-reserva-novo-mundo-1270824089",
+ "label": "c4ai_olx_ad_1270824089",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433662,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:17:38+00:00",
+ "modos_tentados": [
+  "undetected:410:433662"
+ ],
+ "ok": true,
+ "erro": ""
+}

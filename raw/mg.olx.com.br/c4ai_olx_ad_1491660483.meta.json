@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-live-2-1491660483",
+ "label": "c4ai_olx_ad_1491660483",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433608,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:34:09+00:00",
+ "modos_tentados": [
+  "undetected:410:433608"
+ ],
+ "ok": true,
+ "erro": ""
+}

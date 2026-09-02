@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-em-condominio-fechado-1378875382",
+ "label": "c4ai_olx_ad_1378875382",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433663,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:14:42+00:00",
+ "modos_tentados": [
+  "undetected:410:433663"
+ ],
+ "ok": true,
+ "erro": ""
+}

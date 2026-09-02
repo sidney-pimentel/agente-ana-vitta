@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/lote-condominio-terras-alpha-1433555507",
+ "label": "c4ai_olx_ad_1433555507",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433535,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:27:10+00:00",
+ "modos_tentados": [
+  "undetected:410:433535"
+ ],
+ "ok": true,
+ "erro": ""
+}

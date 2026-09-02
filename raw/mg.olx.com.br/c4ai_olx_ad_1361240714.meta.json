@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-264m-1361240714",
+ "label": "c4ai_olx_ad_1361240714",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433606,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:30:26+00:00",
+ "modos_tentados": [
+  "undetected:410:433606"
+ ],
+ "ok": true,
+ "erro": ""
+}

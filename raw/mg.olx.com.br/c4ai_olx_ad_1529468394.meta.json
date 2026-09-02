@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-bosque-dos-buritis-1529468394",
+ "label": "c4ai_olx_ad_1529468394",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1043236,
+ "titulo": "Terreno Bosque dos Buritis - Terrenos, sítios e fazendas - Umuarama, Uberlândia 1529468394 | OLX",
+ "fetched_at": "2026-09-02T17:31:06+00:00",
+ "modos_tentados": [
+  "undetected:200:1043236"
+ ],
+ "ok": true,
+ "erro": ""
+}

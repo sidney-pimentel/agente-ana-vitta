@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-de-esquina-plano-pronto-para-construir-1376291961",
+ "label": "c4ai_olx_ad_1376291961",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433714,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:28:54+00:00",
+ "modos_tentados": [
+  "undetected:410:433714"
+ ],
+ "ok": true,
+ "erro": ""
+}

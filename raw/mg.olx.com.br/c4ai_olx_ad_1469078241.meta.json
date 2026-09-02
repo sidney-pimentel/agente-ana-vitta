@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-no-loteamento-verde-umuarama-275-m-10x27-5-m-valor-245-000-00-1469078241",
+ "label": "c4ai_olx_ad_1469078241",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435620,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:27:29+00:00",
+ "modos_tentados": [
+  "undetected:410:435620"
+ ],
+ "ok": true,
+ "erro": ""
+}

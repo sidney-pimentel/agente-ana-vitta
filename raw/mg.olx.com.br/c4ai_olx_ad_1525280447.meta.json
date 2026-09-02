@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-bairro-brasil-1525280447",
+ "label": "c4ai_olx_ad_1525280447",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 675089,
+ "titulo": "Vendo terreno bairro Brasil - Terrenos, sítios e fazendas - Brasil, Uberlândia 1525280447 | OLX",
+ "fetched_at": "2026-09-02T17:16:13+00:00",
+ "modos_tentados": [
+  "undetected:200:675089"
+ ],
+ "ok": true,
+ "erro": ""
+}

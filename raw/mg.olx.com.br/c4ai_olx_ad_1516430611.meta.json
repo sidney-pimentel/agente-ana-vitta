@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-agio-de-terreno-no-bairro-bem-viver-colinas-sul-1516430611",
+ "label": "c4ai_olx_ad_1516430611",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 673359,
+ "titulo": "Vendo ágio de terreno no bairro Bem Viver Colinas Sul - Terrenos, sítios e fazendas - Daniel Fonseca, Uberlândia 1516430",
+ "fetched_at": "2026-09-02T17:40:10+00:00",
+ "modos_tentados": [
+  "undetected:200:673359"
+ ],
+ "ok": true,
+ "erro": ""
+}

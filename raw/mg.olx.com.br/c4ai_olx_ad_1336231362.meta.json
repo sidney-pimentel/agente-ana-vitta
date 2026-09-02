@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-no-cond-fechado-jardim-umuarama-ii-1336231362",
+ "label": "c4ai_olx_ad_1336231362",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433552,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:31:59+00:00",
+ "modos_tentados": [
+  "undetected:410:433552"
+ ],
+ "ok": true,
+ "erro": ""
+}

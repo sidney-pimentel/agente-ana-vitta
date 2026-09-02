@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/agio-terreno-gsp-life-ii-1361305030",
+ "label": "c4ai_olx_ad_1361305030",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433593,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:33:30+00:00",
+ "modos_tentados": [
+  "undetected:410:433593"
+ ],
+ "ok": true,
+ "erro": ""
+}

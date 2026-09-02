@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/urgente-vendo-lotes-jd-europa-proximo-escola-militar-341-mt-e-401-mt--1528173488",
+ "label": "c4ai_olx_ad_1528173488",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1043722,
+ "titulo": "URGENTE VENDO LOTES JD EUROPA PROXIMO ESCOLA MILITAR, 341 mt² e 401 mt² - * - Terrenos, sítios e fazendas - Jardim Europ",
+ "fetched_at": "2026-09-02T17:14:05+00:00",
+ "modos_tentados": [
+  "undetected:200:1043722"
+ ],
+ "ok": true,
+ "erro": ""
+}

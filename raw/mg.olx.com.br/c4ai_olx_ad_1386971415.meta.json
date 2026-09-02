@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/so-hoje-terreno-condominio-mirante-do-lago-1386971415",
+ "label": "c4ai_olx_ad_1386971415",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 433684,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:30:11+00:00",
+ "modos_tentados": [
+  "undetected:410:433684"
+ ],
+ "ok": true,
+ "erro": ""
+}
