@@ -50,7 +50,23 @@ def extrai(path):
     except Exception as e:
         out["descartar"] = f"initial-data ilegivel: {e}"
         return out
+    t = re.search(r'<title>(.*?)</title>', raw, re.S)
+    if (t and 'não encontrado' in t.group(1).lower()) or (len(ad) <= 1 and 'listId' in ad):
+        out["listId"] = ad.get('listId')
+        out["encerrado"] = True  # OLX responde "Anúncio não encontrado": anúncio removido/expirado
+        return out
     loc = ad.get('location') or {}
+    # paginas ao vivo (2026): location pode vir vazio; locationProperties traz rotulos
+    lp = {(p.get('label') or '').lower(): p.get('value') for p in (ad.get('locationProperties') or []) if isinstance(p, dict)}
+    loc = dict(loc)
+    loc.setdefault('municipality', lp.get('município') or lp.get('municipio'))
+    loc.setdefault('neighbourhood', lp.get('bairro'))
+    loc.setdefault('zipcode', lp.get('cep'))
+    loc.setdefault('address', lp.get('logradouro'))
+    for k in ('municipality', 'neighbourhood', 'zipcode', 'address'):
+        if not loc.get(k):
+            loc[k] = {'municipality': lp.get('município') or lp.get('municipio'), 'neighbourhood': lp.get('bairro'),
+                      'zipcode': lp.get('cep'), 'address': lp.get('logradouro')}[k]
     props = {p.get('name'): p.get('value') for p in (ad.get('properties') or []) if isinstance(p, dict)}
     user = ad.get('user') or {}
     body = re.sub(r'<br\s*/?>', '\n', ad.get('body') or ad.get('description') or '')

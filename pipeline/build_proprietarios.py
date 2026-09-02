@@ -52,7 +52,16 @@ rows, stats = [], {'det': 0, 'lst': 0}
 ids = set(detalhes) | set(lista)
 for k in ids:
     d, a = detalhes.get(k), lista.get(k)
+    encerrado = bool(d and d.get('encerrado'))
+    if encerrado:
+        verif = d.get('snapshot'); d = None  # dados vem da listagem; pagina so provou que o anuncio saiu do ar
     src = d or a
+    if src is None:
+        continue
+    if d and a:  # pagina do anuncio e autoritativa, mas herda da listagem o que ela nao traz
+        for f in ('municipio', 'bairro', 'size', 'm2', 'price', 'tipo', 'subject'):
+            if not d.get(f) and a.get(f):
+                d[f] = a[f]
     municipio = (src.get('municipio') or '')
     if not municipio.lower().startswith('uberl'):
         continue
@@ -90,6 +99,10 @@ for k in ids:
         area_total_m2=fmt_decimal_br(m2), valor_anunciado=fmt_decimal_br(preco(src.get('price'))),
         data_valor=data_de(snap),
     )
+    if encerrado:
+        row['status_apuracao'] = 'Excluido'
+        row['motivo_exclusao'] = f'anuncio removido/encerrado na OLX (pagina "Anuncio nao encontrado" em {data_de(verif)})'
+        obs.append(f"anuncio NAO esta mais no ar (verificado ao vivo em {data_de(verif)})")
     if not src.get('price'):
         row['situacao_valor'] = 'Sem valor no anuncio'
     if re.search(r's[íi]tio|ch[áa]cara|fazenda|rancho', tipo + ' ' + (src.get('subject') or '').lower()):
@@ -120,6 +133,9 @@ for k in ids:
                 obs.append(f"ALERTA: campo tamanho={src.get('size')} diverge da(s) metragem(ns) no texto {sorted(set(vistas))} — conferir")
     elif m2 is not None and m2 >= 100000 and not vistas:
         obs.append(f"ALERTA: tamanho {src.get('size')} sem metragem no texto para confirmar — conferir")
+    if encerrado:
+        row['status_apuracao'] = 'Excluido'
+        row['motivo_exclusao'] = f'anuncio removido/encerrado na OLX (pagina "Anuncio nao encontrado" em {data_de(verif)})'
     if row['status_apuracao'] != 'Excluido' and m2 is not None and m2 < 5000:
         row['status_apuracao'] = 'Excluido'
         row['motivo_exclusao'] = f'area {fmt_decimal_br(m2)} m2 abaixo de 5000 m2'
