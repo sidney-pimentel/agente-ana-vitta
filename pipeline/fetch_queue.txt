@@ -1,3 +1,4 @@
+# re-execucao apos bloqueio de push (token redigido no fetcher)
 # Lote 9 — fontes de PROPRIETARIO DIRETO: OLX via Wayback + agregadores + Mercado Livre
 #delay=4-7
 https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	wb_olx_terrenos_udi_p1
