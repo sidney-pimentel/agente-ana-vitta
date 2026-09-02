@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-morada-nova-1-1000-esquina-asfalto-1402620274",
+ "label": "c4ai_olx_ad_1402620274",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 446972,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:35:58+00:00",
+ "modos_tentados": [
+  "undetected:410:446972"
+ ],
+ "ok": true,
+ "erro": ""
+}

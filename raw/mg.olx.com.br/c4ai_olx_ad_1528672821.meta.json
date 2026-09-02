@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/aluguel-barracao-proximo-rondon-pacheco-e-forum-1528672821",
+ "label": "c4ai_olx_ad_1528672821",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1018901,
+ "titulo": "Aluguel barracão próximo Rondon Pachêco e Forum - Terrenos, sítios e fazendas - Tibery, Uberlândia 1528672821 | OLX",
+ "fetched_at": "2026-09-02T16:58:43+00:00",
+ "modos_tentados": [
+  "undetected:200:1018901"
+ ],
+ "ok": true,
+ "erro": ""
+}

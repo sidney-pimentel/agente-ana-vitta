@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-setor-industrial-taiaman-1528984899",
+ "label": "c4ai_olx_ad_1528984899",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1016391,
+ "titulo": "TERRENO SETOR INDUSTRIAL TAIAMAN - Terrenos, sítios e fazendas - Morumbi, Uberlândia 1528984899 | OLX",
+ "fetched_at": "2026-09-02T16:33:33+00:00",
+ "modos_tentados": [
+  "undetected:200:1016391"
+ ],
+ "ok": true,
+ "erro": ""
+}

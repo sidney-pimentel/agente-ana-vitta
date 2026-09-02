@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-1-000m-cidade-jardim-1528866105",
+ "label": "c4ai_olx_ad_1528866105",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 666832,
+ "titulo": "Terreno 1.000m Cidade Jardim - Terrenos, sítios e fazendas - Centro, Uberlândia 1528866105 | OLX",
+ "fetched_at": "2026-09-02T16:41:54+00:00",
+ "modos_tentados": [
+  "undetected:200:666832"
+ ],
+ "ok": true,
+ "erro": ""
+}

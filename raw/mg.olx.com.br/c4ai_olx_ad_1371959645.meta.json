@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-plano-itapema-sul-1371959645",
+ "label": "c4ai_olx_ad_1371959645",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 447361,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:56:23+00:00",
+ "modos_tentados": [
+  "undetected:410:447361"
+ ],
+ "ok": true,
+ "erro": ""
+}

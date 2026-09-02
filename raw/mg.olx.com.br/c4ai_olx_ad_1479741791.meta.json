@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/venda-lote-terreno-em-condominio-fechado-alphaville-2-460m-1479741791",
+ "label": "c4ai_olx_ad_1479741791",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1026008,
+ "titulo": "Venda - Lote / Terreno em Condomínio Fechado - Alphaville 2 - 460M² - Terrenos, sítios e fazendas - Alto Umuarama, Uberl",
+ "fetched_at": "2026-09-02T16:51:44+00:00",
+ "modos_tentados": [
+  "undetected:200:1026008"
+ ],
+ "ok": true,
+ "erro": ""
+}

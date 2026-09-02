@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-no-tibery-1523834851",
+ "label": "c4ai_olx_ad_1523834851",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 648455,
+ "titulo": "Vendo terreno no Tibery - Terrenos, sítios e fazendas - Tibery, Uberlândia 1523834851 | OLX",
+ "fetched_at": "2026-09-02T16:55:09+00:00",
+ "modos_tentados": [
+  "undetected:200:648455"
+ ],
+ "ok": true,
+ "erro": ""
+}

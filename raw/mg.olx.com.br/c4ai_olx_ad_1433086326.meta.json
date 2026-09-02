@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-chacara-2-mil-metros-1433086326",
+ "label": "c4ai_olx_ad_1433086326",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435480,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:30:46+00:00",
+ "modos_tentados": [
+  "undetected:410:435480"
+ ],
+ "ok": true,
+ "erro": ""
+}

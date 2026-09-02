@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/represa-de-miranda-7-1528099626",
+ "label": "c4ai_olx_ad_1528099626",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 656576,
+ "titulo": "Represa de miranda 7 - Terrenos, sítios e fazendas - Jardim Canaã, Uberlândia 1528099626 | OLX",
+ "fetched_at": "2026-09-02T16:35:24+00:00",
+ "modos_tentados": [
+  "undetected:200:656576"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-chacara-no-condominio-videira-1370905079",
+ "label": "c4ai_olx_ad_1370905079",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435539,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:38:20+00:00",
+ "modos_tentados": [
+  "undetected:410:435539"
+ ],
+ "ok": true,
+ "erro": ""
+}

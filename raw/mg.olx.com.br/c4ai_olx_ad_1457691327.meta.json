@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-em-miranda-8-45km-de-uberlandia-1457691327",
+ "label": "c4ai_olx_ad_1457691327",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 445594,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:33:51+00:00",
+ "modos_tentados": [
+  "undetected:410:445594"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-lote-no-arts-que-analisa-permuta-1525935874",
+ "label": "c4ai_olx_ad_1525935874",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1015370,
+ "titulo": "Vendo lote no Arts que analisa permuta - Terrenos, sítios e fazendas - Granada, Uberlândia 1525935874 | OLX",
+ "fetched_at": "2026-09-02T16:54:49+00:00",
+ "modos_tentados": [
+  "undetected:200:1015370"
+ ],
+ "ok": true,
+ "erro": ""
+}

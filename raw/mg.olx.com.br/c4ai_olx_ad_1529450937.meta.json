@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-1529450937",
+ "label": "c4ai_olx_ad_1529450937",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1024509,
+ "titulo": "Terreno - Terrenos, sítios e fazendas - Presidente Roosevelt, Uberlândia 1529450937 | OLX",
+ "fetched_at": "2026-09-02T16:50:42+00:00",
+ "modos_tentados": [
+  "undetected:200:1024509"
+ ],
+ "ok": true,
+ "erro": ""
+}

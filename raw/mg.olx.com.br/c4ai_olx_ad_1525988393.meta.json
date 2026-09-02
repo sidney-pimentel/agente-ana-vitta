@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/tambore-miranda-lote-de-829m2-agio-1525988393",
+ "label": "c4ai_olx_ad_1525988393",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 668867,
+ "titulo": "Tamboré Miranda - Lote de 829m2 (ágio) - Terrenos, sítios e fazendas - Santa Mônica, Uberlândia 1525988393 | OLX",
+ "fetched_at": "2026-09-02T16:44:40+00:00",
+ "modos_tentados": [
+  "undetected:200:668867"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-a-venda-1528243582",
+ "label": "c4ai_olx_ad_1528243582",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 662334,
+ "titulo": "Chácara a venda - Terrenos, sítios e fazendas - Tocantins, Uberlândia 1528243582 | OLX",
+ "fetched_at": "2026-09-02T16:34:48+00:00",
+ "modos_tentados": [
+  "undetected:200:662334"
+ ],
+ "ok": true,
+ "erro": ""
+}

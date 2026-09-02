@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-a-venda-em-uberlandia-1356376133",
+ "label": "c4ai_olx_ad_1356376133",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435497,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:38:03+00:00",
+ "modos_tentados": [
+  "undetected:410:435497"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/oportunidade-lote-cyrela-buritis-1528353441",
+ "label": "c4ai_olx_ad_1528353441",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 662768,
+ "titulo": "Oportunidade - Lote CYRELA Buritis - Terrenos, sítios e fazendas - Jardim Sul, Uberlândia 1528353441 | OLX",
+ "fetched_at": "2026-09-02T16:50:23+00:00",
+ "modos_tentados": [
+  "undetected:200:662768"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/aluguel-rancho-represa-de-miranda-915007567",
+ "label": "c4ai_olx_ad_915007567",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 668595,
+ "titulo": "Aluguel Rancho Represa de Miranda - Terrenos, sítios e fazendas - Jardim Karaíba, Uberlândia 915007567 | OLX",
+ "fetched_at": "2026-09-02T16:27:13+00:00",
+ "modos_tentados": [
+  "undetected:200:668595"
+ ],
+ "ok": true,
+ "erro": ""
+}

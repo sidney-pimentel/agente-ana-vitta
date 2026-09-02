@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/agio-lote-cond-reserva-do-lago-miranda-670m2-1490586598",
+ "label": "c4ai_olx_ad_1490586598",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 670634,
+ "titulo": "Ágio Lote Cond. Reserva do Lago - Miranda (670m2) - Terrenos, sítios e fazendas - Jardim Karaíba, Uberlândia 1490586598 ",
+ "fetched_at": "2026-09-02T16:47:00+00:00",
+ "modos_tentados": [
+  "undetected:200:670634"
+ ],
+ "ok": true,
+ "erro": ""
+}

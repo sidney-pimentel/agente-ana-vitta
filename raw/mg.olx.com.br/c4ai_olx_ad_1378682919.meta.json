@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-416-m2-a-100-metros-da-joao-naves-1378682919",
+ "label": "c4ai_olx_ad_1378682919",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1012479,
+ "titulo": "Terreno 416 m2 a 100 metros da Joao Naves - Terrenos, sítios e fazendas - Saraiva, Uberlândia 1378682919 | OLX",
+ "fetched_at": "2026-09-02T16:55:29+00:00",
+ "modos_tentados": [
+  "undetected:200:1012479"
+ ],
+ "ok": true,
+ "erro": ""
+}

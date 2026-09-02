@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-no-jardim-barcelona-1503582056",
+ "label": "c4ai_olx_ad_1503582056",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 663873,
+ "titulo": "Terreno no Jardim Barcelona - Terrenos, sítios e fazendas - Nova Uberlândia, Uberlândia 1503582056 | OLX",
+ "fetched_at": "2026-09-02T16:57:53+00:00",
+ "modos_tentados": [
+  "undetected:200:663873"
+ ],
+ "ok": true,
+ "erro": ""
+}

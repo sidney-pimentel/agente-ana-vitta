@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/apenas-r-114-000-00-mil-metros-escriturado-1453278340",
+ "label": "c4ai_olx_ad_1453278340",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 435394,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T16:39:13+00:00",
+ "modos_tentados": [
+  "undetected:410:435394"
+ ],
+ "ok": true,
+ "erro": ""
+}
