@@ -23,6 +23,9 @@ from urllib.parse import urlparse
 
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from redact import redigir
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE = os.path.join(ROOT, "pipeline", "fetch_queue.txt")
 RAW = os.path.join(ROOT, "raw")
@@ -145,12 +148,7 @@ def main():
         last_hit[host] = time.time()
 
         if body:
-            # Push Protection do GitHub recusa HTML com tokens embutidos
-            # (ex.: token de app do Facebook no pixel do site). Redige padrões
-            # de token; conteúdo de anúncio não é afetado.
-            body = re.sub(rb"EAA[A-Za-z0-9]{40,}", b"[REDACTED_FB_TOKEN]", body)
-            body = re.sub(rb"(?i)(access_token|api[_-]?key|secret)([\"' =:]{1,4})[A-Za-z0-9_\-]{24,}",
-                          rb"\1\2[REDACTED]", body)
+            body = redigir(body)  # tokens de terceiros (Push Protection)
             d = os.path.join(RAW, host)
             os.makedirs(d, exist_ok=True)
             slug = slugify(url, label)

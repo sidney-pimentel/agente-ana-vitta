@@ -1,11 +1,31 @@
-# Teste Crawl4AI — fontes que bloquearam o fetcher simples (robots.txt-vedadas NAO entram)
-https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	c4ai_olx_terrenos_udi
-https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/triangulo-mineiro/uberlandia/imoveis/terrenos/compra	c4ai_olxmg_terrenos_udi
-https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular	c4ai_olx_busca_particular
-https://www.imovelweb.com.br/terrenos-venda-uberlandia-mg.html	c4ai_imovelweb
-https://www.wimoveis.com.br/venda/terrenos/mg/uberlandia/	c4ai_wimoveis
-https://www.lbnegocios.com/imoveis/a-venda/uberlandia	c4ai_lbnegocios
-https://www.seuimovelgold.com.br/	c4ai_gold
+# Crawl4AI (undetected) — coleta AO VIVO da OLX: categoria terrenos Uberlandia + busca 'particular', paginadas
+# + Prefeitura (mapas e bairros) e listagem JS da Objetiva
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	c4ai_olx_terrenos_udi_p1
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=2	c4ai_olx_terrenos_udi_p2
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=3	c4ai_olx_terrenos_udi_p3
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=4	c4ai_olx_terrenos_udi_p4
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=5	c4ai_olx_terrenos_udi_p5
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=6	c4ai_olx_terrenos_udi_p6
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=7	c4ai_olx_terrenos_udi_p7
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=8	c4ai_olx_terrenos_udi_p8
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=9	c4ai_olx_terrenos_udi_p9
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=10	c4ai_olx_terrenos_udi_p10
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=11	c4ai_olx_terrenos_udi_p11
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=12	c4ai_olx_terrenos_udi_p12
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=13	c4ai_olx_terrenos_udi_p13
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=14	c4ai_olx_terrenos_udi_p14
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=15	c4ai_olx_terrenos_udi_p15
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular	c4ai_olx_particular_p1
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=2	c4ai_olx_particular_p2
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=3	c4ai_olx_particular_p3
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=4	c4ai_olx_particular_p4
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=5	c4ai_olx_particular_p5
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=6	c4ai_olx_particular_p6
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=7	c4ai_olx_particular_p7
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=8	c4ai_olx_particular_p8
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=9	c4ai_olx_particular_p9
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=10	c4ai_olx_particular_p10
 https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/mapas-e-bairros/	c4ai_prefeitura
-https://www.objetivauberlandia.com.br/venda/terreno	c4ai_objetiva_listagem_js
-https://imoveis.mercadolivre.com.br/terrenos/venda/minas-gerais/uberlandia/	c4ai_mercadolivre
+https://www.objetivauberlandia.com.br/venda/terreno	c4ai_objetiva_terreno_p1
+https://www.objetivauberlandia.com.br/venda/terreno?pagina=2	c4ai_objetiva_terreno_p2
+https://www.objetivauberlandia.com.br/venda/terreno?pagina=3	c4ai_objetiva_terreno_p3

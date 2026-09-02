@@ -25,6 +25,9 @@ from urllib.parse import urlparse
 
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from redact import redigir_str
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "raw")
 QUEUE = os.path.join(ROOT, "pipeline", "crawl4ai_queue.txt")
@@ -110,7 +113,7 @@ async def main():
             os.makedirs(d, exist_ok=True)
             slug = re.sub(r"[^A-Za-z0-9._-]+", "_", label or url)[:80]
             with open(os.path.join(d, slug + ".html"), "w", encoding="utf-8") as fh:
-                fh.write(final["html"])
+                fh.write(redigir_str(final["html"]))
             meta = {"url": url, "label": label, "metodo": f"crawl4ai/{final['modo']}",
                     "http_status": final["status"], "bytes": final["bytes"], "titulo": final["title"],
                     "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
