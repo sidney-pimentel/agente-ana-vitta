@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terrenos-verde-umuarama-1518733752",
+ "label": "c4ai_olx_ad_1518733752",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1024707,
+ "titulo": "Terrenos Verde Umuarama - Terrenos, sítios e fazendas - Santa Mônica, Uberlândia 1518733752 | OLX",
+ "fetched_at": "2026-09-02T17:43:20+00:00",
+ "modos_tentados": [
+  "undetected:200:1024707"
+ ],
+ "ok": true,
+ "erro": ""
+}

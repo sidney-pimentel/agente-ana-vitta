@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-jardim-sul-rua-sem-saida-direto-com-o-proprietario-1470936003",
+ "label": "c4ai_olx_ad_1470936003",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1033934,
+ "titulo": "Vendo terreno Jardim Sul- Rua sem saída- Direto com o proprietário - Terrenos, sítios e fazendas - Jardim Sul, Uberlândi",
+ "fetched_at": "2026-09-02T17:45:11+00:00",
+ "modos_tentados": [
+  "undetected:200:1033934"
+ ],
+ "ok": true,
+ "erro": ""
+}

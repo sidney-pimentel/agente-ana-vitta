@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/imoveis/aceito-carro-e-terreno-apartamento-clube-90m2-16-andar-3-quartos-2-vagas-zona-sul-1324009979",
+ "label": "c4ai_olx_ad_1324009979",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 442371,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:46:59+00:00",
+ "modos_tentados": [
+  "undetected:410:442371"
+ ],
+ "ok": true,
+ "erro": ""
+}

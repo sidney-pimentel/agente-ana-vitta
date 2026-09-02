@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/alugo-ou-vendo-terreno-jardim-patricia-1526338807",
+ "label": "c4ai_olx_ad_1526338807",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1007551,
+ "titulo": "Alugo ou vendo terreno Jardim Patrícia - Terrenos, sítios e fazendas - Jardim Patrícia, Uberlândia 1526338807 | OLX",
+ "fetched_at": "2026-09-02T17:43:59+00:00",
+ "modos_tentados": [
+  "undetected:200:1007551"
+ ],
+ "ok": true,
+ "erro": ""
+}

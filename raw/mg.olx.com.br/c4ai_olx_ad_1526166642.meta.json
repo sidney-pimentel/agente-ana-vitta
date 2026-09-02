@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/vendo-terreno-no-bairro-luizote-iv-1526166642",
+ "label": "c4ai_olx_ad_1526166642",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 659676,
+ "titulo": "Vendo terreno no bairro Luizote IV - Terrenos, sítios e fazendas - Loteamento Luizote IV, Uberlândia 1526166642 | OLX",
+ "fetched_at": "2026-09-02T17:44:54+00:00",
+ "modos_tentados": [
+  "undetected:200:659676"
+ ],
+ "ok": true,
+ "erro": ""
+}

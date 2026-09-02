@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/terreno-daniel-fonseca-1526870389",
+ "label": "c4ai_olx_ad_1526870389",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1018591,
+ "titulo": "Terreno Daniel Fonseca - Terrenos, sítios e fazendas - Daniel Fonseca, Uberlândia 1526870389 | OLX",
+ "fetched_at": "2026-09-02T17:45:47+00:00",
+ "modos_tentados": [
+  "undetected:200:1018591"
+ ],
+ "ok": true,
+ "erro": ""
+}

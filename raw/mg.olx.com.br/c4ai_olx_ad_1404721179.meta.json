@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/imoveis/colonia-a-venda-no-santa-monica-1404721179",
+ "label": "c4ai_olx_ad_1404721179",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 410,
+ "bytes": 446969,
+ "titulo": "Anúncio não encontrado | OLX",
+ "fetched_at": "2026-09-02T17:47:36+00:00",
+ "modos_tentados": [
+  "undetected:410:446969"
+ ],
+ "ok": true,
+ "erro": ""
+}
