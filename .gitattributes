@@ -1,1 +1,2 @@
 saida/fetch_log.csv merge=union
+saida/crawl4ai_teste.csv merge=union

@@ -1,0 +1,11 @@
+# Teste Crawl4AI — fontes que bloquearam o fetcher simples (robots.txt-vedadas NAO entram)
+https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	c4ai_olx_terrenos_udi
+https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/triangulo-mineiro/uberlandia/imoveis/terrenos/compra	c4ai_olxmg_terrenos_udi
+https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular	c4ai_olx_busca_particular
+https://www.imovelweb.com.br/terrenos-venda-uberlandia-mg.html	c4ai_imovelweb
+https://www.wimoveis.com.br/venda/terrenos/mg/uberlandia/	c4ai_wimoveis
+https://www.lbnegocios.com/imoveis/a-venda/uberlandia	c4ai_lbnegocios
+https://www.seuimovelgold.com.br/	c4ai_gold
+https://www.uberlandia.mg.gov.br/prefeitura/secretarias/planejamento-urbano/mapas-e-bairros/	c4ai_prefeitura
+https://www.objetivauberlandia.com.br/venda/terreno	c4ai_objetiva_listagem_js
+https://imoveis.mercadolivre.com.br/terrenos/venda/minas-gerais/uberlandia/	c4ai_mercadolivre
