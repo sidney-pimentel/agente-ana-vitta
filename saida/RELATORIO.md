@@ -138,3 +138,20 @@ e `data_coleta` = data real da coleta nas linhas ao vivo).
   bairros oficiais, ex. "18 hectares beira-rio" em Nossa Senhora Aparecida, "sítio 100.000 m²" no Martins).
 - Tabela oficial de bairros de fev/2026 (link na página viva da Prefeitura) não baixável de datacenter (timeout) nem
   arquivada; a de 2020 (74 bairros) permanece a referência.
+
+## Adendo — telefones dos proprietários (2026-09-02, final)
+
+- A OLX **não entrega o telefone na página**: nas 278 páginas de anúncio coletadas ao vivo o campo é
+  `"phone": ""` com `maskedPhone` mascarado (`3499927*...`); o botão "ver telefone" exige login/app e cada vez
+  mais só o chat. Nenhum scraper obtém o número da página — e automatizar login violaria os termos e a etiqueta
+  do projeto, então não foi feito.
+- Os telefones da base vêm do **texto do anúncio, quando o próprio dono escreve** ("Tratar com Fulano 34 9...").
+  Com a página de **todos** os particulares coletada (278 ao vivo + 148 arquivadas): **59 anúncios com telefone**,
+  196 com nome do anunciante, 189 com endereço/CEP (a OLX expõe logradouro e CEP).
+- **104 anúncios dos snapshots estão encerrados** (OLX responde "Anúncio não encontrado") — marcados `Excluido`
+  com motivo, não apagados. **197 particulares com anúncio no ar hoje.**
+- Correção de regra: tipo rural passa a vir do campo *Tipo* da OLX; "Chácaras Tubalina e Quartel" é bairro
+  oficial, não tipo — isso recuperou o lead **8.300 m², R$ 5,81 mi, Eduardo, telefone no texto**.
+- No corte urbano ≥5.000 m²: 7 linhas `A validar` (1 confirmada com telefone; 2 com tamanho suspeito de
+  digitação sem metragem no texto; 4 sem tamanho). 14 particulares ativos ≥5.000 m² com telefone se contar
+  sítios/chácaras (excluídos por tipo, mantidos como lead).
