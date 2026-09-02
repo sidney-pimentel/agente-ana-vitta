@@ -1,15 +1,6 @@
-# Lote 10 — OLX proprietarios: detalhes via Wayback + mais paginas de listagem
-#delay=4-7
-https://web.archive.org/web/2/https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/rancho-a-venda-1491697471	wb_olx_ad_1491697471
-https://web.archive.org/web/2/https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-20-mil-metros-1452363053	wb_olx_ad_1452363053
-https://web.archive.org/web/2/https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/sitio-escriturado-14-hectares-aceita-imovel-de-menor-valor-no-negocio-1364810206	wb_olx_ad_1364810206
-https://web.archive.org/web/2/https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/rancho-capim-branco-7o-mil-m2-1373388257	wb_olx_ad_1373388257
-https://web.archive.org/web/2/https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/procuro-sitio-ou-fazendo-para-arrendar-1491575894	wb_olx_ad_1491575894
-https://web.archive.org/web/2/https://www.olx.com.br/anuncios/terrenos-a-venda-em-uberlandia-particular?o=2	wb_olx_busca_particular_p2
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba?o=2	wb_olx_terrenos_regiao_p2
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba?o=3	wb_olx_terrenos_regiao_p3
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?o=3	wb_olx_terrenos_udi_p3
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/sitios-e-chacaras/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	wb_olx_sitios_udi
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/lotes/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia	wb_olx_lotes_udi
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?sf=1	wb_olx_terrenos_udi_recentes
-https://web.archive.org/web/2/https://www.olx.com.br/imoveis/terrenos/estado-mg/regiao-de-uberlandia-e-uberaba/uberlandia?ss=5000	wb_olx_terrenos_udi_ss5000
+# Lote 11 — indice CDX do Wayback: o que existe arquivado da OLX para Uberlandia
+#delay=3-5
+https://web.archive.org/cdx/search/cdx?url=mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/*&output=json&filter=statuscode:200&collapse=urlkey&from=2024&limit=8000	cdx_olxmg_terrenos_ads
+https://web.archive.org/cdx/search/cdx?url=mg.olx.com.br/regiao-de-uberlandia-e-uberaba/*uberlandia*terrenos*&output=json&filter=statuscode:200&collapse=urlkey&from=2023&limit=3000	cdx_olxmg_listagens
+https://web.archive.org/cdx/search/cdx?url=olx.com.br/imoveis/terrenos*&output=json&filter=statuscode:200&collapse=urlkey&from=2024&limit=8000	cdx_olx_terrenos_listagens
+https://web.archive.org/cdx/search/cdx?url=olx.com.br/anuncios/*uberlandia*&output=json&filter=statuscode:200&collapse=urlkey&from=2024&limit=2000	cdx_olx_anuncios_uberlandia
