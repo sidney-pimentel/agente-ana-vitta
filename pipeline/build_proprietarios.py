@@ -95,6 +95,11 @@ for k in ids:
                                   f'(escopo exclui rural) — avaliar como lead se estiver no perimetro urbano')
     if re.search(r'rural', (src.get('bairro') or '').lower()) or re.search(r'rodovia|\bkm\b|zona rural', (row['endereco'] or '').lower()):
         row['perimetro_urbano'] = 'Nao'
+    txt = ((src.get('subject') or '') + ' ' + ((d or {}).get('body') or '')).lower()
+    mrod = re.search(r'(\bbr[\s-]?\d{3}\b|rodovia|\b\d{1,3}\s*km\b|\bkm\s*\d{1,3}\b|estrada)[^.\n]{0,60}', txt)
+    if mrod and row['perimetro_urbano'] != 'Nao':
+        row['perimetro_urbano'] = 'A verificar'
+        obs.append(f"ALERTA: texto do anuncio cita rodovia/km (\"{mrod.group(0).strip()[:70]}\") — bairro informado pode nao corresponder")
     if m2 is not None and m2 < 5000:
         row['status_apuracao'] = 'Excluido'
         row['motivo_exclusao'] = f'area {fmt_decimal_br(m2)} m2 abaixo de 5000 m2'

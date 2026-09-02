@@ -95,3 +95,13 @@ Raciocínio explícito, verificável nos números acima:
 - HTML bruto de todas as páginas em `raw/{dominio}/` com `.meta.json` (URL, timestamp, status, bytes).
 - Reprocessamento é 100% offline: `extract_*.py` sobre `raw/` → `build_base.py`.
 
+
+## Adendo — proprietários diretos (captação), 2026-09-02
+
+Pedido: só anúncios de pessoa física. Resultado em `saida/proprietarios_diretos.csv` (mesmo schema).
+
+- **ZAP/VivaReal**: os 262 anúncios ≥5.000 m² coletados são **100% de imobiliárias** (tier pago, URL `/imobiliaria/`). Zero particulares nesse segmento.
+- **Chaves na Mão "direto com proprietário"** (2 URLs): 15 anúncios, todos ≤2.000 m².
+- **proprietariodireto.com.br**: 15 terrenos em Uberlândia, todos entre 250 e 1.000 m².
+- **Trovit**: feed de imobiliárias; **Mercado Livre**: página vazia — sem uso.
+- **OLX** (Cloudflare bloqueia requests e Playwright): contornada **parcialmente** com o Wayback Machine — índice CDX + 11 snapshots de listagem (dez/2024 a abr/2026) + 148 páginas de anúncio arquivadas. 321 anúncios únicos de Uberlândia, **129 de particulares** (`professionalAd=false`). Só 3 caem no corte urbano ≥5.000 m² (um deles cita "BR-452, 25 km de Uberlândia" no título — alerta gravado); 15 particulares ≥5.000 m² são sítios/chácaras/ranchos (`Excluido` com motivo, mantidos como lead). 6 anúncios trazem telefone escrito pelo dono no texto; nos demais a OLX oculta o telefone (contato pelo chat). **Ressalvas**: cobertura = página 1 de cada snapshot (amostra, não o estoque inteiro); ofertas podem ter expirado — `data_coleta` é a data do snapshot.
