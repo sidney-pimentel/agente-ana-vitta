@@ -105,3 +105,21 @@ Pedido: só anúncios de pessoa física. Resultado em `saida/proprietarios_diret
 - **proprietariodireto.com.br**: 15 terrenos em Uberlândia, todos entre 250 e 1.000 m².
 - **Trovit**: feed de imobiliárias; **Mercado Livre**: página vazia — sem uso.
 - **OLX** (Cloudflare bloqueia requests e Playwright): contornada **parcialmente** com o Wayback Machine — índice CDX + 11 snapshots de listagem (dez/2024 a abr/2026) + 148 páginas de anúncio arquivadas. 321 anúncios únicos de Uberlândia, **129 de particulares** (`professionalAd=false`). Só 3 caem no corte urbano ≥5.000 m² (um deles cita "BR-452, 25 km de Uberlândia" no título — alerta gravado); 15 particulares ≥5.000 m² são sítios/chácaras/ranchos (`Excluido` com motivo, mantidos como lead). 6 anúncios trazem telefone escrito pelo dono no texto; nos demais a OLX oculta o telefone (contato pelo chat). **Ressalvas**: cobertura = página 1 de cada snapshot (amostra, não o estoque inteiro); ofertas podem ter expirado — `data_coleta` é a data do snapshot.
+
+## Adendo — Crawl4AI (2026-09-02)
+
+Instalado do GitHub (`unclecode/crawl4ai`, v0.9.3) e testado no runner do GitHub Actions em cascata
+`undetected` → `stealth` → padrão (`magic`, `simulate_user`, `override_navigator`), cadência 6–12 s.
+
+| fonte | resultado |
+|---|---|
+| **OLX** (listagem Uberlândia + busca "particular") | **PASSOU** — 200, páginas completas; varredura ao vivo de 15 páginas (855 anúncios, 763 de Uberlândia, 140 particulares); categoria tem 6.462 anúncios |
+| Prefeitura (Mapas e Bairros) | PASSOU — 200 |
+| LB Negócios, Gold | PASSOU — 200 (antes 403 WAF) |
+| Objetiva (listagem JS) | renderizada — 200 |
+| Imovelweb, Wimoveis | **NÃO** — challenge JS do Cloudflare nos 3 modos |
+| Mercado Livre | 302 para home, inconclusivo |
+
+Robots.txt continua respeitado: Storte/Nexus/Gleba não foram tentadas. A OLX voltou a ser fonte VIVA
+para proprietários diretos (`saida/proprietarios_diretos.csv` passa a marcar `origem = olx.com.br`
+e `data_coleta` = data real da coleta nas linhas ao vivo).
