@@ -30,7 +30,8 @@ for l in out.stdout.splitlines():
         d = json.loads(l)
         if d.get('listId') and not d.get('descartar'):
             k = str(d['listId'])
-            if k not in detalhes or (d.get('snapshot') or '') > (detalhes[k].get('snapshot') or ''):
+            cur = detalhes.get(k)
+            if cur is None or (d.get('live') and not cur.get('live')) or (bool(d.get('live')) == bool(cur.get('live')) and (d.get('snapshot') or '') > (cur.get('snapshot') or '')):
                 detalhes[k] = d
 # 2. listagens
 lista = {str(a['listId']): a for a in json.load(open(f'{S}/olx_ads.json', encoding='utf-8'))}
@@ -62,8 +63,10 @@ for k in ids:
     snap = src.get('snapshot')
     m2 = src.get('m2')
     tipo = (src.get('tipo') or '').lower()
+    live = bool(src.get('live'))
     obs = ["anuncio de PARTICULAR (OLX professionalAd=false" + (", conta nao-profissional" if d and d.get('proAccount') is False else "") + ")",
-           f"snapshot Wayback de {data_de(snap)} — oferta pode ter expirado; conferir no link",
+           (f"coletado AO VIVO na OLX em {data_de(snap)} (Crawl4AI)" if live
+            else f"snapshot Wayback de {data_de(snap)} — oferta pode ter expirado; conferir no link"),
            f"tamanho no anuncio: \"{src.get('size')}\"" if src.get('size') else "sem tamanho no anuncio",
            f"preco no anuncio: \"{src.get('price')}\"" if src.get('price') else "sem preco no anuncio"]
     tel = ''
@@ -78,7 +81,7 @@ for k in ids:
     else:
         obs.append("so listagem arquivada (pagina do anuncio nao arquivada)")
     row = nova_linha(
-        id=f"olx-{k}", data_coleta=data_de(snap), origem='olx.com.br (snapshot Wayback)',
+        id=f"olx-{k}", data_coleta=data_de(snap), origem=('olx.com.br' if live else 'olx.com.br (snapshot Wayback)'),
         url_fonte=src.get('url') or '', codigo_anuncio=k, tipo_contato='Proprietario',
         nome_contato=(d or {}).get('sellerName') or '', telefone=tel,
         endereco=(d or {}).get('endereco') or '', bairro=src.get('bairro') or '',

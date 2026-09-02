@@ -34,8 +34,13 @@ def extrai(path):
     raw = open(path, encoding='utf-8', errors='replace').read()
     meta = json.load(open(path[:-5] + '.meta.json', encoding='utf-8'))
     out = {"arquivo": path, "erros": [], "descartar": None}
-    snap = re.search(r'/web/(\d{14})/', meta.get('final_url') or meta.get('url') or '')
-    out["snapshot"] = snap.group(1) if snap else None
+    live = '/c4ai_' in path
+    if live:
+        out["snapshot"] = (meta.get('fetched_at') or '').replace('-', '').replace(':', '').replace('T', '')[:14] or None
+    else:
+        snap = re.search(r'/web/(\d{14})/', meta.get('final_url') or meta.get('url') or '')
+        out["snapshot"] = snap.group(1) if snap else None
+    out["live"] = live
     m = re.search(r'<script[^>]*id="initial-data"[^>]*data-json="([^"]*)"', raw)
     if not m:
         out["descartar"] = "pagina sem initial-data (snapshot incompleto)"
@@ -81,9 +86,11 @@ def extrai(path):
 
 
 if __name__ == "__main__":
-    for f in sorted(glob.glob(sys.argv[1] if len(sys.argv) > 1 else 'raw/web.archive.org/wb_olx_ad_*.html')):
+    pats = sys.argv[1:] or ['raw/web.archive.org/wb_olx_ad_*.html', 'raw/www.olx.com.br/c4ai_olx_ad_*.html']
+    for f in sorted(x for pat in pats for x in glob.glob(pat)):
         try:
-            if json.load(open(f[:-5] + '.meta.json'))['http_status'] != 200:
+            m = json.load(open(f[:-5] + '.meta.json'))
+            if ('/c4ai_' in f and not m.get('ok')) or ('/c4ai_' not in f and m.get('http_status') != 200):
                 continue
         except Exception:
             continue
