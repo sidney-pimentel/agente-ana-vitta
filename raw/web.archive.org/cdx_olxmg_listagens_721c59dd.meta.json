@@ -1,0 +1,12 @@
+{
+ "url": "https://web.archive.org/cdx/search/cdx?url=mg.olx.com.br/regiao-de-uberlandia-e-uberaba/*uberlandia*terrenos*&output=json&filter=statuscode:200&collapse=urlkey&from=2023&limit=3000",
+ "final_url": "https://web.archive.org/cdx/search/cdx?url=mg.olx.com.br/regiao-de-uberlandia-e-uberaba/*uberlandia*terrenos*&output=json&filter=statuscode:200&collapse=urlkey&from=2023&limit=3000",
+ "http_status": 200,
+ "fetched_at": "2026-09-02T14:35:07+00:00",
+ "bytes": 3,
+ "label": "cdx_olxmg_listagens",
+ "content_type": "application/json",
+ "robots": "robots http 404",
+ "user_agent": "TerrenosUberlandiaResearch/1.0 (coleta educada de anuncios publicos p/ estudo de mercado; contato: sidney@propbank.ai)",
+ "erro": null
+}
