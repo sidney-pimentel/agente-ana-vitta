@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/excelente-oportunidade-terreno-de-426-65-m-no-condominio-arts-1471401228",
+ "label": "c4ai_olx_ad_1471401228",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 666903,
+ "titulo": "Excelente oportunidade! Terreno de 426,65 m² no Condomínio Arts. - Terrenos, sítios e fazendas - Laranjeiras, Uberlândia",
+ "fetched_at": "2026-09-02T15:57:22+00:00",
+ "modos_tentados": [
+  "undetected:200:666903"
+ ],
+ "ok": true,
+ "erro": ""
+}

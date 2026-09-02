@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/procuro-sitio-ou-fazenda-e-ate-10-alqueires-para-arrendamento-1521149852",
+ "label": "c4ai_olx_ad_1521149852",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 661314,
+ "titulo": "Procuro sítio ou fazenda e até 10 alqueires para arrendamento - Terrenos, sítios e fazendas - Jardim das Palmeiras, Uber",
+ "fetched_at": "2026-09-02T15:58:03+00:00",
+ "modos_tentados": [
+  "undetected:200:661314"
+ ],
+ "ok": true,
+ "erro": ""
+}

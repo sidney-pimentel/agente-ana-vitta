@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-condominio-eldorado-1524822970",
+ "label": "c4ai_olx_ad_1524822970",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 669348,
+ "titulo": "Chácara Condomínio Eldorado - Terrenos, sítios e fazendas - Cidade Jardim, Uberlândia 1524822970 | OLX",
+ "fetched_at": "2026-09-02T16:04:57+00:00",
+ "modos_tentados": [
+  "undetected:200:669348"
+ ],
+ "ok": true,
+ "erro": ""
+}

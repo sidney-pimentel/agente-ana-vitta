@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-na-zona-urbana-de-uberlandia-perto-do-clube-caca-e-pesca-itororo-1523812896",
+ "label": "c4ai_olx_ad_1523812896",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1021574,
+ "titulo": "Chácara na zona urbana de Uberlândia perto do clube caça e Pesca Itororo - Terrenos, sítios e fazendas - Santa Mônica, U",
+ "fetched_at": "2026-09-02T16:03:19+00:00",
+ "modos_tentados": [
+  "undetected:200:1021574"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/chacara-capim-branco-2-oportunidade-leia-anuncio-1515890778",
+ "label": "c4ai_olx_ad_1515890778",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 676972,
+ "titulo": "Chácara Capim Branco 2.Oportunidade.Leia anúncio!! - Terrenos, sítios e fazendas - Tibery, Uberlândia 1515890778 | OLX",
+ "fetched_at": "2026-09-02T16:00:37+00:00",
+ "modos_tentados": [
+  "undetected:200:676972"
+ ],
+ "ok": true,
+ "erro": ""
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/lote-a-venda-cond-reserva-novo-mundo-localiz-privilegiada-e-lazer-completo-293-72-m2-1524754158",
+ "label": "c4ai_olx_ad_1524754158",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 1030573,
+ "titulo": "Lote à venda Cond. Reserva Novo Mundo - Localiz Privilegiada e Lazer Completo (293,72 m2) - Terrenos, sítios e fazendas ",
+ "fetched_at": "2026-09-02T15:58:19+00:00",
+ "modos_tentados": [
+  "undetected:200:1030573"
+ ],
+ "ok": true,
+ "erro": ""
+}

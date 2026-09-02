@@ -1,0 +1,14 @@
+{
+ "url": "https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/terrenos/linda-chacara-no-miranda-1-5-mil-metros-1525824544",
+ "label": "c4ai_olx_ad_1525824544",
+ "metodo": "crawl4ai/undetected",
+ "http_status": 200,
+ "bytes": 663624,
+ "titulo": "LINDA CHACARA NO MIRANDA 1 5 MIL METROS - Terrenos, sítios e fazendas - Saraiva, Uberlândia 1525824544 | OLX",
+ "fetched_at": "2026-09-02T16:03:58+00:00",
+ "modos_tentados": [
+  "undetected:200:663624"
+ ],
+ "ok": true,
+ "erro": ""
+}
